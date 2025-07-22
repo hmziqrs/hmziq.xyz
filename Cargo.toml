@@ -1,13 +1,18 @@
 [package]
 name = "hmziq-xyz"
-version = "0.1.0"
+version = "1.0.0"
 authors = ["hmziqrs <hmziqrs@gmail.com>"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-dioxus = { version = "0.7.0-alpha.2", features = ["router"] }
+dioxus = { version = "0.7.0-alpha.3", features = ["router"] }
+dioxus-primitives = { git = "https://github.com/DioxusLabs/components" }
+
+[patch.crates-io]
+dioxus-time = { git = "https://github.com/ealmloff/dioxus-std", branch = "0.7" }
+
 
 [features]
 default = ["web"]
