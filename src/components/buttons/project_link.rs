@@ -11,7 +11,7 @@ pub fn ProjectLink(props: ProjectLinkProps) -> Element {
     rsx! {
         a {
             href: "{props.href}",
-            class: "text-white no-underline px-6 py-2.5 border border-white/30 transition-all duration-300 ease-in-out text-xs uppercase tracking-wider relative overflow-hidden hover:text-black hover:border-white group",
+            class: "text-white no-underline px-6 py-2.5 border border-white/30 transition-all duration-300 ease-in-out text-xs uppercase tracking-[0.1rem] relative overflow-hidden hover:text-black hover:border-white group",
             
             // Bottom-to-top fill background
             div {

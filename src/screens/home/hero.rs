@@ -68,7 +68,7 @@ pub fn HeroSection(props: HeroSectionProps) -> Element {
 
             // Coordinates display
             div {
-                class: "absolute bottom-8 left-8 font-mono text-xs opacity-50 tracking-wider",
+                class: "absolute bottom-8 left-8 font-mono text-xs opacity-50 tracking-[0.1rem]",
                 span { "COORD: " }
                 span { id: "coordText", "00.000° N, 00.000° W" }
             }

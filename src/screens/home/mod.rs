@@ -1,4 +1,3 @@
-use crate::components::decorative::CursorGlow;
 use dioxus::prelude::*;
 use wasm_bindgen::{closure::Closure, JsCast};
 
@@ -14,9 +13,6 @@ pub use projects::ProjectsSection;
 pub fn HomeScreen() -> Element {
     // Scroll position for parallax
     let mut scroll_y = use_signal(|| 0.0);
-
-    // Mouse position for cursor effects
-    let mut mouse_pos = use_signal(|| (0.0, 0.0));
 
     // Active filter state
     let active_filter = use_signal(|| "all".to_string());
@@ -46,8 +42,6 @@ pub fn HomeScreen() -> Element {
         let document_clone = document.clone();
 
         let mouse_handler = Closure::wrap(Box::new(move |event: web_sys::MouseEvent| {
-            mouse_pos.set((event.client_x() as f64, event.client_y() as f64));
-
             // Update coordinates display
             if let Some(coord_elem) = document_clone.get_element_by_id("coordText") {
                 let window_height = window_clone
@@ -87,9 +81,6 @@ pub fn HomeScreen() -> Element {
 
             // Canvas placeholder - will be implemented later
             div { id: "space-canvas", class: "fixed inset-0 -z-10" }
-
-            // Cursor glow effect
-            CursorGlow { position: mouse_pos() }
 
             // Sections
             HeroSection { scroll_y: scroll_y() }

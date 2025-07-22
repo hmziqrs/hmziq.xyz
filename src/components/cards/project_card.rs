@@ -27,7 +27,7 @@ pub fn ProjectCard(props: ProjectCardProps) -> Element {
             
             // Title
             h3 {
-                class: "text-2xl font-light mb-6 tracking-wider",
+                class: "text-2xl font-light mb-6 tracking-[0.1rem]",
                 "{props.project.title}"
             }
             
@@ -42,7 +42,7 @@ pub fn ProjectCard(props: ProjectCardProps) -> Element {
                 class: "flex flex-wrap gap-3 mb-8",
                 for tag in props.project.tags.iter() {
                     span {
-                        class: "px-4 py-1.5 border border-white/30 text-xs opacity-60 uppercase tracking-wider transition-all duration-300 ease-in-out hover:opacity-100 hover:border-white",
+                        class: "px-4 py-1.5 border border-white/30 text-xs opacity-60 uppercase tracking-[0.1rem] transition-all duration-300 ease-in-out hover:opacity-100 hover:border-white",
                         "{tag}"
                     }
                 }

@@ -27,7 +27,7 @@ pub fn ContactCard(props: ContactCardProps) -> Element {
             
             // Label
             div {
-                class: "text-lg font-light tracking-wider uppercase relative z-10",
+                class: "text-lg font-light tracking-[0.2rem] uppercase relative z-10",
                 "{props.label}"
             }
         }
