@@ -9,6 +9,8 @@ pub use contact::ContactSection;
 pub use hero::HeroSection;
 pub use projects::ProjectsSection;
 
+use crate::components::CursorGlow;
+
 #[component]
 pub fn HomeScreen() -> Element {
     // Scroll position for parallax
@@ -81,7 +83,7 @@ pub fn HomeScreen() -> Element {
 
             // Canvas placeholder - will be implemented later
             div { id: "space-canvas", class: "fixed inset-0 -z-10" }
-
+            CursorGlow { }
             // Sections
             HeroSection { scroll_y: scroll_y() }
             ProjectsSection { active_filter }
