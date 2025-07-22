@@ -28,7 +28,16 @@ project/
 │  ├─ containers/            # Container components (logic + UI)
 │  │  └─ mod.rs
 │  ├─ screens/               # Page-level components
-│  │  └─ mod.rs
+│  │  ├─ mod.rs
+│  │  ├─ home/               # Home screen with components
+│  │  │  ├─ mod.rs          # Main screen component
+│  │  ├─ [new_screen]/
+│  │  │  ├─ mod.rs          # Main screen component
+│  │  │  ├─ [container].rs  # Screen-specific child container | not reusable
+│  │  │  ├─ [component].rs  # Screen-specific child component | not reusable
+│  │  │  └─ [hook].rs       # Screen-specific hook component | not reusable
+│  │  ├─ not_found/          # 404 screen with components
+│  │  │  └─ mod.rs
 │  ├─ hooks/                 # Custom hooks
 │  │  ├─ mod.rs
 │  │  ├─ use_form.rs
@@ -636,7 +645,8 @@ fn App() -> Element {
 2. **Async Operations**: Wrap API calls with StateFrame for consistent loading states
 3. **Forms**: Use OxForm pattern with validator crate for robust form handling
 4. **Component Hierarchy**: Separate concerns: components (UI), containers (logic), screens (pages)
-5. **Custom Hooks**: Extract reusable logic into custom hooks
-6. **Type Safety**: Leverage Rust's type system with proper serialization/deserialization
+5. **Screen Organization**: Each screen should have its own directory to have its own components, containers, and hooks.
+6. **Custom Hooks**: Extract reusable logic into custom hooks
+7. **Type Safety**: Leverage Rust's type system with proper serialization/deserialization
 
 This structure provides a production-ready foundation for scalable Dioxus applications with proper state management, form handling, and routing patterns.
