@@ -1,16 +1,6 @@
 use dioxus::prelude::*;
-use std::collections::HashMap;
 use crate::components::buttons::ProjectLink;
-
-#[derive(Clone, PartialEq)]
-pub struct Project {
-    pub title: String,
-    pub description: String,
-    pub tags: Vec<String>,
-    pub icon: String,
-    pub links: HashMap<String, String>,
-    pub number: usize,
-}
+use crate::types::Project;
 
 #[derive(Props, Clone, PartialEq)]
 pub struct ProjectCardProps {

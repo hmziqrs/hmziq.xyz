@@ -9,6 +9,7 @@ pub mod screens;
 mod config;
 mod env;
 pub mod store;
+pub mod types;
 pub mod ui;
 
 const FAVICON: Asset = asset!("/assets/favicon.ico");

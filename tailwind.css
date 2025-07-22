@@ -1,1 +1,53 @@
 @import "tailwindcss";
+
+/* Custom animations for space-themed UI */
+@layer utilities {
+  /* Animation classes */
+  .animate-fadeInUp {
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  .animate-asteroid {
+    animation: asteroid 20s linear infinite;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-600 {
+    animation-delay: 600ms;
+  }
+  
+  /* Gradients */
+  .bg-gradient-radial {
+    background-image: radial-gradient(var(--tw-gradient-stops));
+  }
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes asteroid {
+  from {
+    transform: translateX(-100px) translateY(0) rotate(0deg);
+  }
+  to {
+    transform: translateX(calc(100vw + 100px)) translateY(100px) rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-30%, -70%) scale(1.2);
+  }
+}
