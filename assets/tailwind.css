@@ -656,6 +656,9 @@
   .px-14 {
     padding-inline: calc(var(--spacing) * 14);
   }
+  .px-\[30px\] {
+    padding-inline: 30px;
+  }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
@@ -1144,10 +1147,10 @@
       height: calc(var(--spacing) * 0);
     }
   }
-  .after\:h-\[200px\] {
+  .after\:h-\[160px\] {
     &::after {
       content: var(--tw-content);
-      height: 200px;
+      height: 160px;
     }
   }
   .after\:h-px {
@@ -1168,10 +1171,10 @@
       width: calc(var(--spacing) * 24);
     }
   }
-  .after\:w-\[200px\] {
+  .after\:w-\[160px\] {
     &::after {
       content: var(--tw-content);
-      width: 200px;
+      width: 160px;
     }
   }
   .after\:-translate-x-1\/2 {
@@ -1361,22 +1364,22 @@
       }
     }
   }
-  .hover\:after\:h-\[200px\] {
+  .hover\:after\:h-\[160px\] {
     &:hover {
       @media (hover: hover) {
         &::after {
           content: var(--tw-content);
-          height: 200px;
+          height: 160px;
         }
       }
     }
   }
-  .hover\:after\:w-\[200px\] {
+  .hover\:after\:w-\[160px\] {
     &:hover {
       @media (hover: hover) {
         &::after {
           content: var(--tw-content);
-          width: 200px;
+          width: 160px;
         }
       }
     }

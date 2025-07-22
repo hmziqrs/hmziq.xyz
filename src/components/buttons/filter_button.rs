@@ -10,7 +10,7 @@ pub struct FilterButtonProps {
 
 #[component]
 pub fn FilterButton(props: FilterButtonProps) -> Element {
-    let base_classes = "px-8 py-3 border transition-all duration-300 ease-in-out relative overflow-hidden tracking-wider uppercase text-xs backdrop-blur-sm cursor-pointer";
+    let base_classes = "px-[30px] py-3 border transition-all duration-300 ease-in-out relative overflow-hidden tracking-wider uppercase text-xs backdrop-blur-sm cursor-pointer";
     
     let state_classes = if props.active {
         "border-white text-black shadow-[0_0_20px_rgba(255,255,255,0.3)] bg-black/50"
@@ -19,9 +19,9 @@ pub fn FilterButton(props: FilterButtonProps) -> Element {
     };
 
     let after_classes = if props.active {
-        "after:w-[200px] after:h-[200px]"
+        "after:w-[160px] after:h-[160px]"
     } else {
-        "after:w-0 after:h-0 hover:after:w-[200px] hover:after:h-[200px]"
+        "after:w-0 after:h-0 hover:after:w-[160px] hover:after:h-[160px]"
     };
 
     rsx! {
