@@ -9,12 +9,12 @@ pub use contact::ContactSection;
 pub use hero::HeroSection;
 pub use projects::ProjectsSection;
 
-use crate::components::CursorGlow;
+use crate::components::{decorative::Coordinates, CursorGlow};
+use crate::store::viewport::use_viewport;
 
 #[component]
 pub fn HomeScreen() -> Element {
-    // Scroll position for parallax
-    let mut scroll_y = use_signal(|| 0.0);
+    let viewport = use_viewport();
 
     // Active filter state
     let active_filter = use_signal(|| "all".to_string());
@@ -26,7 +26,7 @@ pub fn HomeScreen() -> Element {
 
         let scroll_handler = Closure::wrap(Box::new(move |_: web_sys::Event| {
             let scroll_y_val = window_clone.page_y_offset().unwrap_or(0.0);
-            scroll_y.set(scroll_y_val);
+            viewport.update_scroll_offset(scroll_y_val);
         }) as Box<dyn FnMut(_)>);
 
         window
@@ -38,36 +38,13 @@ pub fn HomeScreen() -> Element {
 
     // Mouse event handler
     use_effect(move || {
-        let window = web_sys::window().expect("should have window");
-        let document = window.document().expect("should have document");
-        let window_clone = window.clone();
-        let document_clone = document.clone();
+        let document = web_sys::window()
+            .expect("should have window")
+            .document()
+            .expect("should have document");
 
         let mouse_handler = Closure::wrap(Box::new(move |event: web_sys::MouseEvent| {
-            // Update coordinates display
-            if let Some(coord_elem) = document_clone.get_element_by_id("coordText") {
-                let window_height = window_clone
-                    .inner_height()
-                    .unwrap()
-                    .as_f64()
-                    .unwrap_or(800.0);
-                let window_width = window_clone
-                    .inner_width()
-                    .unwrap()
-                    .as_f64()
-                    .unwrap_or(1200.0);
-
-                let lat = event.client_y() as f64 / window_height * 180.0 - 90.0;
-                let lng = event.client_x() as f64 / window_width * 360.0 - 180.0;
-                let coord_text = format!(
-                    "{:.3}° {}, {:.3}° {}",
-                    lat.abs(),
-                    if lat > 0.0 { "N" } else { "S" },
-                    lng.abs(),
-                    if lng > 0.0 { "E" } else { "W" }
-                );
-                coord_elem.set_inner_html(&coord_text);
-            }
+            viewport.update_mouse_position(event.client_x() as f64, event.client_y() as f64);
         }) as Box<dyn FnMut(_)>);
 
         document
@@ -75,6 +52,37 @@ pub fn HomeScreen() -> Element {
             .expect("should add mouse listener");
 
         mouse_handler.forget(); // Keep closure alive
+    });
+
+    // Window resize event handler and initial dimensions
+    use_effect(move || {
+        let window = web_sys::window().expect("should have window");
+        let window_clone = window.clone();
+
+        // Set initial dimensions
+        let initial_width = window.inner_width().unwrap().as_f64().unwrap_or(1200.0);
+        let initial_height = window.inner_height().unwrap().as_f64().unwrap_or(800.0);
+        viewport.update_window_dimensions(initial_width, initial_height);
+
+        let resize_handler = Closure::wrap(Box::new(move |_: web_sys::Event| {
+            let width = window_clone
+                .inner_width()
+                .unwrap()
+                .as_f64()
+                .unwrap_or(1200.0);
+            let height = window_clone
+                .inner_height()
+                .unwrap()
+                .as_f64()
+                .unwrap_or(800.0);
+            viewport.update_window_dimensions(width, height);
+        }) as Box<dyn FnMut(_)>);
+
+        window
+            .add_event_listener_with_callback("resize", resize_handler.as_ref().unchecked_ref())
+            .expect("should add resize listener");
+
+        resize_handler.forget(); // Keep closure alive
     });
 
     rsx! {
@@ -85,8 +93,9 @@ pub fn HomeScreen() -> Element {
             // Canvas placeholder - will be implemented later
             div { id: "space-canvas", class: "fixed inset-0 -z-10" }
             CursorGlow { }
+            Coordinates { }
             // Sections
-            HeroSection { scroll_y: scroll_y() }
+            HeroSection { scroll_y: viewport.scroll_offset.read().y }
             ProjectsSection { active_filter }
             ContactSection {}
 

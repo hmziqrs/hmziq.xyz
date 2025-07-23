@@ -582,6 +582,12 @@
       background-color: color-mix(in oklab, var(--color-black) 10%, transparent);
     }
   }
+  .bg-black\/20 {
+    background-color: color-mix(in srgb, #000 20%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      background-color: color-mix(in oklab, var(--color-black) 20%, transparent);
+    }
+  }
   .bg-black\/50 {
     background-color: color-mix(in srgb, #000 50%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -677,6 +683,9 @@
   }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
   }
   .py-2\.5 {
     padding-block: calc(var(--spacing) * 2.5);
@@ -940,13 +949,6 @@
       }
     }
   }
-  .group-hover\:h-full {
-    &:is(:where(.group):hover *) {
-      @media (hover: hover) {
-        height: 100%;
-      }
-    }
-  }
   .group-hover\:w-\[200px\] {
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
@@ -975,6 +977,13 @@
     &:is(:where(.group):hover *) {
       @media (hover: hover) {
         opacity: 100%;
+      }
+    }
+  }
+  .group-hover\/link\:h-full {
+    &:is(:where(.group\/link):hover *) {
+      @media (hover: hover) {
+        height: 100%;
       }
     }
   }

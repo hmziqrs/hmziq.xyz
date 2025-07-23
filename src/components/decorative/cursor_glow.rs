@@ -1,26 +1,12 @@
 use dioxus::{logger::tracing, prelude::*};
-use wasm_bindgen::{prelude::Closure, JsCast};
+use crate::store::viewport::use_viewport;
 
 #[component]
 pub fn CursorGlow() -> Element {
-    let mut mouse_pos = use_signal(|| (0.0, 0.0));
-
-    let (x, y) = mouse_pos();
-
-    use_effect(move || {
-        let window = web_sys::window().expect("should have window");
-        let document = window.document().expect("should have document");
-
-        let mouse_handler = Closure::wrap(Box::new(move |event: web_sys::MouseEvent| {
-            mouse_pos.set((event.client_x() as f64, event.client_y() as f64));
-        }) as Box<dyn FnMut(_)>);
-
-        document
-            .add_event_listener_with_callback("mousemove", mouse_handler.as_ref().unchecked_ref())
-            .expect("should add mouse listener");
-
-        mouse_handler.forget(); // Keep closure alive
-    });
+    let viewport = use_viewport();
+    let mouse_pos = viewport.mouse_position.read();
+    
+    let (x, y) = (mouse_pos.x, mouse_pos.y);
 
     let glow_style = format!(
         // "transform: translate(-50%, -50%); left: {}px; top: {}px; background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%); filter: blur(64px);",
