@@ -10,12 +10,12 @@ pub struct FilterButtonProps {
 
 #[component]
 pub fn FilterButton(props: FilterButtonProps) -> Element {
-    let base_classes = "px-[30px] py-3 border transition-all duration-300 ease-in-out relative overflow-hidden tracking-[0.1rem] uppercase text-xs backdrop-blur-sm cursor-pointer";
-    
+    let base_classes = "px-[30px] py-3 border transition-all duration-300 ease-in-out relative overflow-hidden tracking-[0.1rem] uppercase text-xs backdrop-blur-sm bg-black/10 cursor-pointer";
+
     let state_classes = if props.active {
-        "border-white text-black shadow-[0_0_20px_rgba(255,255,255,0.3)] bg-black/50"
+        "border-white text-black shadow-[0_0_20px_rgba(255,255,255,0.3)]"
     } else {
-        "border-white/30 bg-black/50 text-white hover:text-black hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+        "border-white/30 text-white hover:text-black hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
     };
 
     let after_classes = if props.active {
@@ -28,7 +28,7 @@ pub fn FilterButton(props: FilterButtonProps) -> Element {
         button {
             class: "{base_classes} {state_classes} {after_classes} after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:bg-white after:transition-all after:duration-300 after:ease-in-out after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full",
             onclick: move |_| props.on_click.call(props.filter.clone()),
-            
+
             span {
                 class: "relative z-10",
                 "{props.text}"

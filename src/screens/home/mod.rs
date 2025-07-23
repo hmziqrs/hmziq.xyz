@@ -81,6 +81,7 @@ pub fn HomeScreen() -> Element {
         div {
             class: "bg-black text-white overflow-x-hidden leading-relaxed cursor-crosshair min-h-screen",
 
+            Asteroids {}
             // Canvas placeholder - will be implemented later
             div { id: "space-canvas", class: "fixed inset-0 -z-10" }
             CursorGlow { }
@@ -90,7 +91,6 @@ pub fn HomeScreen() -> Element {
             ContactSection {}
 
             // Floating asteroids
-            Asteroids {}
         }
     }
 }
