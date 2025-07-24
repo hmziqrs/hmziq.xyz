@@ -20,6 +20,7 @@ web-sys = { version = "0.3", features = ["Document", "Window", "Element", "Mouse
 gloo-storage = "0.3"
 gloo-timers = { version = "0.3", features = ["futures"] }
 gloo-net = "0.6"
+js-sys = "0.3.77"
 
 # UI and icons (commented out for now to avoid version conflicts)
 # hmziq-dioxus-free-icons = { version = "0.9", features = ["lucide", "simple-icons"] }

@@ -1,3 +1,4 @@
+use dioxus::document::document;
 use dioxus::prelude::*;
 use wasm_bindgen::{closure::Closure, JsCast};
 
@@ -34,24 +35,6 @@ pub fn HomeScreen() -> Element {
             .expect("should add scroll listener");
 
         scroll_handler.forget(); // Keep closure alive
-    });
-
-    // Mouse event handler
-    use_effect(move || {
-        let document = web_sys::window()
-            .expect("should have window")
-            .document()
-            .expect("should have document");
-
-        let mouse_handler = Closure::wrap(Box::new(move |event: web_sys::MouseEvent| {
-            viewport.update_mouse_position(event.client_x() as f64, event.client_y() as f64);
-        }) as Box<dyn FnMut(_)>);
-
-        document
-            .add_event_listener_with_callback("mousemove", mouse_handler.as_ref().unchecked_ref())
-            .expect("should add mouse listener");
-
-        mouse_handler.forget(); // Keep closure alive
     });
 
     // Window resize event handler and initial dimensions
