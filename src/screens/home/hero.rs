@@ -7,30 +7,13 @@ use crate::{
 };
 use dioxus::prelude::*;
 
-#[derive(Props, Clone, PartialEq)]
-pub struct HeroSectionProps {
-    scroll_y: f64,
-}
-
 #[component]
-pub fn HeroSection(props: HeroSectionProps) -> Element {
+pub fn HeroSection() -> Element {
     rsx! {
         section {
             class: "h-screen relative flex items-center justify-center overflow-hidden",
 
-            // Parallax nebulas
-            Nebula {
-                width: "600px",
-                height: "600px",
-                animation_duration: "20s",
-                style: format!("transform: translate(-50%, {}%)", -50.0 + props.scroll_y * 0.1)
-            }
-            Nebula {
-                width: "800px",
-                height: "800px",
-                animation_duration: "30s",
-                style: format!("transform: translate(-50%, {}%)", -50.0 + props.scroll_y * 0.15)
-            }
+
 
             // Orbiting elements
             Orbit {

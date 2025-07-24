@@ -1,13 +1,7 @@
-use crate::store::viewport::use_viewport;
 use dioxus::prelude::*;
 
 #[component]
 pub fn CursorGlow() -> Element {
-    let viewport = use_viewport();
-    let mouse_pos = viewport.mouse_position.read();
-
-    let (x, y) = (mouse_pos.x, mouse_pos.y);
-
     rsx! {
         div {
             id: "cursor",
