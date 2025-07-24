@@ -11,7 +11,7 @@ pub fn ExploreButton(props: ExploreButtonProps) -> Element {
     rsx! {
         a {
             href: "{props.href}",
-            class: "inline-block px-18 py-6 border border-white text-white hover:text-black transition-all duration-300 ease relative overflow-hidden tracking-wider uppercase text-sm hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] group",
+            class: "inline-block cursor-none px-18 py-6 border border-white text-white hover:text-black transition-all duration-300 ease relative overflow-hidden tracking-wider uppercase text-sm hover:shadow-[0_0_30px_rgba(255,255,255,0.5)] group",
 
             // Expanding circle background
             div {

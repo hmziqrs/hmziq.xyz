@@ -87,7 +87,7 @@ pub fn HomeScreen() -> Element {
 
     rsx! {
         div {
-            class: "bg-black text-white overflow-x-hidden leading-relaxed cursor-crosshair min-h-screen",
+            class: "bg-black text-white overflow-x-hidden leading-relaxed min-h-screen cursor-none",
 
             Asteroids {}
             // Canvas placeholder - will be implemented later
