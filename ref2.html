@@ -1,0 +1,988 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hamza Iqbal | Labs</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+        <style>
+            :root {
+                --black: #000000;
+                --white: #ffffff;
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: "Courier New", monospace;
+                background-color: var(--black);
+                color: var(--white);
+                line-height: 1.6;
+                overflow-x: hidden;
+                position: relative;
+                min-height: 100vh;
+            }
+
+            #webgl-container {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -1;
+            }
+
+            a {
+                color: var(--white);
+                text-decoration: none;
+                transition: all 0.3s ease;
+            }
+
+            .section-title {
+                text-align: center;
+                margin: 40px 0 20px;
+                font-size: 2rem;
+                position: relative;
+                display: block;
+                width: fit-content;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .section-title::after {
+                content: "";
+                display: block;
+                width: 50px;
+                height: 2px;
+                background: var(--white);
+                margin: 10px auto 0;
+            }
+
+            /* Hero Section */
+            #hero {
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .hero-content {
+                z-index: 2;
+                padding: 30px;
+                max-width: 800px;
+                position: relative;
+                background: rgba(255, 255, 255, 0.03);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
+            }
+
+            .hero-title {
+                font-size: 3.5rem;
+                margin-bottom: 10px;
+                letter-spacing: 2px;
+                text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+            }
+
+            .blink {
+                animation: blink 1s step-end infinite;
+                opacity: 1;
+            }
+
+            @keyframes blink {
+                0%,
+                100% {
+                    opacity: 1;
+                }
+                50% {
+                    opacity: 0;
+                }
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+                color: #ccc;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+                margin-bottom: 30px;
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                color: #ddd;
+            }
+
+            .hero-links {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .radial-button {
+                position: relative;
+                overflow: hidden;
+                background: transparent;
+                color: var(--white);
+                border: 1px solid var(--white);
+                padding: 12px 24px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-family: inherit;
+                z-index: 1;
+            }
+
+            .radial-button::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 0;
+                height: 0;
+                background: var(--white);
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                transition:
+                    width 0.6s,
+                    height 0.6s;
+                z-index: -1;
+            }
+
+            .radial-button:hover::before {
+                width: 300px;
+                height: 300px;
+            }
+
+            .radial-button:hover {
+                color: var(--black);
+            }
+
+            .radial-button span {
+                position: relative;
+                z-index: 2;
+            }
+
+            /* Filter Section */
+            #project-filters {
+                padding: 40px 20px;
+                text-align: center;
+            }
+
+            .filter-buttons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+                margin-top: 20px;
+            }
+
+            .filter-btn {
+                position: relative;
+                overflow: hidden;
+                background: transparent;
+                color: var(--white);
+                border: 1px solid var(--white);
+                padding: 10px 15px;
+                cursor: pointer;
+                font-family: inherit;
+                transition: all 0.3s ease;
+            }
+
+            .filter-btn::before {
+                content: "";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 0;
+                height: 0;
+                background: var(--white);
+                border-radius: 50%;
+                transform: translate(-50%, -50%);
+                transition:
+                    width 0.4s,
+                    height 0.4s;
+                z-index: -1;
+            }
+
+            .filter-btn:hover::before,
+            .filter-btn.active::before {
+                width: 300px;
+                height: 300px;
+            }
+
+            .filter-btn:hover,
+            .filter-btn.active {
+                color: var(--black);
+            }
+
+            .filter-btn span {
+                position: relative;
+                z-index: 2;
+            }
+
+            /* Projects Gallery */
+            #projects {
+                padding: 20px;
+            }
+
+            .projects-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 30px;
+                padding: 20px;
+                max-width: 1400px;
+                margin: 0 auto;
+            }
+
+            .project-card {
+                background-color: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                overflow: hidden;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(12px);
+                position: relative;
+                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            }
+
+            .project-card::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(
+                    45deg,
+                    transparent,
+                    rgba(255, 255, 255, 0.08),
+                    transparent
+                );
+                transform: translateX(-100%);
+                transition: transform 0.6s ease;
+            }
+
+            .project-card:hover::before {
+                transform: translateX(100%);
+            }
+
+            .project-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 15px 35px rgba(255, 255, 255, 0.1);
+                border-color: rgba(255, 255, 255, 0.2);
+            }
+
+            .project-image {
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                display: block;
+            }
+
+            .project-content {
+                padding: 20px;
+            }
+
+            .project-title {
+                font-size: 1.3rem;
+                margin-bottom: 10px;
+            }
+
+            .project-description {
+                font-size: 0.9rem;
+                color: #bbb;
+                margin-bottom: 15px;
+                line-height: 1.5;
+            }
+
+            .project-tags {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 5px;
+            }
+
+            .project-tag {
+                background-color: rgba(255, 255, 255, 0.1);
+                color: var(--white);
+                padding: 4px 10px;
+                font-size: 0.8rem;
+            }
+
+            /* Contact Section */
+            #contact {
+                text-align: center;
+                padding: 60px 20px;
+                margin-top: 40px;
+            }
+
+            #contact .section-title {
+                margin-bottom: 15px;
+            }
+
+            #contact p {
+                color: #ccc;
+                max-width: 600px;
+                margin: 0 auto 30px;
+                font-size: 1.1rem;
+            }
+
+            .contact-links {
+                margin-top: 20px;
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            /* Footer */
+            footer {
+                text-align: center;
+                padding: 20px;
+                color: #777;
+                font-size: 0.9rem;
+                border-top: 1px solid rgba(255, 255, 255, 0.1);
+            }
+
+            /* Cursor effect */
+            .cursor-follower {
+                position: fixed;
+                width: 20px;
+                height: 20px;
+                border: 1px solid var(--white);
+                pointer-events: none;
+                transform: translate(-50%, -50%);
+                z-index: 9999;
+                transition: all 0.1s ease;
+                mix-blend-mode: difference;
+            }
+
+            .cursor-follower.trail {
+                width: 6px;
+                height: 6px;
+                background: var(--white);
+            }
+
+            .cursor-coordinates {
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                color: rgba(255, 255, 255, 0.7);
+                font-size: 0.9rem;
+                z-index: 100;
+                background: rgba(0, 0, 0, 0.3);
+                padding: 8px 15px;
+                font-family: "Courier New", monospace;
+                backdrop-filter: blur(5px);
+            }
+
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .hero-title {
+                    font-size: 2.5rem;
+                }
+                .projects-grid {
+                    grid-template-columns: repeat(
+                        auto-fill,
+                        minmax(250px, 1fr)
+                    );
+                    gap: 20px;
+                }
+                .filter-buttons {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .filter-btn {
+                    width: 80%;
+                }
+                .hero-links,
+                .contact-links {
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .section-title {
+                    font-size: 1.7rem;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: auto;
+                }
+                .hero-content {
+                    padding: 20px;
+                    margin: 0 15px;
+                }
+                .project-content {
+                    padding: 15px;
+                }
+            }
+
+            @media (max-width: 480px) {
+                .hero-title {
+                    font-size: 2rem;
+                }
+                .section-title {
+                    font-size: 1.5rem;
+                }
+                .projects-grid {
+                    grid-template-columns: 1fr;
+                    padding: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="webgl-container"></div>
+        <div class="cursor-follower" id="cursor"></div>
+        <div class="cursor-follower trail" id="cursorTrail"></div>
+        <div class="cursor-coordinates" id="coordinates">N: 0, E: 0</div>
+
+        <!-- Hero Section -->
+        <header id="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hamza Iqbal<span class="blink">_</span>
+                </h1>
+                <p class="hero-subtitle">Engineer | Explorer | Creator</p>
+                <p class="hero-description">
+                    Welcome to my laboratory. A collection of code experiments,
+                    passion projects, and explorations in the vast space of
+                    technology.
+                </p>
+                <div class="hero-links">
+                    <button class="radial-button">
+                        <span><i class="fas fa-globe"></i> Website</span>
+                    </button>
+                    <button class="radial-button">
+                        <span><i class="fab fa-github"></i> GitHub</span>
+                    </button>
+                    <button class="radial-button">
+                        <span><i class="fas fa-flask"></i> Experiments</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Project Filter Section -->
+        <section id="project-filters">
+            <h2 class="section-title">Filter Experiments</h2>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">
+                    <span>All</span>
+                </button>
+                <button class="filter-btn" data-filter="flutter">
+                    <span>Flutter</span>
+                </button>
+                <button class="filter-btn" data-filter="rust">
+                    <span>Rust</span>
+                </button>
+                <button class="filter-btn" data-filter="web">
+                    <span>Web</span>
+                </button>
+                <button class="filter-btn" data-filter="mobile">
+                    <span>Mobile</span>
+                </button>
+                <button class="filter-btn" data-filter="game">
+                    <span>Game</span>
+                </button>
+                <button class="filter-btn" data-filter="ui">
+                    <span>UI/UX</span>
+                </button>
+                <button class="filter-btn" data-filter="tool">
+                    <span>Tool</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Projects Gallery -->
+        <section id="projects">
+            <h2 class="section-title">Experiments</h2>
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project items will be populated by JavaScript -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2 class="section-title">Signal In</h2>
+            <p>Have a project in mind or want to discuss an experiment?</p>
+            <div class="contact-links">
+                <button class="radial-button">
+                    <span><i class="fas fa-envelope"></i> Email</span>
+                </button>
+                <button class="radial-button">
+                    <span><i class="fab fa-telegram"></i> Telegram</span>
+                </button>
+                <button class="radial-button">
+                    <span><i class="fab fa-twitter"></i> Twitter</span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                &copy; <span id="currentYear"></span> Hamza Iqbal. All signals
+                received.
+            </p>
+        </footer>
+
+        <script>
+            // --- Project Data ---
+            const projects = [
+                {
+                    id: 1,
+                    title: "Flutter UI Designs",
+                    description:
+                        "Collection of UI designs built with Flutter, featuring responsive designs, parallax animations, and light/dark themes.",
+                    imageUrl:
+                        "https://cv.hmziq.rs/assets/flutter-ui-designs-44c021f513f82106.jpg",
+                    tags: ["flutter", "ui", "mobile", "web"],
+                    link: "https://github.com/hmziqrs/flutter-ui-designs",
+                },
+                {
+                    id: 2,
+                    title: "Flutter Movie Concept",
+                    description:
+                        "True cross-platform UI design featuring complex scroll-based animations powered by Flutter.",
+                    imageUrl:
+                        "https://cv.hmziq.rs/assets/movie-concept-7ff52446c3f2e084.jpg",
+                    tags: ["flutter", "ui", "mobile"],
+                    link: "https://github.com/hmziqrs/invmovieconcept1",
+                },
+                {
+                    id: 3,
+                    title: "React Native Loop Game",
+                    description:
+                        "Clone of the infinity loop game built with React Native.",
+                    imageUrl:
+                        "https://cv.hmziq.rs/assets/react-native-loop-17ddfd29dc1fa148.jpg",
+                    tags: ["react-native", "mobile", "game"],
+                    link: "https://github.com/hmziqrs/react-native-loop-game",
+                },
+                {
+                    id: 4,
+                    title: "Golang Minesweeper",
+                    description:
+                        "A classic Minesweeper game implemented in Go with a terminal interface.",
+                    imageUrl:
+                        "https://cv.hmziq.rs/assets/golang-minesweeper-cf44766541a6431b.gif",
+                    tags: ["go", "game", "cli"],
+                    link: "https://github.com/hmziqrs/golang-minesweeper",
+                },
+                {
+                    id: 5,
+                    title: "My CV Website",
+                    description:
+                        "This very website, built as a static site to showcase my professional profile.",
+                    imageUrl:
+                        "https://cv.hmziq.rs/assets/my-cv-c3f42ff5b47f81e1.jpg",
+                    tags: ["nextjs", "web", "typescript"],
+                    link: "https://github.com/hmziqrs/cv",
+                },
+                {
+                    id: 6,
+                    title: "Rust Dioxus Free Icons",
+                    description:
+                        "A Rust crate for using free SVG icons in Dioxus projects.",
+                    imageUrl: "",
+                    tags: ["rust", "crate", "tool"],
+                    link: "https://github.com/hmziqrs/dioxus-free-icons",
+                },
+                {
+                    id: 7,
+                    title: "Space Background Experiment",
+                    description:
+                        "Playing with CSS and JS to create a dynamic starfield background.",
+                    imageUrl: "",
+                    tags: ["web", "css", "javascript"],
+                    link: "#",
+                },
+                {
+                    id: 8,
+                    title: "CLI Task Manager",
+                    description:
+                        "A simple command-line tool for managing daily tasks, built with Rust.",
+                    imageUrl: "",
+                    tags: ["rust", "cli", "tool"],
+                    link: "#",
+                },
+            ];
+
+            // --- WebGL Space Background ---
+            class SpaceBackground {
+                constructor() {
+                    this.scene = new THREE.Scene();
+                    this.camera = new THREE.PerspectiveCamera(
+                        75,
+                        window.innerWidth / window.innerHeight,
+                        0.1,
+                        2000,
+                    );
+                    this.renderer = new THREE.WebGLRenderer({
+                        antialias: true,
+                        alpha: true,
+                    });
+                    this.renderer.setSize(
+                        window.innerWidth,
+                        window.innerHeight,
+                    );
+                    this.renderer.setPixelRatio(window.devicePixelRatio);
+                    document
+                        .getElementById("webgl-container")
+                        .appendChild(this.renderer.domElement);
+
+                    this.starField = null;
+                    this.camera.position.z = 100;
+
+                    this.init();
+                    this.animate();
+
+                    window.addEventListener("resize", () =>
+                        this.onWindowResize(),
+                    );
+                }
+
+                init() {
+                    // Create starfield with fewer stars
+                    this.createStarField();
+
+                    // Add subtle ambient light
+                    const ambientLight = new THREE.AmbientLight(0x222222);
+                    this.scene.add(ambientLight);
+                }
+
+                createStarField() {
+                    const starGeometry = new THREE.BufferGeometry();
+                    const starCount = 5000; // Reduced from 15000
+                    const starVertices = [];
+                    const starSizes = [];
+                    const starColors = [];
+                    const starTwinkleData = [];
+
+                    // Color palette (white, light sky blue, light yellow, light purple)
+                    const colors = [
+                        [1.0, 1.0, 1.0], // White
+                        [0.53, 0.81, 0.98], // Light Sky Blue
+                        [1.0, 1.0, 0.88], // Light Yellow
+                        [0.9, 0.9, 0.98], // Light Purple
+                    ];
+
+                    for (let i = 0; i < starCount; i++) {
+                        // Create more stars near the camera
+                        const distance = Math.pow(Math.random(), 3) * 1000;
+                        const theta = Math.random() * Math.PI * 2;
+                        const phi = Math.acos(2 * Math.random() - 1);
+
+                        const x = distance * Math.sin(phi) * Math.cos(theta);
+                        const y = distance * Math.sin(phi) * Math.sin(theta);
+                        const z = distance * Math.cos(phi);
+
+                        starVertices.push(x, y, z);
+
+                        // Size based on distance (closer stars are larger)
+                        const size = Math.max(0.8, 5 - distance / 200);
+                        starSizes.push(size);
+
+                        // Assign random color
+                        const colorIndex = Math.floor(
+                            Math.random() * colors.length,
+                        );
+                        starColors.push(...colors[colorIndex]);
+
+                        // Twinkle data
+                        starTwinkleData.push(
+                            Math.random() * 0.7 + 0.3, // Base brightness (increased range)
+                            Math.random() * 3 + 1, // Twinkle speed (faster)
+                            Math.random() * Math.PI * 2, // Phase offset
+                        );
+                    }
+
+                    starGeometry.setAttribute(
+                        "position",
+                        new THREE.Float32BufferAttribute(starVertices, 3),
+                    );
+                    starGeometry.setAttribute(
+                        "size",
+                        new THREE.Float32BufferAttribute(starSizes, 1),
+                    );
+                    starGeometry.setAttribute(
+                        "customColor",
+                        new THREE.Float32BufferAttribute(starColors, 3),
+                    );
+                    starGeometry.setAttribute(
+                        "twinkleData",
+                        new THREE.Float32BufferAttribute(starTwinkleData, 3),
+                    );
+
+                    const starMaterial = new THREE.ShaderMaterial({
+                        uniforms: {
+                            time: { value: 0 },
+                        },
+                        vertexShader: `
+                        attribute float size;
+                        attribute vec3 customColor;
+                        attribute vec3 twinkleData;
+                        varying vec3 vColor;
+                        varying float vBrightness;
+                        uniform float time;
+
+                        void main() {
+                            vColor = customColor;
+
+                            // Twinkle effect with more pronounced variation
+                            float baseBrightness = twinkleData.x;
+                            float speed = twinkleData.y;
+                            float phase = twinkleData.z;
+                            vBrightness = baseBrightness + 0.5 * sin(time * speed + phase);
+
+                            // Clamp brightness to prevent black stars
+                            vBrightness = max(0.1, vBrightness);
+
+                            vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
+                            gl_PointSize = size * (300.0 / -mvPosition.z) * vBrightness;
+                            gl_Position = projectionMatrix * mvPosition;
+                        }
+                    `,
+                        fragmentShader: `
+                        varying vec3 vColor;
+                        varying float vBrightness;
+
+                        void main() {
+                            // Create circular star shape
+                            vec2 coord = gl_PointCoord - vec2(0.5);
+                            float distance = length(coord);
+
+                            if (distance > 0.5) discard;
+
+                            // Create glow effect for closer stars
+                            float alpha = 1.0 - distance * 2.0;
+                            alpha = pow(alpha, 2.0);
+
+                            // Add subtle glow
+                            float glow = 0.4 * (1.0 - distance * 1.5);
+
+                            gl_FragColor = vec4(vColor, alpha + glow) * vBrightness;
+                        }
+                    `,
+                        blending: THREE.AdditiveBlending,
+                        depthTest: true,
+                        transparent: true,
+                    });
+
+                    this.starField = new THREE.Points(
+                        starGeometry,
+                        starMaterial,
+                    );
+                    this.scene.add(this.starField);
+                }
+
+                animate() {
+                    requestAnimationFrame(() => this.animate());
+
+                    const time = Date.now() * 0.001;
+
+                    // Update star twinkle
+                    if (this.starField) {
+                        this.starField.material.uniforms.time.value = time;
+                    }
+
+                    // Slow camera movement for dynamic perspective
+                    this.camera.position.x = Math.sin(time * 0.05) * 20;
+                    this.camera.position.y = Math.cos(time * 0.03) * 15;
+                    this.camera.lookAt(0, 0, 0);
+
+                    this.renderer.render(this.scene, this.camera);
+                }
+
+                onWindowResize() {
+                    this.camera.aspect = window.innerWidth / window.innerHeight;
+                    this.camera.updateProjectionMatrix();
+                    this.renderer.setSize(
+                        window.innerWidth,
+                        window.innerHeight,
+                    );
+                }
+            }
+
+            // --- Custom Cursor ---
+            class CustomCursor {
+                constructor() {
+                    this.cursor = document.getElementById("cursor");
+                    this.cursorTrail = document.getElementById("cursorTrail");
+                    this.coordinates = document.getElementById("coordinates");
+                    this.pos = { x: 0, y: 0 };
+                    this.trailPos = { x: 0, y: 0 };
+
+                    this.init();
+                }
+
+                init() {
+                    document.addEventListener("mousemove", (e) => {
+                        this.pos.x = e.clientX;
+                        this.pos.y = e.clientY;
+
+                        // Update directional coordinates
+                        const centerX = window.innerWidth / 2;
+                        const centerY = window.innerHeight / 2;
+
+                        const northSouth = this.pos.y < centerY ? "N" : "S";
+                        const eastWest = this.pos.x > centerX ? "E" : "W";
+
+                        const nsValue = Math.abs(this.pos.y - centerY);
+                        const ewValue = Math.abs(this.pos.x - centerX);
+
+                        this.coordinates.textContent = `${northSouth}: ${Math.round(nsValue)}, ${eastWest}: ${Math.round(ewValue)}`;
+                    });
+
+                    this.animate();
+                }
+
+                animate() {
+                    // Smooth follow for main cursor
+                    this.cursor.style.transform = `translate(${this.pos.x}px, ${this.pos.y}px)`;
+
+                    // Lagging trail effect
+                    this.trailPos.x += (this.pos.x - this.trailPos.x) / 8;
+                    this.trailPos.y += (this.pos.y - this.trailPos.y) / 8;
+                    this.cursorTrail.style.transform = `translate(${this.trailPos.x}px, ${this.trailPos.y}px)`;
+
+                    requestAnimationFrame(() => this.animate());
+                }
+            }
+
+            // --- Project Rendering ---
+            function renderProjects(filter = "all") {
+                const projectsGrid = document.getElementById("projectsGrid");
+                projectsGrid.innerHTML = "";
+
+                const filteredProjects =
+                    filter === "all"
+                        ? projects
+                        : projects.filter((project) =>
+                              project.tags.includes(filter),
+                          );
+
+                if (filteredProjects.length === 0) {
+                    projectsGrid.innerHTML =
+                        '<p class="no-projects">No experiments found for this filter. Keep exploring the cosmos!</p>';
+                    return;
+                }
+
+                filteredProjects.forEach((project) => {
+                    const projectCard = document.createElement("div");
+                    projectCard.className = "project-card";
+
+                    let imageHtml = "";
+                    if (project.imageUrl) {
+                        imageHtml = `<img src="${project.imageUrl}" alt="${project.title}" class="project-image" onerror="this.style.display='none';">`;
+                    }
+
+                    let linkHtml = "";
+                    if (project.link) {
+                        linkHtml = `
+                        <button class="radial-button" style="margin-top: 15px; width: 100%;">
+                            <span><i class="fas fa-external-link-alt"></i> View Project</span>
+                        </button>
+                    `;
+                    }
+
+                    const tagsHtml = project.tags
+                        .map((tag) => `<span class="project-tag">${tag}</span>`)
+                        .join("");
+
+                    projectCard.innerHTML = `
+                    ${imageHtml}
+                    <div class="project-content">
+                        <h3 class="project-title">${project.title}</h3>
+                        <p class="project-description">${project.description}</p>
+                        <div class="project-tags">${tagsHtml}</div>
+                        ${linkHtml}
+                    </div>
+                `;
+
+                    if (project.link) {
+                        projectCard
+                            .querySelector(".radial-button")
+                            .addEventListener("click", () => {
+                                window.open(project.link, "_blank");
+                            });
+                    }
+
+                    projectsGrid.appendChild(projectCard);
+                });
+            }
+
+            // --- Filter Setup ---
+            function setupFilters() {
+                const filterButtons = document.querySelectorAll(".filter-btn");
+
+                filterButtons.forEach((button) => {
+                    button.addEventListener("click", () => {
+                        filterButtons.forEach((btn) =>
+                            btn.classList.remove("active"),
+                        );
+                        button.classList.add("active");
+
+                        const filterValue = button.getAttribute("data-filter");
+                        renderProjects(filterValue);
+                    });
+                });
+            }
+
+            // --- Initialize ---
+            document.addEventListener("DOMContentLoaded", () => {
+                // Initialize WebGL space background
+                new SpaceBackground();
+
+                // Initialize custom cursor
+                new CustomCursor();
+
+                // Render projects
+                renderProjects("all");
+
+                // Setup filters
+                setupFilters();
+
+                // Set current year
+                document.getElementById("currentYear").textContent =
+                    new Date().getFullYear();
+
+                // Add button functionality
+                document
+                    .querySelectorAll(".radial-button")
+                    .forEach((button) => {
+                        button.addEventListener("click", function () {
+                            const text = this.querySelector("span").textContent;
+                            if (text.includes("Website")) {
+                                window.open("https://www.hmziq.rs", "_blank");
+                            } else if (text.includes("GitHub")) {
+                                window.open(
+                                    "https://github.com/hmziqrs",
+                                    "_blank",
+                                );
+                            } else if (text.includes("Experiments")) {
+                                document
+                                    .querySelector("#projects")
+                                    .scrollIntoView({ behavior: "smooth" });
+                            } else if (text.includes("Email")) {
+                                window.location.href =
+                                    "mailto:hmziq.dev@gmail.com";
+                            } else if (text.includes("Telegram")) {
+                                window.open("https://t.me/hmziqrs", "_blank");
+                            } else if (text.includes("Twitter")) {
+                                window.open(
+                                    "https://twitter.com/hmziqrs",
+                                    "_blank",
+                                );
+                            }
+                        });
+                    });
+            });
+        </script>
+    </body>
+</html>
