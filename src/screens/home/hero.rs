@@ -1,8 +1,5 @@
 use crate::{
-    components::{
-        buttons::ExploreButton,
-        decorative::{Nebula, Orbit},
-    },
+    components::{buttons::ExploreButton, decorative::Orbit},
     ui::GlitchTitle,
 };
 use dioxus::prelude::*;
