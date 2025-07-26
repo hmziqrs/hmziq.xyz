@@ -7,6 +7,7 @@ const coordinatesId = "coordinates";
 let mouse = { x: 0, y: 0 };
 let scrollY = 0;
 let isOverClickable = false;
+let isMouseDown = false;
 
 let dom = {
   cursor: null,
@@ -82,8 +83,8 @@ function updateCoordinates() {
 function updateCursor() {
   if (dom.cursor) {
     let scale = 1;
-    if () {
-//
+    if (isMouseDown) {
+      scale = 0.5;
     }
     else if (isOverClickable) {
       scale = 2.2;
@@ -114,6 +115,16 @@ window.addEventListener("scroll", () => {
 
 window.addEventListener("resize", () => {
   updateCoordinates();
+});
+
+window.addEventListener("mousedown", () => {
+  isMouseDown = true;
+  updateCursor();
+});
+
+window.addEventListener("mouseup", () => {
+  isMouseDown = false;
+  updateCursor();
 });
 
 let duration = 50;
