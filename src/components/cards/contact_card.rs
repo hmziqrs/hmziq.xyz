@@ -12,6 +12,8 @@ pub fn ContactCard(props: ContactCardProps) -> Element {
     rsx! {
         a {
             href: "{props.href}",
+            target: "_blank",
+            rel: "noopener noreferrer",
             class: "block p-10 border border-white/30 transition-all duration-500 ease-in-out text-white relative overflow-hidden bg-black/50 backdrop-blur-sm hover:translate-y-[-10px] hover:shadow-[0_20px_40px_rgba(255,255,255,0.2)] hover:border-white hover:text-black text-center group btn cursor-none",
 
             // Expanding circular background on hover
