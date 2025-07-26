@@ -85,17 +85,22 @@ function updateCursor() {
     let scale = 1;
     if (isMouseDown) {
       scale = 0.5;
-    }
-    else if (isOverClickable) {
+    } else if (isOverClickable) {
       scale = 2.2;
     }
     dom.cursor.style.transform = `translate(${mouse.x}px, ${mouse.y}px) scale(${scale})`;
   }
 }
 
-function cursorMove() {
+function updateCursorTrail() {
   if (dom.cursorTrail) {
-    dom.cursorTrail.style.transform = `translate(${mouse.x}px, ${mouse.y}px) scale(1)`;
+    let x = mouse.x;
+    let y = mouse.y;
+    if (isOverClickable || isMouseDown) {
+      x += 7;
+      y += 7;
+    }
+    dom.cursorTrail.style.transform = `translate(${x}px, ${y}px) scale(1)`;
   }
 }
 
@@ -103,7 +108,7 @@ window.addEventListener("mousemove", (event) => {
   mouse.x = event.clientX;
   mouse.y = event.clientY;
   updateCursor();
-  cursorMove();
+  updateCursorTrail();
   updateCoordinates();
   detectClickableElement(event);
 });
@@ -120,11 +125,13 @@ window.addEventListener("resize", () => {
 window.addEventListener("mousedown", () => {
   isMouseDown = true;
   updateCursor();
+  updateCursorTrail();
 });
 
 window.addEventListener("mouseup", () => {
   isMouseDown = false;
   updateCursor();
+  updateCursorTrail();
 });
 
 let duration = 50;

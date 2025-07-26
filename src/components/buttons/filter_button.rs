@@ -26,7 +26,7 @@ pub fn FilterButton(props: FilterButtonProps) -> Element {
 
     rsx! {
         button {
-            class: "{base_classes} {state_classes} {after_classes} after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:bg-white after:transition-all after:duration-300 after:ease-in-out after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full",
+            class: "{base_classes} {state_classes} {after_classes} after:content-[''] after:absolute after:top-1/2 after:left-1/2 after:bg-white after:transition-all after:duration-300 after:ease-in-out after:-translate-x-1/2 after:-translate-y-1/2 after:rounded-full btn",
             onclick: move |_| props.on_click.call(props.filter.clone()),
 
             span {
