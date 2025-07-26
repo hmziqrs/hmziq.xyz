@@ -59,6 +59,11 @@ pub fn ProjectCard(props: ProjectCardProps) -> Element {
                 }
             }
 
+            // Shine effect on hover
+            div {
+                class: "absolute inset-0 bg-gradient-to-r from-transparent via-white/8 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-600 ease-out transform skew-x-12 -z-10"
+            }
+
             // Radial gradient glow on hover (positioned behind content)
             div {
                 class: "absolute inset-0 bg-gradient-radial from-white/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"
