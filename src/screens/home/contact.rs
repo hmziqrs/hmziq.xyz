@@ -13,7 +13,7 @@ pub fn ContactSection() -> Element {
     rsx! {
         section {
             id: "contact",
-            class: "py-36 px-5 text-center relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-white before:to-transparent",
+            class: "py-36 px-5 text-center relative overflow-hidden before:content-[''] before:absolute before:top-0 before:left-0 before:right-0 before:h-px before:bg-gradient-to-r before:from-transparent before:via-white before:to-transparent min-h-screen",
 
             div {
                 class: "mb-20",
