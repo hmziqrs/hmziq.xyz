@@ -41,7 +41,7 @@ jobs:
         run: cargo binstall dioxus-cli
 
       - name: Build static site
-        run: dx build --platform web --release --ssg
+        run: dx build  --release
 
       - name: Cache Rust dependencies
         uses: actions/cache@v4
@@ -56,7 +56,7 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
-          name: nextjs-build
+          name: dioxus-build
           path: ./target/dx/hmziq-xyz/release/web/public/
 
   # Deploy to GitHub Pages
@@ -73,7 +73,7 @@ jobs:
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
-          name: nextjs-build
+          name: dioxus-build
           path: ./out
 
       - name: Upload Pages artifact
@@ -101,7 +101,7 @@ jobs:
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
-          name: nextjs-build
+          name: dioxus-build
           path: ./out
 
       - name: Deploy to Cloudflare Pages
@@ -122,7 +122,7 @@ jobs:
       - name: Download build artifact
         uses: actions/download-artifact@v4
         with:
-          name: nextjs-build
+          name: dioxus-build
           path: ./out
 
       - name: Deploy to Firebase Hosting
@@ -131,4 +131,4 @@ jobs:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_HMZIQ_XYZ }}
           channelId: live
-          projectId: hmziqrs-home
+          projectId: hmziq-xyz
