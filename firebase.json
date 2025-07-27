@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "./target/dx/hmziq-xyz/release/web/public/",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
