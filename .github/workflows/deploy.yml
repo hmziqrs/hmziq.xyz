@@ -24,39 +24,8 @@ env:
   ENV_VARS: ${{ vars.ENV_VARS }}
 
 jobs:
-  # Wait for assets build if in progress
-  wait-for-assets:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Check if assets workflow is running
-        id: check
-        run: |
-          # Get workflow runs for build-assets.yml
-          RUNNING=$(curl -s -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
-            "https://api.github.com/repos/${{ github.repository }}/actions/runs?workflow_id=build-assets.yml&status=in_progress" | \
-            jq '.total_count')
-          
-          echo "running_count=$RUNNING" >> $GITHUB_OUTPUT
-          
-          if [ "$RUNNING" -gt 0 ]; then
-            echo "Assets workflow is currently running. Will wait for completion."
-          else
-            echo "No assets workflow in progress."
-          fi
-
-      - name: Wait for assets build workflow
-        if: steps.check.outputs.running_count > 0
-        uses: lewagon/wait-on-check-action@v1.3.4
-        with:
-          ref: ${{ github.ref }}
-          check-name: 'Build on ubuntu-latest'
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          wait-interval: 10
-          allowed-conclusions: success,skipped,cancelled
-
   # Build job
   build:
-    needs: wait-for-assets
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -101,51 +70,22 @@ jobs:
       - name: Build static site
         run: dx build --release
 
-      - name: Get or build assets tool
-        run: |
-          mkdir -p ./bin
-          
-          # Try to download pre-built binary from latest release
-          echo "Attempting to download pre-built assets binary..."
-          
-          LATEST_RELEASE=$(curl -s https://api.github.com/repos/${{ github.repository }}/releases | \
-            jq -r '.[] | select(.name | contains("Assets Binary")) | .tag_name' | \
-            sort -V | tail -n 1)
-          
-          if [ -n "$LATEST_RELEASE" ]; then
-            echo "Found release: $LATEST_RELEASE"
-            
-            # Download Linux binary
-            if curl -f -L \
-              "https://github.com/${{ github.repository }}/releases/download/$LATEST_RELEASE/assets-linux" \
-              -o ./bin/assets 2>/dev/null; then
-              chmod +x ./bin/assets
-              echo "Successfully downloaded pre-built binary"
-            else
-              echo "Failed to download binary, will build from source"
-              LATEST_RELEASE=""
-            fi
-          fi
-          
-          # Fall back to building from source if download failed
-          if [ -z "$LATEST_RELEASE" ]; then
-            echo "Building assets tool from source..."
-            cargo build --release --bin assets
-            cp target/release/assets ./bin/assets
-            echo "Successfully built from source"
-          fi
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
 
       - name: Copy favicon assets
         run: |
-          echo "Running assets tool to copy favicons..."
-          ./bin/assets
-          
+          echo "Running TypeScript assets script to copy favicons..."
+          bun scripts/assets.ts
+
           # Verify the assets were copied
           if [ -d "target/dx/hmziq-xyz/release/web/public/assets/fav" ]; then
             echo "✅ Favicon assets successfully copied to build directory"
             ls -la target/dx/hmziq-xyz/release/web/public/assets/fav/
           else
-            echo "❌ Error: Favicon assets directory not found after running assets tool"
+            echo "❌ Error: Favicon assets directory not found after running assets script"
             exit 1
           fi
 

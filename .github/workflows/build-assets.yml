@@ -1,155 +1,156 @@
-name: Build and Release Assets Binary
+# Commented out - using TypeScript/Bun version instead
+# name: Build and Release Assets Binary
 
-on:
-  push:
-    paths:
-      - "scripts/assets.rs"
-      - ".github/workflows/build-assets.yml"
-  workflow_dispatch:
+# on:
+#   push:
+#     paths:
+#       - "scripts/assets.rs"
+#       - ".github/workflows/build-assets.yml"
+#   workflow_dispatch:
 
-permissions:
-  contents: read
+# permissions:
+#   contents: read
 
-jobs:
-  build:
-    name: Build on ${{ matrix.os }}
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-        include:
-          - os: ubuntu-latest
-            artifact_name: assets-linux
-            asset_name: assets-linux-amd64
-          - os: macos-latest
-            artifact_name: assets-macos
-            asset_name: assets-macos-amd64
-          - os: windows-latest
-            artifact_name: assets-windows.exe
-            asset_name: assets-windows-amd64.exe
+# jobs:
+#   build:
+#     name: Build on ${{ matrix.os }}
+#     runs-on: ${{ matrix.os }}
+#     strategy:
+#       matrix:
+#         os: [ubuntu-latest, macos-latest, windows-latest]
+#         include:
+#           - os: ubuntu-latest
+#             artifact_name: assets-linux
+#             asset_name: assets-linux-amd64
+#           - os: macos-latest
+#             artifact_name: assets-macos
+#             asset_name: assets-macos-amd64
+#           - os: windows-latest
+#             artifact_name: assets-windows.exe
+#             asset_name: assets-windows-amd64.exe
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
 
-      - name: Setup Rust toolchain
-        uses: dtolnay/rust-toolchain@stable
-        with:
-          toolchain: stable
+#       - name: Setup Rust toolchain
+#         uses: dtolnay/rust-toolchain@stable
+#         with:
+#           toolchain: stable
 
-      - name: Cache cargo registry and build
-        uses: actions/cache@v4
-        with:
-          path: |
-            ~/.cargo/registry
-            ~/.cargo/git
-            target
-          key: ${{ runner.os }}-cargo-assets-${{ hashFiles('**/Cargo.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-cargo-assets-
-            ${{ runner.os }}-cargo-
+#       - name: Cache cargo registry and build
+#         uses: actions/cache@v4
+#         with:
+#           path: |
+#             ~/.cargo/registry
+#             ~/.cargo/git
+#             target
+#           key: ${{ runner.os }}-cargo-assets-${{ hashFiles('**/Cargo.lock') }}
+#           restore-keys: |
+#             ${{ runner.os }}-cargo-assets-
+#             ${{ runner.os }}-cargo-
 
-      - name: Build binary in release mode
-        run: |
-          cargo build --release --bin assets
+#       - name: Build binary in release mode
+#         run: |
+#           cargo build --release --bin assets
 
-      - name: Copy binary to artifact location
-        shell: bash
-        run: |
-          mkdir -p ./artifacts/
-          if [ "${{ matrix.os }}" = "windows-latest" ]; then
-            cp target/release/assets.exe ./artifacts/${{ matrix.artifact_name }}
-          else
-            cp target/release/assets ./artifacts/${{ matrix.artifact_name }}
-          fi
+#       - name: Copy binary to artifact location
+#         shell: bash
+#         run: |
+#           mkdir -p ./artifacts/
+#           if [ "${{ matrix.os }}" = "windows-latest" ]; then
+#             cp target/release/assets.exe ./artifacts/${{ matrix.artifact_name }}
+#           else
+#             cp target/release/assets ./artifacts/${{ matrix.artifact_name }}
+#           fi
 
-      - name: Generate checksum
-        shell: bash
-        working-directory: ./artifacts
-        run: |
-          if [ "${{ matrix.os }}" = "windows-latest" ]; then
-            # Windows doesn't have sha256sum, use certutil
-            certutil -hashfile ${{ matrix.artifact_name }} SHA256 > ${{ matrix.artifact_name }}.sha256
-          else
-            sha256sum ${{ matrix.artifact_name }} > ${{ matrix.artifact_name }}.sha256
-          fi
+#       - name: Generate checksum
+#         shell: bash
+#         working-directory: ./artifacts
+#         run: |
+#           if [ "${{ matrix.os }}" = "windows-latest" ]; then
+#             # Windows doesn't have sha256sum, use certutil
+#             certutil -hashfile ${{ matrix.artifact_name }} SHA256 > ${{ matrix.artifact_name }}.sha256
+#           else
+#             sha256sum ${{ matrix.artifact_name }} > ${{ matrix.artifact_name }}.sha256
+#           fi
 
-      - name: Upload build artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ matrix.asset_name }}
-          path: |
-            ./artifacts/${{ matrix.artifact_name }}
-            ./artifacts/${{ matrix.artifact_name }}.sha256
+#       - name: Upload build artifacts
+#         uses: actions/upload-artifact@v4
+#         with:
+#           name: ${{ matrix.asset_name }}
+#           path: |
+#             ./artifacts/${{ matrix.artifact_name }}
+#             ./artifacts/${{ matrix.artifact_name }}.sha256
 
-  release:
-    name: Create Release
-    needs: build
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    if: github.ref == 'refs/heads/master' || github.event_name == 'workflow_dispatch'
+#   release:
+#     name: Create Release
+#     needs: build
+#     runs-on: ubuntu-latest
+#     permissions:
+#       contents: write
+#     if: github.ref == 'refs/heads/master' || github.event_name == 'workflow_dispatch'
 
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4
 
-      - name: Set version
-        id: version
-        run: |
-          # Use timestamp-based versioning
-          echo "version=assets-$(date +'%Y%m%d%H%M%S')" >> $GITHUB_OUTPUT
-          echo "date=$(date +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_OUTPUT
+#       - name: Set version
+#         id: version
+#         run: |
+#           # Use timestamp-based versioning
+#           echo "version=assets-$(date +'%Y%m%d%H%M%S')" >> $GITHUB_OUTPUT
+#           echo "date=$(date +'%Y-%m-%d %H:%M:%S UTC')" >> $GITHUB_OUTPUT
 
-      - name: Download all artifacts
-        uses: actions/download-artifact@v4
-        with:
-          path: ./artifacts
+#       - name: Download all artifacts
+#         uses: actions/download-artifact@v4
+#         with:
+#           path: ./artifacts
 
-      - name: Create release notes
-        run: |
-          cat > release_notes.md << EOF
-          # Assets Binary Release
+#       - name: Create release notes
+#         run: |
+#           cat > release_notes.md << EOF
+#           # Assets Binary Release
+#
+#           **Release Date**: ${{ steps.version.outputs.date }}
+#
+#           This release contains pre-built binaries for the \`assets\` script that copies favicon assets to the Dioxus build output directory.
+#
+#           ## Usage
+#
+#           Download the appropriate binary for your platform and run:
+#
+#           \`\`\`bash
+#           # Linux/macOS
+#           chmod +x assets-[platform]
+#           ./assets-[platform]
+#
+#           # Windows
+#           assets-windows.exe
+#           \`\`\`
+#
+#           ## Checksums
+#
+#           SHA256 checksums are provided for each binary to verify integrity.
+#
+#           ## Changes
+#
+#           Built from commit: ${{ github.sha }}
+#           EOF
 
-          **Release Date**: ${{ steps.version.outputs.date }}
-
-          This release contains pre-built binaries for the \`assets\` script that copies favicon assets to the Dioxus build output directory.
-
-          ## Usage
-
-          Download the appropriate binary for your platform and run:
-
-          \`\`\`bash
-          # Linux/macOS
-          chmod +x assets-[platform]
-          ./assets-[platform]
-
-          # Windows
-          assets-windows.exe
-          \`\`\`
-
-          ## Checksums
-
-          SHA256 checksums are provided for each binary to verify integrity.
-
-          ## Changes
-
-          Built from commit: ${{ github.sha }}
-          EOF
-
-      - name: Create Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ steps.version.outputs.version }}
-          name: Assets Binary ${{ steps.version.outputs.version }}
-          body_path: release_notes.md
-          draft: false
-          prerelease: false
-          files: |
-            ./artifacts/assets-linux-amd64/assets-linux
-            ./artifacts/assets-linux-amd64/assets-linux.sha256
-            ./artifacts/assets-macos-amd64/assets-macos
-            ./artifacts/assets-macos-amd64/assets-macos.sha256
-            ./artifacts/assets-windows-amd64.exe/assets-windows.exe
-            ./artifacts/assets-windows-amd64.exe/assets-windows.exe.sha256
-          token: ${{ secrets.GITHUB_TOKEN }}
+#       - name: Create Release
+#         uses: softprops/action-gh-release@v2
+#         with:
+#           tag_name: ${{ steps.version.outputs.version }}
+#           name: Assets Binary ${{ steps.version.outputs.version }}
+#           body_path: release_notes.md
+#           draft: false
+#           prerelease: false
+#           files: |
+#             ./artifacts/assets-linux-amd64/assets-linux
+#             ./artifacts/assets-linux-amd64/assets-linux.sha256
+#             ./artifacts/assets-macos-amd64/assets-macos
+#             ./artifacts/assets-macos-amd64/assets-macos.sha256
+#             ./artifacts/assets-windows-amd64.exe/assets-windows.exe
+#             ./artifacts/assets-windows-amd64.exe/assets-windows.exe.sha256
+#           token: ${{ secrets.GITHUB_TOKEN }}
