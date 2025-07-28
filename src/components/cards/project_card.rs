@@ -36,12 +36,12 @@ pub fn ProjectCard(props: ProjectCardProps) -> Element {
                 class: "flex gap-4 mb-4 text-xs opacity-60",
                 span {
                     class: "flex items-center gap-1",
-                    "⭐ {props.project.stars}"
+                    "◇ {props.project.stars}"
                 }
                 if props.project.forks > 0 {
                     span {
                         class: "flex items-center gap-1",
-                        "🍴 {props.project.forks}"
+                        "⟁ {props.project.forks}"
                     }
                 }
             }
@@ -81,7 +81,7 @@ pub fn ProjectCard(props: ProjectCardProps) -> Element {
 
             // Radial gradient glow on hover (positioned behind content)
             div {
-                class: "absolute inset-0 bg-gradient-radial from-white/5 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"
+                class: "absolute inset-0 bg-gradient-radial from-white/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"
             }
         }
     }

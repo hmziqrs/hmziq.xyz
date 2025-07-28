@@ -11,7 +11,7 @@ pub fn get_projects() -> Vec<Project> {
             clean_tags: vec!["flutter".to_string(), "ui-design".to_string(), "animations".to_string()],
             stars: 320,
             forks: 54,
-            icon: "◐".to_string(),
+            icon: "◈".to_string(),
             links: {
                 let mut links = HashMap::new();
                 links.insert("github".to_string(), "https://github.com/hmziqrs/flutter-ui-designs".to_string());
@@ -29,7 +29,7 @@ pub fn get_projects() -> Vec<Project> {
             clean_tags: vec!["flutter".to_string(), "concept".to_string(), "flutter-animation".to_string()],
             stars: 61,
             forks: 18,
-            icon: "◑".to_string(),
+            icon: "▶".to_string(),
             links: {
                 let mut links = HashMap::new();
                 links.insert("github".to_string(), "https://github.com/hmziqrs/invmovieconcept1".to_string());
@@ -47,7 +47,7 @@ pub fn get_projects() -> Vec<Project> {
             clean_tags: vec!["react-native".to_string(), "puzzle-game".to_string(), "react-hooks".to_string()],
             stars: 22,
             forks: 13,
-            icon: "◒".to_string(),
+            icon: "∞".to_string(),
             links: {
                 let mut links = HashMap::new();
                 links.insert("github".to_string(), "https://github.com/hmziqrs/react-native-loop-game".to_string());
@@ -64,7 +64,7 @@ pub fn get_projects() -> Vec<Project> {
             clean_tags: vec!["flutter".to_string(), "dart".to_string(), "experimental".to_string()],
             stars: 15,
             forks: 2,
-            icon: "◓".to_string(),
+            icon: "◎".to_string(),
             links: {
                 let mut links = HashMap::new();
                 links.insert("github".to_string(), "https://github.com/hmziqrs/Flutter-Experiments".to_string());
@@ -81,7 +81,7 @@ pub fn get_projects() -> Vec<Project> {
             clean_tags: vec!["typescript".to_string(), "frontend".to_string(), "web".to_string()],
             stars: 2,
             forks: 0,
-            icon: "◔".to_string(),
+            icon: "◆".to_string(),
             links: {
                 let mut links = HashMap::new();
                 links.insert("github".to_string(), "https://github.com/hmziqrs/ruxlog-frontend".to_string());
@@ -97,7 +97,7 @@ pub fn get_projects() -> Vec<Project> {
             clean_tags: vec!["golang".to_string(), "cross-platform".to_string(), "screenshot-capture".to_string()],
             stars: 2,
             forks: 1,
-            icon: "◕".to_string(),
+            icon: "◊".to_string(),
             links: {
                 let mut links = HashMap::new();
                 links.insert("github".to_string(), "https://github.com/hmziqrs/go-cross-screenshot".to_string());
@@ -113,7 +113,7 @@ pub fn get_projects() -> Vec<Project> {
             clean_tags: vec!["dart".to_string(), "flutter".to_string(), "cli".to_string()],
             stars: 2,
             forks: 0,
-            icon: "◖".to_string(),
+            icon: "⟁".to_string(),
             links: {
                 let mut links = HashMap::new();
                 links.insert("github".to_string(), "https://github.com/hmziqrs/fhgllaunch".to_string());
@@ -129,7 +129,7 @@ pub fn get_projects() -> Vec<Project> {
             clean_tags: vec!["rust".to_string(), "dioxus".to_string(), "dioxus-web".to_string()],
             stars: 1,
             forks: 0,
-            icon: "◗".to_string(),
+            icon: "◉".to_string(),
             links: {
                 let mut links = HashMap::new();
                 links.insert("github".to_string(), "https://github.com/hmziqrs/cv".to_string());
@@ -147,7 +147,7 @@ pub fn get_projects() -> Vec<Project> {
             clean_tags: vec!["rust".to_string(), "axum".to_string(), "backend".to_string()],
             stars: 1,
             forks: 0,
-            icon: "◐".to_string(),
+            icon: "◊".to_string(),
             links: {
                 let mut links = HashMap::new();
                 links.insert("github".to_string(), "https://github.com/hmziqrs/ruxlog-backend".to_string());
@@ -163,7 +163,7 @@ pub fn get_projects() -> Vec<Project> {
             clean_tags: vec!["flutter".to_string(), "multi-platform".to_string(), "entertainment".to_string()],
             stars: 1,
             forks: 0,
-            icon: "◑".to_string(),
+            icon: "♫".to_string(),
             links: {
                 let mut links = HashMap::new();
                 links.insert("github".to_string(), "https://github.com/hmziqrs/gandalf-sax".to_string());
@@ -181,7 +181,7 @@ pub fn get_projects() -> Vec<Project> {
             clean_tags: vec!["nextjs".to_string(), "react".to_string(), "ssr".to_string()],
             stars: 1,
             forks: 0,
-            icon: "◒".to_string(),
+            icon: "◇".to_string(),
             links: {
                 let mut links = HashMap::new();
                 links.insert("github".to_string(), "https://github.com/hmziqrs/next-blog".to_string());
@@ -197,7 +197,7 @@ pub fn get_projects() -> Vec<Project> {
             clean_tags: vec!["go".to_string(), "game".to_string(), "cli".to_string()],
             stars: 1,
             forks: 0,
-            icon: "◓".to_string(),
+            icon: "⬡".to_string(),
             links: {
                 let mut links = HashMap::new();
                 links.insert("github".to_string(), "https://github.com/hmziqrs/go-minesweeper".to_string());
