@@ -9,7 +9,7 @@ pub fn ContactSection() -> Element {
     let contacts = vec![
         ("⟁", "GITHUB", "https://github.com/hmziqrs"),
         ("◈", "TWITTER", "https://twitter.com/hmziqrs"),
-        ("◉", "TELEGRAM", "https://t.me/hmziqrs"),
+        ("◉", "EMAIL", "mailto:hmziqrs@gmail.com"),
         ("◆", "WEBSITE", "https://www.hmziq.rs/"),
     ];
 
