@@ -6,6 +6,7 @@ pub struct Project {
     pub short_description: String,
     pub description: String,
     pub tags: Vec<String>,
+    pub clean_tags: Vec<String>,
     pub stars: usize,
     pub forks: usize,
     pub icon: String,
