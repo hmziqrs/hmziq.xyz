@@ -1,4 +1,7 @@
-use crate::{components::{cards::ContactCard, decorative::AtherCanvas}, ui::SectionTitle};
+use crate::{
+    components::{cards::ContactCard, decorative::AtherCanvas},
+    ui::SectionTitle,
+};
 use dioxus::prelude::*;
 
 #[component]
@@ -19,7 +22,7 @@ pub fn ContactSection() -> Element {
 
             div {
                 class: "mb-20 relative z-10",
-                SectionTitle { text: "ESTABLISH CONTACT" }
+                SectionTitle { text: "CONTACT" }
             }
 
             div {

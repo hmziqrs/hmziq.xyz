@@ -30,17 +30,17 @@ pub fn HeroSection() -> Element {
             div {
                 class: "text-center z-10 relative",
 
-                GlitchTitle { text: "DIGITAL LABORATORY" }
+                GlitchTitle { text: "HMZIQ LABS" }
 
                 p {
                     class: "text-base sm:text-xl lg:text-2xl font-light tracking-[0.5rem] opacity-80 animate-fadeInUp animation-delay-300 uppercase",
-                    "Experiments in Code & Design"
+                    "Experiments"
                 }
 
                 div {
                     class: "mt-16 animate-fadeInUp animation-delay-600",
                     ExploreButton {
-                        text: "INITIATE EXPLORATION",
+                        text: "Explore",
                         href: "#projects"
                     }
                 }
