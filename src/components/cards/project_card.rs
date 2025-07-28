@@ -27,14 +27,29 @@ pub fn ProjectCard(props: ProjectCardProps) -> Element {
 
             // Title
             h3 {
-                class: "text-2xl font-light mb-6 tracking-[0.1rem]",
+                class: "text-2xl font-light mb-4 tracking-[0.1rem]",
                 "{props.project.title}"
             }
 
-            // Description
+            // Stars and Forks
+            div {
+                class: "flex gap-4 mb-4 text-xs opacity-60",
+                span {
+                    class: "flex items-center gap-1",
+                    "⭐ {props.project.stars}"
+                }
+                if props.project.forks > 0 {
+                    span {
+                        class: "flex items-center gap-1",
+                        "🍴 {props.project.forks}"
+                    }
+                }
+            }
+
+            // Short Description
             p {
                 class: "text-sm opacity-70 mb-8 leading-relaxed",
-                "{props.project.description}"
+                "{props.project.short_description}"
             }
 
             // Tags
