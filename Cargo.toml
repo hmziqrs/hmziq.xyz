@@ -53,3 +53,8 @@ codegen-units = 1
 panic = "abort"
 strip = true
 incremental = false
+
+
+[[bin]]
+name = "assets"
+path = "scripts/assets.rs"

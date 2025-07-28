@@ -1,19 +1,22 @@
 {
-  "name": "hmziqrs",
-  "short_name": "hmziqrs",
+  "name": "HMZIQ LABS - Experiments",
+  "short_name": "HMZIQ LABS",
+  "description": "Experimental tech lab showcasing innovative projects",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/fav/android-chrome-192x192.png",
+      "src": "/assets/fav/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/fav/android-chrome-512x512.png",
+      "src": "/assets/fav/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "theme_color": "#0000000",
-  "background_color": "#0000000",
-  "display": "standalone"
+  ]
 }
