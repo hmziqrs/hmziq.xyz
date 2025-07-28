@@ -13,12 +13,9 @@ pub fn ProjectsSection(mut props: ProjectsSectionProps) -> Element {
     let projects = get_projects();
     let filters = vec![
         "all",
-        "mobile",
-        "web",
-        "rust",
         "flutter",
-        "react-native",
-        "open-source",
+        "rust",
+        "web",
     ];
 
     let filtered_projects = use_memo(move || {
@@ -28,7 +25,7 @@ pub fn ProjectsSection(mut props: ProjectsSectionProps) -> Element {
         } else {
             projects
                 .iter()
-                .filter(|p| p.tags.contains(&filter))
+                .filter(|p| p.clean_tags.contains(&filter))
                 .cloned()
                 .collect()
         }

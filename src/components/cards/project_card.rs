@@ -36,12 +36,12 @@ pub fn ProjectCard(props: ProjectCardProps) -> Element {
                 class: "flex gap-4 mb-4 text-xs opacity-60",
                 span {
                     class: "flex items-center gap-1",
-                    "◉ {props.project.stars}"
+                    "☆ {props.project.stars}"
                 }
                 if props.project.forks > 0 {
                     span {
                         class: "flex items-center gap-1",
-                        "◈ {props.project.forks}"
+                        "⎇ {props.project.forks}"
                     }
                 }
             }
