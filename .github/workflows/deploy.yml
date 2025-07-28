@@ -34,24 +34,41 @@ jobs:
       - name: Setup Rust toolchain
         uses: dtolnay/rust-toolchain@stable
 
-      - name: Install cargo-binstall
-        run: cargo install cargo-binstall
-
-      - name: Install Dioxus CLI binary
-        run: cargo binstall dioxus-cli
-
-      - name: Build static site
-        run: dx build  --release
-
-      - name: Cache Rust dependencies
+      - name: Cache cargo registry, git, and binaries
         uses: actions/cache@v4
         with:
           path: |
             ~/.cargo/registry
             ~/.cargo/git
-          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+            ~/.cargo/bin
+          key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-${{ hashFiles('.github/workflows/deploy.yml') }}
           restore-keys: |
+            ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}-
             ${{ runner.os }}-cargo-
+
+      - name: Cache build artifacts
+        uses: actions/cache@v4
+        with:
+          path: target
+          key: ${{ runner.os }}-target-${{ hashFiles('**/Cargo.lock') }}-${{ hashFiles('**/*.rs') }}
+          restore-keys: |
+            ${{ runner.os }}-target-${{ hashFiles('**/Cargo.lock') }}-
+            ${{ runner.os }}-target-
+
+      - name: Install cargo-binstall
+        run: |
+          if ! command -v cargo-binstall &> /dev/null; then
+            cargo install cargo-binstall
+          fi
+
+      - name: Install Dioxus CLI binary
+        run: |
+          if ! command -v dx &> /dev/null; then
+            cargo binstall dioxus-cli --no-confirm
+          fi
+
+      - name: Build static site
+        run: dx build --release
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
