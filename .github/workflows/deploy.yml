@@ -64,7 +64,7 @@ jobs:
       - name: Install Dioxus CLI binary
         run: |
           if ! command -v dx &> /dev/null; then
-            cargo binstall dioxus-cli --no-confirm
+            cargo binstall cargo binstall dioxus-cli@0.7.0-alpha.3 --no-confirm
           fi
 
       - name: Build static site
