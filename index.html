@@ -1,10 +1,112 @@
 <!doctype html>
 <html lang="en" class="dark h-full">
     <head>
-        <title>{app_title}</title>
-        <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Basic Meta Tags -->
         <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"
+        />
+        <title>
+            HMZIQ LABS - Experiments | Senior Software Engineer Portfolio
+        </title>
+        <meta
+            name="description"
+            content="Experimental tech lab showcasing innovative projects in Flutter, Rust, React, and modern web technologies. Explore cutting-edge UI/UX experiments and cross-platform development."
+        />
+        <meta
+            name="keywords"
+            content="HMZIQ LABS, hmziqrs, Experimental Portfolio, Tech Lab, Senior Software Engineer, Flutter Developer, Rust Developer, React Developer, Dioxus Framework, WebAssembly Development, Cross-platform Apps, Real-time Web Apps, UI/UX Experiments, Interactive Animations"
+        />
+        <meta name="author" content="hmziqrs" />
+        <meta name="creator" content="hmziqrs" />
+        <meta name="publisher" content="hmziqrs" />
+        <meta name="generator" content="Dioxus" />
+
+        <!-- Theme & Display -->
+        <meta name="theme-color" content="#000000" />
+        <meta name="color-scheme" content="dark" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://hmziq.xyz/" />
+
+        <!-- Robots -->
+        <meta
+            name="robots"
+            content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        />
+        <meta
+            name="googlebot"
+            content="index, follow, max-video-preview:-1, max-image-preview:large, max-snippet:-1"
+        />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:url" content="https://hmziq.xyz/" />
+        <meta property="og:site_name" content="HMZIQ LABS" />
+        <meta
+            property="og:title"
+            content="HMZIQ LABS - Experiments | Senior Software Engineer Portfolio"
+        />
+        <meta
+            property="og:description"
+            content="Experimental tech lab showcasing innovative projects in Flutter, Rust, React, and modern web technologies."
+        />
+        <meta property="og:image" content="https://hmziq.xyz/og-image.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:type" content="image/png" />
+        <meta
+            property="og:image:alt"
+            content="HMZIQ LABS - Experimental Tech Portfolio"
+        />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@hmziqrs" />
+        <meta name="twitter:creator" content="@hmziqrs" />
+        <meta name="twitter:url" content="https://hmziq.xyz/" />
+        <meta name="twitter:title" content="HMZIQ LABS - Experiments" />
+        <meta
+            name="twitter:description"
+            content="Experimental tech lab showcasing innovative projects in Flutter, Rust, React, and modern web technologies."
+        />
+        <meta name="twitter:image" content="https://hmziq.xyz/og-image.png" />
+        <meta
+            name="twitter:image:alt"
+            content="HMZIQ LABS - Experimental Tech Portfolio"
+        />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="/favicon-16x16.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="/favicon-32x32.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="/apple-touch-icon.png"
+        />
+
+        <!-- Web Manifest -->
+        <link rel="manifest" href="/manifest.json" />
+
+        <!-- Preconnect to external domains -->
+        <link rel="preconnect" href="https://www.gstatic.com" />
+        <link rel="preconnect" href="https://firebaseapp.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
     </head>
     <body class="antialiased min-h-full bg-black">
         <div id="main"></div>
@@ -34,6 +136,65 @@
                 page_path: window.location.pathname,
                 page_location: window.location.href,
             });
+        </script>
+
+        <!-- Structured Data -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "ProfilePage",
+                "mainEntity": {
+                    "@type": "Person",
+                    "name": "hmziqrs",
+                    "alternateName": "HMZIQ",
+                    "description": "Senior Software Engineer specializing in experimental web technologies, cross-platform development, and innovative UI/UX",
+                    "url": "https://hmziq.xyz",
+                    "sameAs": [
+                        "https://github.com/hmziqrs",
+                        "https://twitter.com/hmziqrs"
+                    ],
+                    "jobTitle": "Senior Software Engineer",
+                    "knowsAbout": [
+                        "Flutter Development",
+                        "Rust Programming",
+                        "React Development",
+                        "WebAssembly",
+                        "Cross-platform Development",
+                        "UI/UX Design",
+                        "Real-time Applications",
+                        "Web Performance Optimization"
+                    ],
+                    "owns": {
+                        "@type": "WebSite",
+                        "name": "HMZIQ LABS",
+                        "url": "https://hmziq.xyz",
+                        "description": "Experimental tech lab and portfolio"
+                    }
+                },
+                "breadcrumb": {
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Home",
+                            "item": "https://hmziq.xyz"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Projects",
+                            "item": "https://hmziq.xyz/#projects"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Contact",
+                            "item": "https://hmziq.xyz/#contact"
+                        }
+                    ]
+                }
+            }
         </script>
     </body>
 </html>
