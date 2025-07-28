@@ -58,3 +58,7 @@ incremental = false
 [[bin]]
 name = "assets"
 path = "scripts/assets.rs"
+
+# Dependencies only for non-WASM targets (scripts)
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+# Add any script-specific dependencies here if needed in the future
