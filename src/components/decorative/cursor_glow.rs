@@ -5,8 +5,9 @@ pub fn CursorGlow() -> Element {
     rsx! {
         div {
             id: "cursor",
-            class: "fixed pointer-events-none z-[9999] rounded-full w-[20px] h-[20px] border border-white shadow-[0_0_20px_1px_rgba(255,255,255,1.0)] transition-all duration-100 ease",
+            class: "fixed pointer-events-none z-[9999] rounded-full w-[20px] h-[20px] border border-white transition-all duration-100 ease",
             style: "mix-blend-mode: difference;",
+            // style: "mix-blend-mode: difference; box-shadow: 0 0 20px rgba(255,255,255,1.0);",
         }
         div {
             id: "cursor-trail",

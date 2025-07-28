@@ -83,12 +83,15 @@ function updateCoordinates() {
 function updateCursor() {
   if (dom.cursor) {
     let scale = 1;
+    let shadowSpread = 20;
     if (isMouseDown) {
       scale = 0.5;
     } else if (isOverClickable) {
       scale = 2.2;
+      shadowSpread = 5;
     }
     dom.cursor.style.transform = `translate(${mouse.x}px, ${mouse.y}px) scale(${scale})`;
+    dom.cursor.style.boxShadow = `0 0 ${shadowSpread}px rgba(255,255,255,1.0)`;
   }
 }
 
