@@ -343,89 +343,84 @@ pub fn GitHubActivitySection() -> Element {
                         }
                     }
 
-                    // Contribution heatmap with responsive scaling
+                    // Contribution heatmap
                     div {
-                        class: "w-full overflow-x-auto md:overflow-x-visible",
+                        class: "w-full overflow-x-auto",
 
-                        // Transform wrapper for desktop scaling
+                        // Container
                         div {
-                            class: "inline-block origin-top-left md:scale-110 lg:scale-125 xl:scale-150",
+                            class: "inline-flex flex-col min-w-fit",
 
-                            // Container
+                            // Month labels
                             div {
-                                class: "flex flex-col",
+                                class: "flex mb-1 md:mb-2 text-[9px] md:text-[10px] lg:text-xs text-white/40 font-mono uppercase",
 
-                                // Month labels
+                                // Spacer for day labels
+                                div { class: "w-8 md:w-10 lg:w-12 mr-1 md:mr-2 shrink-0" }
+
+                                // Month labels container - positioned absolutely
                                 div {
-                                    class: "flex mb-2 text-[10px] text-white/40 font-mono uppercase",
-
-                                    // Spacer for day labels
-                                    div { class: "w-10 mr-2 shrink-0" }
-
-                                    // Month labels positioned over weeks
-                                    div {
-                                        class: "relative",
-                                        style: "width: 689px;", // 52 weeks * 13px (10px + 3px gap)
-
-                                        for (week_pos, month) in get_month_positions() {
-                                            div {
-                                                class: "absolute",
-                                                style: format!("left: {}px;", week_pos * 13),
-                                                "{month}"
-                                            }
+                                    class: "relative",
+                                    style: "width: 572px;", // 52 weeks * 11px (8px + 3px gap)
+                                    
+                                    for (week_pos, month) in get_month_positions() {
+                                        div {
+                                            class: "absolute",
+                                            style: format!("left: {}px;", week_pos * 11), // 8px cell + 3px gap
+                                            "{month}"
                                         }
                                     }
                                 }
+                            }
 
-                                // Main grid container
+                            // Main grid container
+                            div {
+                                class: "flex",
+
+                                // Day labels
                                 div {
-                                    class: "flex",
+                                    class: "flex flex-col gap-[2px] md:gap-[3px] lg:gap-1 mr-1 md:mr-2 text-[9px] md:text-[10px] lg:text-xs text-white/40 font-mono shrink-0",
+                                    div { class: "size-2 md:size-3 lg:size-[14px]", "" }
+                                    div { class: "size-2 md:size-3 lg:size-[14px] leading-[8px] md:leading-[12px] lg:leading-[14px]", "MON" }
+                                    div { class: "size-2 md:size-3 lg:size-[14px]", "" }
+                                    div { class: "size-2 md:size-3 lg:size-[14px] leading-[8px] md:leading-[12px] lg:leading-[14px]", "WED" }
+                                    div { class: "size-2 md:size-3 lg:size-[14px]", "" }
+                                    div { class: "size-2 md:size-3 lg:size-[14px] leading-[8px] md:leading-[12px] lg:leading-[14px]", "FRI" }
+                                    div { class: "size-2 md:size-3 lg:size-[14px]", "" }
+                                }
 
-                                    // Day labels
-                                    div {
-                                        class: "flex flex-col gap-[3px] mr-2 text-[10px] text-white/40 font-mono shrink-0",
-                                        div { class: "h-[10px]", "" }
-                                        div { class: "h-[10px] leading-[10px]", "MON" }
-                                        div { class: "h-[10px]", "" }
-                                        div { class: "h-[10px] leading-[10px]", "WED" }
-                                        div { class: "h-[10px]", "" }
-                                        div { class: "h-[10px] leading-[10px]", "FRI" }
-                                        div { class: "h-[10px]", "" }
-                                    }
+                                // Weeks container
+                                div {
+                                    class: "flex gap-[3px] md:gap-[3px] lg:gap-1",
 
-                                    // Weeks container
-                                    div {
-                                        class: "flex gap-[3px]",
-
-                                        if data().contributions.calendar.weeks.is_empty() {
-                                            // Fallback - 52 weeks
-                                            for _week in 0..52 {
-                                                div {
-                                                    class: "flex flex-col gap-[3px]",
-                                                    for _day in 0..7 {
-                                                        div {
-                                                            class: "w-[10px] h-[10px] bg-white/5",
-                                                            title: "No data available",
-                                                        }
+                                    if data().contributions.calendar.weeks.is_empty() {
+                                        // Fallback - 52 weeks
+                                        for _week in 0..52 {
+                                            div {
+                                                class: "flex flex-col gap-[2px] md:gap-[3px] lg:gap-1",
+                                                for _day in 0..7 {
+                                                    div {
+                                                        class: "size-2 md:size-3 lg:size-[14px] bg-white/5",
+                                                        title: "No data available",
                                                     }
                                                 }
                                             }
-                                        } else {
-                                            // Real contribution data
-                                            for week in data().contributions.calendar.weeks.iter() {
-                                                div {
-                                                    class: "flex flex-col gap-[3px]",
-                                                    for day in week.contribution_days.iter() {
-                                                        div {
-                                                            class: format!("w-[10px] h-[10px] {} hover:ring-1 hover:ring-white/40 transition-all duration-200 cursor-pointer group relative",
-                                                                get_contribution_color_from_github(&day.color)),
-                                                            title: format!("{} contributions on {}", day.contribution_count, day.date),
+                                        }
+                                    } else {
+                                        // Real contribution data
+                                        for week in data().contributions.calendar.weeks.iter() {
+                                            div {
+                                                class: "flex flex-col gap-[2px] md:gap-[3px] lg:gap-1",
+                                                for day in week.contribution_days.iter() {
+                                                    div {
+                                                        class: format!("size-2 md:size-3 lg:size-[14px] {} hover:ring-1 hover:ring-white/40 transition-all duration-200 cursor-pointer group relative",
+                                                            get_contribution_color_from_github(&day.color)),
+                                                        title: format!("{} contributions on {}", day.contribution_count, day.date),
 
-                                                            // Enhanced hover tooltip
-                                                            div {
-                                                                class: "absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-black/90 backdrop-blur-sm border border-white/30 text-white text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none z-50 shadow-lg",
-                                                                "{day.contribution_count} contributions on {format_date(&day.date)}"
-                                                            }
+                                                        // Enhanced hover tooltip
+                                                        div {
+                                                            class: "absolute bottom-full left-1/2 -translate-x-1/2 mb-2 px-3 py-1.5 bg-black/90 backdrop-blur-sm border border-white/30 text-white text-xs whitespace-nowrap opacity-0 group-hover:opacity-100 transition-all duration-200 pointer-events-none z-50 shadow-lg",
+                                                            "{day.contribution_count} contributions on {format_date(&day.date)}"
                                                         }
                                                     }
                                                 }
@@ -439,13 +434,13 @@ pub fn GitHubActivitySection() -> Element {
 
                     // Legend
                     div {
-                        class: "flex items-center justify-end gap-2 mt-6 text-[10px] text-white/40 font-mono uppercase tracking-wider",
+                        class: "flex items-center justify-end gap-2 mt-6 text-[9px] md:text-[10px] lg:text-xs text-white/40 font-mono uppercase tracking-wider",
                         span { "LESS" }
-                        div { class: "w-[10px] h-[10px] bg-white/10" }
-                        div { class: "w-[10px] h-[10px] bg-green-400/30" }
-                        div { class: "w-[10px] h-[10px] bg-green-400/50" }
-                        div { class: "w-[10px] h-[10px] bg-green-400/70" }
-                        div { class: "w-[10px] h-[10px] bg-green-400/90" }
+                        div { class: "size-2 md:size-3 lg:size-[14px] bg-white/10" }
+                        div { class: "size-2 md:size-3 lg:size-[14px] bg-green-400/30" }
+                        div { class: "size-2 md:size-3 lg:size-[14px] bg-green-400/50" }
+                        div { class: "size-2 md:size-3 lg:size-[14px] bg-green-400/70" }
+                        div { class: "size-2 md:size-3 lg:size-[14px] bg-green-400/90" }
                         span { "MORE" }
                     }
                 }
