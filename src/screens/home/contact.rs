@@ -2,6 +2,7 @@ use crate::{
     components::{cards::ContactCard, decorative::AtherCanvas},
     ui::SectionTitle,
 };
+use chrono::Datelike;
 use dioxus::prelude::*;
 
 #[component]
@@ -12,6 +13,19 @@ pub fn ContactSection() -> Element {
         ("◉", "EMAIL", "mailto:hmziqrs@gmail.com"),
         ("◆", "WEBSITE", "https://www.hmziq.rs/"),
     ];
+
+    // Get current date
+    let now = chrono::Utc::now();
+    let months = [
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+    ];
+    let current_date = format!(
+        "{}, {} {}",
+        now.day(),
+        months[(now.month() - 1) as usize],
+        now.year()
+    );
+    let current_year = now.year();
 
     rsx! {
         section {
@@ -33,6 +47,28 @@ pub fn ContactSection() -> Element {
                         icon: icon.to_string(),
                         label: label.to_string(),
                         href: href.to_string()
+                    }
+                }
+            }
+
+            // Copyright section
+            div {
+                class: "mt-32 relative z-10",
+
+                // Soft blurred background container
+                div {
+                    class: "inline-block px-8 py-6 bg-black/30 backdrop-blur-md",
+
+                    // Copyright text
+                    p {
+                        class: "text-sm text-white/70 font-light tracking-wider mb-2",
+                        "© {current_year} hmziqrs. Crafted with Dioxus and Rust."
+                    }
+
+                    // Updated date
+                    p {
+                        class: "text-xs text-white/50 font-light tracking-wider",
+                        "Updated on {current_date}"
                     }
                 }
             }
