@@ -224,6 +224,16 @@ fn get_month_positions() -> Vec<(usize, &'static str)> {
 pub fn GitHubActivitySection() -> Element {
     let data = use_signal(|| get_github_data());
 
+    // Calculate which months to show
+    let month_positions = get_month_positions();
+    let mut shown_months = Vec::new();
+    for (i, (pos, month)) in month_positions.iter().enumerate() {
+        if i % 3 == 0 {
+            // Show every 3rd month
+            shown_months.push((*pos, *month));
+        }
+    }
+
     rsx! {
     section {
         id: "github-activity",
@@ -363,16 +373,6 @@ pub fn GitHubActivitySection() -> Element {
                                     class: "flex gap-[2px] md:gap-[2px] lg:gap-[2px]",
 
                                     // Create 52 cells to match weeks
-                                    let month_positions = get_month_positions();
-                                    let mut shown_months = Vec::new();
-
-                                    // Select months to show (every 2nd or 3rd)
-                                    for (i, (pos, month)) in month_positions.iter().enumerate() {
-                                        if i % 3 == 0 { // Show every 3rd month
-                                            shown_months.push((*pos, *month));
-                                        }
-                                    }
-
                                     for week in 0..52 {
                                         div {
                                             class: "size-1.5 md:size-1.5 lg:size-2 flex items-end justify-center text-[6px] md:text-[6px] lg:text-[7px] text-white/40 font-mono",
