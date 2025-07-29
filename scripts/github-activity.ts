@@ -96,11 +96,19 @@ interface ActivityData {
 }
 
 async function fetchGitHubData(endpoint: string): Promise<any> {
+  const token = process.env.GITHUB_TOKEN;
+  const headers: Record<string, string> = {
+    Accept: "application/vnd.github.v3+json",
+    "User-Agent": "hmziq-xyz-website",
+  };
+  
+  // Add token if available for better rate limits and reduced caching
+  if (token) {
+    headers.Authorization = `Bearer ${token}`;
+  }
+
   const response = await fetch(`https://api.github.com${endpoint}`, {
-    headers: {
-      Accept: "application/vnd.github.v3+json",
-      "User-Agent": "hmziq-xyz-website",
-    },
+    headers,
   });
 
   if (!response.ok) {
