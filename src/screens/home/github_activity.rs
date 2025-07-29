@@ -215,9 +215,9 @@ pub fn GitHubActivitySection() -> Element {
                 }
             }
             
-            // Two column layout
+            // Single column layout
             div {
-                class: "grid grid-cols-1 xl:grid-cols-2 gap-12",
+                class: "max-w-4xl mx-auto space-y-12",
                 
                 // Recent Activity Log
                 div {
