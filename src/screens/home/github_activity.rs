@@ -130,23 +130,6 @@ fn format_activity_log(activity: &Activity) -> String {
     }
 }
 
-fn get_month_label(week_index: usize) -> Option<&'static str> {
-    match week_index {
-        0 => Some("AUG"),
-        4 => Some("SEP"),
-        8 => Some("OCT"),
-        13 => Some("NOV"),
-        17 => Some("DEC"),
-        22 => Some("JAN"),
-        26 => Some("FEB"),
-        30 => Some("MAR"),
-        35 => Some("APR"),
-        39 => Some("MAY"),
-        44 => Some("JUN"),
-        48 => Some("JUL"),
-        _ => None
-    }
-}
 
 fn get_contribution_color_from_github(color: &str) -> &'static str {
     match color {
@@ -157,6 +140,26 @@ fn get_contribution_color_from_github(color: &str) -> &'static str {
         "#216e39" => "bg-green-400/90",
         _ => "bg-white/5",
     }
+}
+
+fn get_month_labels() -> Vec<&'static str> {
+    use chrono::{Datelike, Utc};
+    
+    let now = Utc::now();
+    let current_month = now.month();
+    
+    let months = ["JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"];
+    let mut result = Vec::new();
+    
+    // GitHub shows ~52 weeks of contributions, starting from current week going back
+    // So we need to show months for the past year
+    for i in 0..12 {
+        let month_index = ((current_month as i32 - i - 1 + 12) % 12) as usize;
+        result.push(months[month_index]);
+    }
+    
+    result.reverse();
+    result
 }
 
 #[component]
@@ -226,15 +229,9 @@ pub fn GitHubActivitySection() -> Element {
                         
                         // Terminal header
                         div {
-                            class: "flex items-center gap-3 mb-6 pb-4 border-b border-white/20",
-                            div {
-                                class: "flex gap-2",
-                                div { class: "w-3 h-3 bg-white/30 rounded-full" }
-                                div { class: "w-3 h-3 bg-white/30 rounded-full" }
-                                div { class: "w-3 h-3 bg-white/30 rounded-full" }
-                            }
+                            class: "mb-6 pb-4 border-b border-white/20",
                             h3 {
-                                class: "text-sm font-light tracking-[0.2rem] text-white/80 uppercase ml-auto",
+                                class: "text-sm font-light tracking-[0.2rem] text-white/80 uppercase",
                                 "ACTIVITY LOG"
                             }
                         }
@@ -281,100 +278,88 @@ pub fn GitHubActivitySection() -> Element {
                         
                         // Header
                         div {
-                            class: "flex items-center gap-3 mb-6 pb-4 border-b border-white/20",
-                            div {
-                                class: "flex gap-2",
-                                div { class: "w-3 h-3 bg-white/30 rounded-full" }
-                                div { class: "w-3 h-3 bg-white/30 rounded-full" }
-                                div { class: "w-3 h-3 bg-white/30 rounded-full" }
-                            }
+                            class: "mb-6 pb-4 border-b border-white/20",
                             h3 {
-                                class: "text-sm font-light tracking-[0.2rem] text-white/80 uppercase ml-auto",
+                                class: "text-sm font-light tracking-[0.2rem] text-white/80 uppercase",
                                 "{data().contributions.total_contributions} CONTRIBUTIONS THIS YEAR"
                             }
                         }
                         
                         // Contribution heatmap
                         div {
-                            class: "overflow-x-auto overflow-y-hidden",
+                            class: "w-full",
+                            
+                            // Month labels
                             div {
-                                class: "min-w-fit",
+                                class: "flex justify-between mb-2 pl-12 pr-4 text-[10px] text-white/40 font-mono uppercase",
+                                for month in get_month_labels() {
+                                    div {
+                                        class: "text-center",
+                                        "{month}"
+                                    }
+                                }
+                            }
+                            
+                            // Grid container
+                            div {
+                                class: "flex gap-1",
                                 
-                                // Month labels
+                                // Day labels
                                 div {
-                                    class: "flex gap-[3px] mb-2 ml-10 text-[10px] text-white/40 font-mono uppercase",
-                                    for week in 0..52 {
-                                        if let Some(month) = get_month_label(week) {
+                                    class: "flex flex-col gap-[3px] mr-2 text-[10px] text-white/40 font-mono",
+                                    div { class: "h-[10px]", "" }
+                                    div { class: "h-[10px] leading-[10px]", "MON" }
+                                    div { class: "h-[10px]", "" }
+                                    div { class: "h-[10px] leading-[10px]", "WED" }
+                                    div { class: "h-[10px]", "" }
+                                    div { class: "h-[10px] leading-[10px]", "FRI" }
+                                    div { class: "h-[10px]", "" }
+                                }
+                                
+                                // Contribution grid
+                                div {
+                                    class: "flex-1 flex gap-[3px] justify-between",
+                                    if data().contributions.calendar.weeks.is_empty() {
+                                        // Fallback
+                                        for _week in 0..52 {
                                             div {
-                                                class: "tracking-wider",
-                                                style: format!("width: {}px;", if week == 0 { 30 } else { 50 }),
-                                                "{month}"
-                                            }
-                                        }
-                                    }
-                                }
-                                
-                                // Grid container
-                                div {
-                                    class: "flex gap-1",
-                                    
-                                    // Day labels
-                                    div {
-                                        class: "flex flex-col gap-[3px] mr-2 text-[10px] text-white/40 font-mono",
-                                        div { class: "h-[10px]", "" }
-                                        div { class: "h-[10px] leading-[10px]", "MON" }
-                                        div { class: "h-[10px]", "" }
-                                        div { class: "h-[10px] leading-[10px]", "WED" }
-                                        div { class: "h-[10px]", "" }
-                                        div { class: "h-[10px] leading-[10px]", "FRI" }
-                                        div { class: "h-[10px]", "" }
-                                    }
-                                    
-                                    // Contribution grid
-                                    div {
-                                        class: "flex gap-[3px]",
-                                        if data().contributions.calendar.weeks.is_empty() {
-                                            // Fallback
-                                            for _week in 0..52 {
-                                                div {
-                                                    class: "flex flex-col gap-[3px]",
-                                                    for _day in 0..7 {
-                                                        div {
-                                                            class: "w-[10px] h-[10px] bg-white/5",
-                                                            title: "No data available",
-                                                        }
+                                                class: "flex flex-col gap-[3px]",
+                                                for _day in 0..7 {
+                                                    div {
+                                                        class: "w-[10px] h-[10px] bg-white/5",
+                                                        title: "No data available",
                                                     }
                                                 }
                                             }
-                                        } else {
-                                            // Real contribution data
-                                            for week in data().contributions.calendar.weeks.iter() {
-                                                div {
-                                                    class: "flex flex-col gap-[3px]",
-                                                    for day in week.contribution_days.iter() {
-                                                        div {
-                                                            class: format!("w-[10px] h-[10px] {} hover:ring-1 hover:ring-white/40 transition-all duration-200 cursor-pointer", 
-                                                                get_contribution_color_from_github(&day.color)),
-                                                            title: format!("{} contributions on {}", day.contribution_count, day.date),
-                                                        }
+                                        }
+                                    } else {
+                                        // Real contribution data
+                                        for week in data().contributions.calendar.weeks.iter() {
+                                            div {
+                                                class: "flex flex-col gap-[3px]",
+                                                for day in week.contribution_days.iter() {
+                                                    div {
+                                                        class: format!("w-[10px] h-[10px] {} hover:ring-1 hover:ring-white/40 transition-all duration-200 cursor-pointer", 
+                                                            get_contribution_color_from_github(&day.color)),
+                                                        title: format!("{} contributions on {}", day.contribution_count, day.date),
                                                     }
                                                 }
                                             }
                                         }
                                     }
                                 }
-                                
-                                // Legend
-                                div {
-                                    class: "flex items-center justify-end gap-2 mt-6 text-[10px] text-white/40 font-mono uppercase tracking-wider",
-                                    span { "LESS" }
-                                    div { class: "w-[10px] h-[10px] bg-white/10" }
-                                    div { class: "w-[10px] h-[10px] bg-green-400/30" }
-                                    div { class: "w-[10px] h-[10px] bg-green-400/50" }
-                                    div { class: "w-[10px] h-[10px] bg-green-400/70" }
-                                    div { class: "w-[10px] h-[10px] bg-green-400/90" }
-                                    span { "MORE" }
-                                }
+                            }
+                            
+                            // Legend
+                            div {
+                                class: "flex items-center justify-end gap-2 mt-6 text-[10px] text-white/40 font-mono uppercase tracking-wider",
+                                span { "LESS" }
+                                div { class: "w-[10px] h-[10px] bg-white/10" }
+                                div { class: "w-[10px] h-[10px] bg-green-400/30" }
+                                div { class: "w-[10px] h-[10px] bg-green-400/50" }
+                                div { class: "w-[10px] h-[10px] bg-green-400/70" }
+                                div { class: "w-[10px] h-[10px] bg-green-400/90" }
+                                span { "MORE" }
                             }
                         }
                     }
