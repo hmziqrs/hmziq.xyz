@@ -353,21 +353,34 @@ pub fn GitHubActivitySection() -> Element {
 
                             // Month labels
                             div {
-                                class: "flex mb-1 md:mb-2 text-[9px] md:text-[10px] lg:text-xs text-white/40 font-mono uppercase",
+                                class: "flex mb-2",
 
                                 // Spacer for day labels
-                                div { class: "w-8 md:w-10 lg:w-12 mr-1 md:mr-2 shrink-0" }
+                                div { class: "w-6 md:w-6 lg:w-8 mr-1 md:mr-1 shrink-0" }
 
-                                // Month labels container - positioned absolutely
+                                // Month row - match the weeks grid exactly
                                 div {
-                                    class: "relative",
-                                    style: "width: 572px;", // 52 weeks * 11px (8px + 3px gap)
-                                    
-                                    for (week_pos, month) in get_month_positions() {
+                                    class: "flex gap-[2px] md:gap-[2px] lg:gap-[2px]",
+
+                                    // Create 52 cells to match weeks
+                                    let month_positions = get_month_positions();
+                                    let mut shown_months = Vec::new();
+
+                                    // Select months to show (every 2nd or 3rd)
+                                    for (i, (pos, month)) in month_positions.iter().enumerate() {
+                                        if i % 3 == 0 { // Show every 3rd month
+                                            shown_months.push((*pos, *month));
+                                        }
+                                    }
+
+                                    for week in 0..52 {
                                         div {
-                                            class: "absolute",
-                                            style: format!("left: {}px;", week_pos * 11), // 8px cell + 3px gap
-                                            "{month}"
+                                            class: "size-1.5 md:size-1.5 lg:size-2 flex items-end justify-center text-[6px] md:text-[6px] lg:text-[7px] text-white/40 font-mono",
+
+                                            // Show month if this week is selected
+                                            if let Some((_, month)) = shown_months.iter().find(|(pos, _)| *pos == week) {
+                                                "{month}"
+                                            }
                                         }
                                     }
                                 }
@@ -379,28 +392,28 @@ pub fn GitHubActivitySection() -> Element {
 
                                 // Day labels
                                 div {
-                                    class: "flex flex-col gap-[2px] md:gap-[3px] lg:gap-1 mr-1 md:mr-2 text-[9px] md:text-[10px] lg:text-xs text-white/40 font-mono shrink-0",
-                                    div { class: "size-2 md:size-3 lg:size-[14px]", "" }
-                                    div { class: "size-2 md:size-3 lg:size-[14px] leading-[8px] md:leading-[12px] lg:leading-[14px]", "MON" }
-                                    div { class: "size-2 md:size-3 lg:size-[14px]", "" }
-                                    div { class: "size-2 md:size-3 lg:size-[14px] leading-[8px] md:leading-[12px] lg:leading-[14px]", "WED" }
-                                    div { class: "size-2 md:size-3 lg:size-[14px]", "" }
-                                    div { class: "size-2 md:size-3 lg:size-[14px] leading-[8px] md:leading-[12px] lg:leading-[14px]", "FRI" }
-                                    div { class: "size-2 md:size-3 lg:size-[14px]", "" }
+                                    class: "flex flex-col gap-[2px] md:gap-[2px] lg:gap-[2px] mr-1 md:mr-1 text-[6px] md:text-[6px] lg:text-[7px] text-white/40 font-mono shrink-0",
+                                    div { class: "size-1.5 md:size-1.5 lg:size-2", "" }
+                                    div { class: "size-1.5 md:size-1.5 lg:size-2 leading-[6px] md:leading-[6px] lg:leading-[8px]", "MON" }
+                                    div { class: "size-1.5 md:size-1.5 lg:size-2", "" }
+                                    div { class: "size-1.5 md:size-1.5 lg:size-2 leading-[6px] md:leading-[6px] lg:leading-[8px]", "WED" }
+                                    div { class: "size-1.5 md:size-1.5 lg:size-2", "" }
+                                    div { class: "size-1.5 md:size-1.5 lg:size-2 leading-[6px] md:leading-[6px] lg:leading-[8px]", "FRI" }
+                                    div { class: "size-1.5 md:size-1.5 lg:size-2", "" }
                                 }
 
                                 // Weeks container
                                 div {
-                                    class: "flex gap-[3px] md:gap-[3px] lg:gap-1",
+                                    class: "flex gap-[2px] md:gap-[2px] lg:gap-[2px]",
 
                                     if data().contributions.calendar.weeks.is_empty() {
                                         // Fallback - 52 weeks
                                         for _week in 0..52 {
                                             div {
-                                                class: "flex flex-col gap-[2px] md:gap-[3px] lg:gap-1",
+                                                class: "flex flex-col gap-[2px] md:gap-[2px] lg:gap-[2px]",
                                                 for _day in 0..7 {
                                                     div {
-                                                        class: "size-2 md:size-3 lg:size-[14px] bg-white/5",
+                                                        class: "size-1.5 md:size-1.5 lg:size-2 bg-white/5",
                                                         title: "No data available",
                                                     }
                                                 }
@@ -410,10 +423,10 @@ pub fn GitHubActivitySection() -> Element {
                                         // Real contribution data
                                         for week in data().contributions.calendar.weeks.iter() {
                                             div {
-                                                class: "flex flex-col gap-[2px] md:gap-[3px] lg:gap-1",
+                                                class: "flex flex-col gap-[2px] md:gap-[2px] lg:gap-[2px]",
                                                 for day in week.contribution_days.iter() {
                                                     div {
-                                                        class: format!("size-2 md:size-3 lg:size-[14px] {} hover:ring-1 hover:ring-white/40 transition-all duration-200 cursor-pointer group relative",
+                                                        class: format!("size-1.5 md:size-1.5 lg:size-2 {} hover:ring-1 hover:ring-white/40 transition-all duration-200 cursor-pointer group relative",
                                                             get_contribution_color_from_github(&day.color)),
                                                         title: format!("{} contributions on {}", day.contribution_count, day.date),
 
@@ -434,13 +447,13 @@ pub fn GitHubActivitySection() -> Element {
 
                     // Legend
                     div {
-                        class: "flex items-center justify-end gap-2 mt-6 text-[9px] md:text-[10px] lg:text-xs text-white/40 font-mono uppercase tracking-wider",
+                        class: "flex items-center justify-end gap-1 mt-4 text-[6px] md:text-[6px] lg:text-[7px] text-white/40 font-mono uppercase tracking-wider",
                         span { "LESS" }
-                        div { class: "size-2 md:size-3 lg:size-[14px] bg-white/10" }
-                        div { class: "size-2 md:size-3 lg:size-[14px] bg-green-400/30" }
-                        div { class: "size-2 md:size-3 lg:size-[14px] bg-green-400/50" }
-                        div { class: "size-2 md:size-3 lg:size-[14px] bg-green-400/70" }
-                        div { class: "size-2 md:size-3 lg:size-[14px] bg-green-400/90" }
+                        div { class: "size-1.5 md:size-1.5 lg:size-2 bg-white/10" }
+                        div { class: "size-1.5 md:size-1.5 lg:size-2 bg-green-400/30" }
+                        div { class: "size-1.5 md:size-1.5 lg:size-2 bg-green-400/50" }
+                        div { class: "size-1.5 md:size-1.5 lg:size-2 bg-green-400/70" }
+                        div { class: "size-1.5 md:size-1.5 lg:size-2 bg-green-400/90" }
                         span { "MORE" }
                     }
                 }
