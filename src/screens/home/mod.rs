@@ -3,10 +3,12 @@ use dioxus::prelude::*;
 mod contact;
 mod hero;
 mod projects;
+mod github_activity;
 
 pub use contact::ContactSection;
 pub use hero::HeroSection;
 pub use projects::ProjectsSection;
+pub use github_activity::GitHubActivitySection;
 
 use crate::components::{decorative::Coordinates, CursorGlow};
 
@@ -26,6 +28,7 @@ pub fn HomeScreen() -> Element {
             Coordinates { }
             // Sections
             HeroSection { }
+            GitHubActivitySection { }
             ProjectsSection { active_filter }
             ContactSection {}
 
