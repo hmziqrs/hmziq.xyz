@@ -104,6 +104,19 @@ jobs:
             exit 1
           fi
 
+      - name: Fix asset references
+        run: |
+          echo "Running assets-fix script to fix asset references in index.html..."
+          bun scripts/assets-fix.ts
+
+          # Verify the script ran successfully
+          if [ $? -eq 0 ]; then
+            echo "✅ Asset references successfully fixed"
+          else
+            echo "❌ Error: Failed to fix asset references"
+            exit 1
+          fi
+
       - name: Upload build artifact
         uses: actions/upload-artifact@v4
         with:
