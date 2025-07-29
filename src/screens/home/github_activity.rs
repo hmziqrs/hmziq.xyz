@@ -99,60 +99,63 @@ fn format_time_ago(datetime: &str) -> String {
     }
 }
 
-fn get_activity_icon(activity_type: &str) -> &'static str {
+fn get_activity_type_symbol(activity_type: &str) -> &'static str {
     match activity_type {
-        "PushEvent" => "⟶",
+        "PushEvent" => "→",
         "WatchEvent" => "★",
-        "CreateEvent" => "✱",
-        "PullRequestEvent" => "⇅",
-        "IssuesEvent" => "◉",
-        _ => "•"
+        "CreateEvent" => "+",
+        "PullRequestEvent" => "⇄",
+        "IssuesEvent" => "●",
+        _ => "·"
     }
 }
 
-fn get_activity_description(activity: &Activity) -> String {
+fn format_activity_log(activity: &Activity) -> String {
+    let repo_name = activity.repo.split('/').last().unwrap_or(&activity.repo);
+    
     match activity.activity_type.as_str() {
-        "PushEvent" => format!("Pushed to {}", activity.repo.split('/').last().unwrap_or(&activity.repo)),
-        "WatchEvent" => format!("Starred {}", activity.repo),
-        "CreateEvent" => format!("Created {}", activity.message.as_ref().unwrap_or(&"repository".to_string())),
-        "PullRequestEvent" => format!("{} PR in {}", 
-            activity.action.as_ref().unwrap_or(&"Updated".to_string()),
-            activity.repo.split('/').last().unwrap_or(&activity.repo)
-        ),
-        "IssuesEvent" => format!("{} issue in {}", 
-            activity.action.as_ref().unwrap_or(&"Updated".to_string()),
-            activity.repo.split('/').last().unwrap_or(&activity.repo)
-        ),
-        _ => format!("Activity in {}", activity.repo.split('/').last().unwrap_or(&activity.repo))
+        "PushEvent" => {
+            if let Some(msg) = &activity.message {
+                let first_line = msg.lines().next().unwrap_or(msg);
+                format!("[PUSH] {} :: {}", repo_name, first_line)
+            } else {
+                format!("[PUSH] {} :: pushed commits", repo_name)
+            }
+        },
+        "WatchEvent" => format!("[STAR] {} :: starred repository", activity.repo),
+        "CreateEvent" => format!("[CREATE] {} :: created {}", repo_name, activity.message.as_ref().unwrap_or(&"repository".to_string())),
+        "PullRequestEvent" => format!("[PR] {} :: {} pull request", repo_name, activity.action.as_ref().unwrap_or(&"updated".to_string())),
+        "IssuesEvent" => format!("[ISSUE] {} :: {} issue", repo_name, activity.action.as_ref().unwrap_or(&"updated".to_string())),
+        _ => format!("[{}] {} :: activity", activity.activity_type.to_uppercase(), repo_name)
     }
 }
 
 fn get_month_label(week_index: usize) -> Option<&'static str> {
-    // Show month labels at the start of each month (approximate)
     match week_index {
-        0 => Some("Aug"),
-        4 => Some("Sep"),
-        8 => Some("Oct"),
-        13 => Some("Nov"),
-        17 => Some("Dec"),
-        22 => Some("Jan"),
-        26 => Some("Feb"),
-        30 => Some("Mar"),
-        35 => Some("Apr"),
-        39 => Some("May"),
-        44 => Some("Jun"),
-        48 => Some("Jul"),
+        0 => Some("AUG"),
+        4 => Some("SEP"),
+        8 => Some("OCT"),
+        13 => Some("NOV"),
+        17 => Some("DEC"),
+        22 => Some("JAN"),
+        26 => Some("FEB"),
+        30 => Some("MAR"),
+        35 => Some("APR"),
+        39 => Some("MAY"),
+        44 => Some("JUN"),
+        48 => Some("JUL"),
         _ => None
     }
 }
 
 fn get_contribution_color_from_github(color: &str) -> &'static str {
     match color {
-        "#216e39" => "bg-green-900/50",  // Level 4 (darkest)
-        "#30a14e" => "bg-green-700/60",  // Level 3
-        "#40c463" => "bg-green-500/70",  // Level 2
-        "#9be9a8" => "bg-green-400/80",  // Level 1 (lightest)
-        _ => "bg-white/5",                // Level 0 (no contributions)
+        "#ebedf0" => "bg-white/10",
+        "#9be9a8" => "bg-green-400/30",
+        "#40c463" => "bg-green-400/50", 
+        "#30a14e" => "bg-green-400/70",
+        "#216e39" => "bg-green-400/90",
+        _ => "bg-white/5",
     }
 }
 
@@ -171,96 +174,98 @@ pub fn GitHubActivitySection() -> Element {
                 SectionTitle { text: "LAB ACTIVITY" }
             }
             
-            // Stats overview
+            // Stats bar
             div {
-                class: "flex justify-center gap-8 mb-20 flex-wrap",
+                class: "flex justify-center gap-8 mb-20 pb-10 border-b border-white/20",
                 
-                // Followers
                 div {
-                    class: "bg-black/50 backdrop-blur-sm border border-white/10 rounded-lg p-6 hover:bg-white/5 transition-all duration-300",
+                    class: "text-center",
                     div {
-                        class: "text-3xl font-thin text-white mb-2",
+                        class: "text-3xl font-thin text-white mb-2 tracking-wider",
                         "{data().user.followers}"
                     }
                     div {
-                        class: "text-sm text-white/60 uppercase tracking-widest",
-                        "Followers"
+                        class: "text-xs text-white/60 uppercase tracking-[0.2rem]",
+                        "FOLLOWERS"
                     }
                 }
                 
-                // Repositories
                 div {
-                    class: "bg-black/50 backdrop-blur-sm border border-white/10 rounded-lg p-6 hover:bg-white/5 transition-all duration-300",
+                    class: "text-center border-l border-r border-white/20 px-8",
                     div {
-                        class: "text-3xl font-thin text-white mb-2",
+                        class: "text-3xl font-thin text-white mb-2 tracking-wider",
                         "{data().user.public_repos}"
                     }
                     div {
-                        class: "text-sm text-white/60 uppercase tracking-widest",
-                        "Repositories"
+                        class: "text-xs text-white/60 uppercase tracking-[0.2rem]",
+                        "REPOSITORIES"
                     }
                 }
                 
-                // Stars (from top repo)
                 div {
-                    class: "bg-black/50 backdrop-blur-sm border border-white/10 rounded-lg p-6 hover:bg-white/5 transition-all duration-300",
+                    class: "text-center",
                     div {
-                        class: "text-3xl font-thin text-white mb-2",
-                        "{data().top_repositories.iter().map(|r| r.stars).sum::<u32>()}"
+                        class: "text-3xl font-thin text-white mb-2 tracking-wider",
+                        "{data().contributions.total_contributions}"
                     }
                     div {
-                        class: "text-sm text-white/60 uppercase tracking-widest",
-                        "Total Stars"
+                        class: "text-xs text-white/60 uppercase tracking-[0.2rem]",
+                        "CONTRIBUTIONS"
                     }
                 }
             }
             
-            // Single column layout
+            // Two column layout
             div {
-                class: "max-w-4xl mx-auto space-y-16",
+                class: "grid grid-cols-1 xl:grid-cols-2 gap-12",
                 
-                // Recent Activity
+                // Recent Activity Log
                 div {
-                    class: "space-y-6",
                     div {
-                        class: "bg-black/50 backdrop-blur-sm border border-white/10 rounded-lg p-6",
-                        h3 {
-                            class: "text-2xl font-thin tracking-wider text-white mb-6 text-center",
-                            "Recent Activity"
+                        class: "border border-white/20 bg-black/50 backdrop-blur-sm p-8",
+                        
+                        // Terminal header
+                        div {
+                            class: "flex items-center gap-3 mb-6 pb-4 border-b border-white/20",
+                            div {
+                                class: "flex gap-2",
+                                div { class: "w-3 h-3 bg-white/30 rounded-full" }
+                                div { class: "w-3 h-3 bg-white/30 rounded-full" }
+                                div { class: "w-3 h-3 bg-white/30 rounded-full" }
+                            }
+                            h3 {
+                                class: "text-sm font-light tracking-[0.2rem] text-white/80 uppercase ml-auto",
+                                "ACTIVITY LOG"
+                            }
                         }
                         
+                        // Activity entries
                         div {
-                            class: "space-y-4",
-                            for activity in data().recent_activity.iter().take(5) {
+                            class: "space-y-3 font-mono text-xs",
+                            for activity in data().recent_activity.iter().take(8) {
                                 div {
-                                    class: "group relative p-4 rounded-lg bg-white/5 border border-white/10 hover:bg-white/10 transition-all duration-300",
+                                    class: "group",
                                     
+                                    // Timestamp and activity
                                     div {
-                                        class: "flex items-start gap-4",
+                                        class: "flex items-start gap-3",
                                         
-                                        // Icon
-                                        div {
-                                            class: "text-2xl text-white/80",
-                                            "{get_activity_icon(&activity.activity_type)}"
+                                        // Time
+                                        span {
+                                            class: "text-white/40 shrink-0",
+                                            "{format_time_ago(&activity.created_at)}"
                                         }
                                         
-                                        // Content
-                                        div {
-                                            class: "flex-1",
-                                            div {
-                                                class: "text-white/90 mb-1",
-                                                "{get_activity_description(activity)}"
-                                            }
-                                            if let Some(message) = &activity.message {
-                                                div {
-                                                    class: "text-sm text-white/60 line-clamp-2 mb-2",
-                                                    "{message}"
-                                                }
-                                            }
-                                            div {
-                                                class: "text-xs text-white/40",
-                                                "{format_time_ago(&activity.created_at)}"
-                                            }
+                                        // Symbol
+                                        span {
+                                            class: "text-white/60",
+                                            "{get_activity_type_symbol(&activity.activity_type)}"
+                                        }
+                                        
+                                        // Log message
+                                        span {
+                                            class: "text-white/80 group-hover:text-white transition-colors duration-300",
+                                            "{format_activity_log(activity)}"
                                         }
                                     }
                                 }
@@ -271,30 +276,37 @@ pub fn GitHubActivitySection() -> Element {
                 
                 // Contribution Graph
                 div {
-                    class: "space-y-6",
                     div {
-                        class: "bg-black/50 backdrop-blur-sm border border-white/10 rounded-lg p-6",
-                        h3 {
-                            class: "text-2xl font-thin tracking-wider text-white mb-6 text-center",
-                            "{data().contributions.total_contributions} contributions in the last year"
+                        class: "border border-white/20 bg-black/50 backdrop-blur-sm p-8",
+                        
+                        // Header
+                        div {
+                            class: "flex items-center gap-3 mb-6 pb-4 border-b border-white/20",
+                            div {
+                                class: "flex gap-2",
+                                div { class: "w-3 h-3 bg-white/30 rounded-full" }
+                                div { class: "w-3 h-3 bg-white/30 rounded-full" }
+                                div { class: "w-3 h-3 bg-white/30 rounded-full" }
+                            }
+                            h3 {
+                                class: "text-sm font-light tracking-[0.2rem] text-white/80 uppercase ml-auto",
+                                "{data().contributions.total_contributions} CONTRIBUTIONS THIS YEAR"
+                            }
                         }
                         
-                        // Contribution heatmap container
+                        // Contribution heatmap
                         div {
-                            class: "bg-white/5 rounded-lg p-4 md:p-6 border border-white/10 overflow-x-auto",
-                            
-                            // Inner container for horizontal scroll on mobile
+                            class: "overflow-x-auto overflow-y-hidden",
                             div {
                                 class: "min-w-fit",
                                 
                                 // Month labels
                                 div {
-                                    class: "flex gap-[3px] mb-2 ml-10",
-                                    style: "font-size: 11px;",
+                                    class: "flex gap-[3px] mb-2 ml-10 text-[10px] text-white/40 font-mono uppercase",
                                     for week in 0..52 {
                                         if let Some(month) = get_month_label(week) {
                                             div {
-                                                class: "text-white/60",
+                                                class: "tracking-wider",
                                                 style: format!("width: {}px;", if week == 0 { 30 } else { 50 }),
                                                 "{month}"
                                             }
@@ -305,65 +317,63 @@ pub fn GitHubActivitySection() -> Element {
                                 // Grid container
                                 div {
                                     class: "flex gap-1",
-                                
-                                // Day labels
-                                div {
-                                    class: "flex flex-col gap-[3px] mr-2 text-white/40",
-                                    style: "font-size: 11px;",
-                                    div { class: "h-[11px]", "" }
-                                    div { class: "h-[11px] leading-[11px]", "Mon" }
-                                    div { class: "h-[11px]", "" }
-                                    div { class: "h-[11px] leading-[11px]", "Wed" }
-                                    div { class: "h-[11px]", "" }
-                                    div { class: "h-[11px] leading-[11px]", "Fri" }
-                                    div { class: "h-[11px]", "" }
-                                }
-                                
-                                // Contribution grid
-                                div {
-                                    class: "flex gap-[3px]",
-                                    if data().contributions.calendar.weeks.is_empty() {
-                                        // Fallback if no contribution data
-                                        for _week in 0..52 {
-                                            div {
-                                                class: "flex flex-col gap-[3px]",
-                                                for _day in 0..7 {
-                                                    div {
-                                                        class: "w-[11px] h-[11px] rounded-sm bg-white/5",
-                                                        title: "No data available",
+                                    
+                                    // Day labels
+                                    div {
+                                        class: "flex flex-col gap-[3px] mr-2 text-[10px] text-white/40 font-mono",
+                                        div { class: "h-[10px]", "" }
+                                        div { class: "h-[10px] leading-[10px]", "MON" }
+                                        div { class: "h-[10px]", "" }
+                                        div { class: "h-[10px] leading-[10px]", "WED" }
+                                        div { class: "h-[10px]", "" }
+                                        div { class: "h-[10px] leading-[10px]", "FRI" }
+                                        div { class: "h-[10px]", "" }
+                                    }
+                                    
+                                    // Contribution grid
+                                    div {
+                                        class: "flex gap-[3px]",
+                                        if data().contributions.calendar.weeks.is_empty() {
+                                            // Fallback
+                                            for _week in 0..52 {
+                                                div {
+                                                    class: "flex flex-col gap-[3px]",
+                                                    for _day in 0..7 {
+                                                        div {
+                                                            class: "w-[10px] h-[10px] bg-white/5",
+                                                            title: "No data available",
+                                                        }
                                                     }
                                                 }
                                             }
-                                        }
-                                    } else {
-                                        // Use real contribution data
-                                        for week in data().contributions.calendar.weeks.iter() {
-                                            div {
-                                                class: "flex flex-col gap-[3px]",
-                                                for day in week.contribution_days.iter() {
-                                                    div {
-                                                        class: format!("w-[11px] h-[11px] rounded-sm hover:ring-1 hover:ring-white/20 transition-all duration-200 cursor-pointer {}", 
-                                                            get_contribution_color_from_github(&day.color)),
-                                                        title: format!("{} contributions on {}", day.contribution_count, day.date),
+                                        } else {
+                                            // Real contribution data
+                                            for week in data().contributions.calendar.weeks.iter() {
+                                                div {
+                                                    class: "flex flex-col gap-[3px]",
+                                                    for day in week.contribution_days.iter() {
+                                                        div {
+                                                            class: format!("w-[10px] h-[10px] {} hover:ring-1 hover:ring-white/40 transition-all duration-200 cursor-pointer", 
+                                                                get_contribution_color_from_github(&day.color)),
+                                                            title: format!("{} contributions on {}", day.contribution_count, day.date),
+                                                        }
                                                     }
                                                 }
                                             }
                                         }
                                     }
                                 }
-                            }
-                            
+                                
                                 // Legend
                                 div {
-                                    class: "flex items-center justify-end gap-2 mt-4 text-white/40",
-                                    style: "font-size: 11px;",
-                                    span { "Less" }
-                                    div { class: "w-[11px] h-[11px] bg-white/5 rounded-sm" }
-                                    div { class: "w-[11px] h-[11px] bg-green-900/50 rounded-sm" }
-                                    div { class: "w-[11px] h-[11px] bg-green-700/60 rounded-sm" }
-                                    div { class: "w-[11px] h-[11px] bg-green-500/70 rounded-sm" }
-                                    div { class: "w-[11px] h-[11px] bg-green-400/80 rounded-sm" }
-                                    span { "More" }
+                                    class: "flex items-center justify-end gap-2 mt-6 text-[10px] text-white/40 font-mono uppercase tracking-wider",
+                                    span { "LESS" }
+                                    div { class: "w-[10px] h-[10px] bg-white/10" }
+                                    div { class: "w-[10px] h-[10px] bg-green-400/30" }
+                                    div { class: "w-[10px] h-[10px] bg-green-400/50" }
+                                    div { class: "w-[10px] h-[10px] bg-green-400/70" }
+                                    div { class: "w-[10px] h-[10px] bg-green-400/90" }
+                                    span { "MORE" }
                                 }
                             }
                         }
@@ -373,14 +383,13 @@ pub fn GitHubActivitySection() -> Element {
             
             // View on GitHub link
             div {
-                class: "text-center mt-12",
+                class: "text-center mt-20",
                 a {
                     href: "{data().user.profile_url}",
                     target: "_blank",
                     rel: "noopener noreferrer",
-                    class: "inline-flex items-center gap-2 px-6 py-3 text-white/80 bg-black/50 backdrop-blur-sm border border-white/10 rounded-lg hover:bg-white/10 hover:text-white hover:border-white/20 transition-all duration-300",
-                    "View on GitHub"
-                    span { "→" }
+                    class: "inline-block px-8 py-3 text-xs text-white/80 border border-white/30 uppercase tracking-[0.2rem] transition-all duration-300 hover:text-black hover:bg-white hover:border-white hover:shadow-[0_0_20px_rgba(255,255,255,0.3)] backdrop-blur-sm bg-black/10 cursor-none btn",
+                    "VIEW ON GITHUB"
                 }
             }
         }
