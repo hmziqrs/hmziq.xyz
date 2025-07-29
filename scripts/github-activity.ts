@@ -100,6 +100,7 @@ async function fetchGitHubData(endpoint: string): Promise<any> {
   const headers: Record<string, string> = {
     Accept: "application/vnd.github.v3+json",
     "User-Agent": "hmziq-xyz-website",
+    "Cache-Control": "no-cache",
   };
   
   // Add token if available for better rate limits and reduced caching
