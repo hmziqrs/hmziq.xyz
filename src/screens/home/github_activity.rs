@@ -152,10 +152,10 @@ fn format_activity_log(activity: &Activity) -> String {
 fn get_contribution_color_from_github(color: &str) -> &'static str {
     match color {
         "#ebedf0" => "bg-white/10",
-        "#9be9a8" => "bg-green-400/30",
-        "#40c463" => "bg-green-400/50",
-        "#30a14e" => "bg-green-400/70",
-        "#216e39" => "bg-green-400/90",
+        "#9be9a8" => "bg-lime-400/30",
+        "#40c463" => "bg-lime-400/50",
+        "#30a14e" => "bg-lime-400/70",
+        "#216e39" => "bg-lime-400/90",
         _ => "bg-white/5",
     }
 }
@@ -457,10 +457,10 @@ pub fn GitHubActivitySection() -> Element {
                         class: "flex items-center justify-end gap-1.5 mt-6 text-[7px] md:text-[8px] lg:text-[9px] text-white/40 font-mono uppercase tracking-wider",
                         span { "LESS" }
                         div { class: "size-2 md:size-2.5 lg:size-3 bg-white/10" }
-                        div { class: "size-2 md:size-2.5 lg:size-3 bg-green-400/30" }
-                        div { class: "size-2 md:size-2.5 lg:size-3 bg-green-400/50" }
-                        div { class: "size-2 md:size-2.5 lg:size-3 bg-green-400/70" }
-                        div { class: "size-2 md:size-2.5 lg:size-3 bg-green-400/90" }
+                        div { class: "size-2 md:size-2.5 lg:size-3 bg-lime-400/30" }
+                        div { class: "size-2 md:size-2.5 lg:size-3 bg-lime-400/50" }
+                        div { class: "size-2 md:size-2.5 lg:size-3 bg-lime-400/70" }
+                        div { class: "size-2 md:size-2.5 lg:size-3 bg-lime-400/90" }
                         span { "MORE" }
                     }
                 }

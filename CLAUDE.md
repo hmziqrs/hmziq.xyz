@@ -1,7 +1,7 @@
 # hmziq.xyz - Dioxus Web App
 
 ## Tech Stack
-- Dioxus 0.7.0-alpha.3 + Rust
+- Dioxus 0.7.9 + Rust
 - TailwindCSS
 - WASM target
 - Validator, Serde, Reqwest

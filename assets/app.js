@@ -1,5 +1,3 @@
-console.log("Hello World!");
-
 const cursorId = "cursor";
 const cursorTrailId = "cursor-trail";
 const coordinatesId = "coordinates";
@@ -8,50 +6,41 @@ let mouse = { x: 0, y: 0 };
 let scrollY = 0;
 let isOverClickable = false;
 let isMouseDown = false;
+let cursorDirty = false;
 
 let dom = {
   cursor: null,
   cursorTrail: null,
   coordinates: null,
-};
-let custom = {
-  cursor: null,
+  coordSpan: null,
 };
 
 function main() {
   dom.cursor = document.getElementById(cursorId);
   dom.cursorTrail = document.getElementById(cursorTrailId);
   dom.coordinates = document.getElementById(coordinatesId);
+  if (dom.coordinates) {
+    dom.coordSpan = dom.coordinates.querySelector(".coord-text");
+  }
+}
+
+function isClickableTarget(el) {
+  let current = el;
+  while (current) {
+    if (current.tagName === "A" || current.classList.contains("btn")) {
+      return true;
+    }
+    current = current.parentElement;
+  }
+  return false;
 }
 
 function detectClickableElement(event) {
-  const target = event.target;
-
-  // Check if element is an anchor tag or has .btn class
-  const isClickable =
-    target.tagName === "A" || target.classList.contains("btn");
-
-  // Also check parent elements in case of nested structure
-  let parent = target.parentElement;
-  let foundClickable = isClickable;
-
-  while (parent && !foundClickable) {
-    foundClickable = parent.tagName === "A" || parent.classList.contains("btn");
-    parent = parent.parentElement;
+  const nowClickable = isClickableTarget(event.target);
+  if (nowClickable !== isOverClickable) {
+    isOverClickable = nowClickable;
+    cursorDirty = true;
   }
-
-  const wasOverClickable = isOverClickable;
-  isOverClickable = foundClickable;
-
-  // Log state changes for debugging
-  if (wasOverClickable !== isOverClickable) {
-    console.log(
-      `Cursor ${isOverClickable ? "entered" : "left"} clickable element`,
-    );
-    updateCursor();
-  }
-
-  return isOverClickable;
 }
 
 function calculateCoordinates() {
@@ -69,72 +58,86 @@ function calculateCoordinates() {
 
 function updateCoordinates() {
   if (dom.coordinates) {
-    const coordText = calculateCoordinates();
-    const coordSpan = dom.coordinates.querySelector(".coord-text");
-    if (coordSpan) {
-      coordSpan.textContent = coordText;
+    if (dom.coordSpan) {
+      dom.coordSpan.textContent = calculateCoordinates();
     }
-
-    // Update transform for scroll offset
     dom.coordinates.style.transform = `translate(0, ${scrollY}px)`;
   }
 }
 
 function updateCursor() {
-  if (dom.cursor) {
-    let scale = 1;
-    let shadowSpread = 20;
-    if (isMouseDown) {
-      scale = 0.5;
-    } else if (isOverClickable) {
-      scale = 2.2;
-      shadowSpread = 5;
-    }
-    dom.cursor.style.transform = `translate(${mouse.x}px, ${mouse.y}px) scale(${scale})`;
-    dom.cursor.style.boxShadow = `0 0 ${shadowSpread}px rgba(255,255,255,1.0)`;
+  if (!dom.cursor) return;
+
+  let scale = 1;
+  let shadowSpread = 20;
+  if (isMouseDown) {
+    scale = 0.5;
+  } else if (isOverClickable) {
+    scale = 2.2;
+    shadowSpread = 5;
   }
+
+  dom.cursor.style.transform = `translate(${mouse.x}px, ${mouse.y}px) scale(${scale})`;
+  dom.cursor.style.boxShadow = `0 0 ${shadowSpread}px rgba(255,255,255,1.0)`;
 }
 
 function updateCursorTrail() {
-  if (dom.cursorTrail) {
-    let x = mouse.x;
-    let y = mouse.y;
-    if (isOverClickable || isMouseDown) {
-      x += 7;
-      y += 7;
-    }
-    dom.cursorTrail.style.transform = `translate(${x}px, ${y}px) scale(1)`;
+  if (!dom.cursorTrail) return;
+
+  let x = mouse.x;
+  let y = mouse.y;
+  if (isOverClickable || isMouseDown) {
+    x += 7;
+    y += 7;
   }
+  dom.cursorTrail.style.transform = `translate(${x}px, ${y}px) scale(1)`;
 }
+
+function renderFrame() {
+  if (cursorDirty) {
+    updateCursor();
+    updateCursorTrail();
+    updateCoordinates();
+    cursorDirty = false;
+  }
+  requestAnimationFrame(renderFrame);
+}
+
+requestAnimationFrame(renderFrame);
 
 window.addEventListener("mousemove", (event) => {
   mouse.x = event.clientX;
   mouse.y = event.clientY;
-  updateCursor();
-  updateCursorTrail();
-  updateCoordinates();
+  if (!cursorDirty) {
+    cursorDirty = true;
+  }
+});
+
+document.addEventListener("mouseover", (event) => {
   detectClickableElement(event);
 });
 
 window.addEventListener("scroll", () => {
   scrollY = window.pageYOffset;
-  updateCoordinates();
+  cursorDirty = true;
 });
 
+let resizeDebounce = null;
 window.addEventListener("resize", () => {
-  updateCoordinates();
+  if (resizeDebounce) clearTimeout(resizeDebounce);
+  resizeDebounce = setTimeout(() => {
+    cursorDirty = true;
+  }, 100);
 });
 
 window.addEventListener("mousedown", () => {
   isMouseDown = true;
-  updateCursor();
-  updateCursorTrail();
+  cursorDirty = true;
 });
 
 window.addEventListener("mouseup", () => {
   isMouseDown = false;
-  updateCursor();
-  updateCursorTrail();
+  cursorDirty = true;
 });
 
 let duration = 50;
@@ -174,13 +177,16 @@ const fadeInOut = (t, m) => {
 };
 const lerp = (a, b, t) => a + (b - a) * t;
 
-function createRenderingContext() {
-  const canvas = document.createElement("canvas");
-  const ctx = canvas.getContext("2d");
-  const buffer = document.createElement("canvas");
-  const bufferCtx = buffer.getContext("2d");
-
-  return { ctx, buffer: bufferCtx };
+// Reusable particle props buffer to avoid per-frame allocation
+let _particlePropsBuf = null;
+function getParticleProps(i, len) {
+  if (!_particlePropsBuf || _particlePropsBuf.length !== len) {
+    _particlePropsBuf = new Float32Array(len);
+  }
+  for (let j = 0; j < len; j++) {
+    _particlePropsBuf[j] = ather.particleProps[i + j];
+  }
+  return _particlePropsBuf;
 }
 
 // SimplexNoise implementation
@@ -393,11 +399,7 @@ function initAtherParticle(i) {
 }
 
 function drawAtherParticle(i) {
-  const props = new Float32Array(ather.particlePropCount);
-  for (let j = 0; j < ather.particlePropCount; j++) {
-    props[j] = ather.particleProps[i + j];
-  }
-
+  const props = getParticleProps(i, ather.particlePropCount);
   let [x, y, vx, vy, s, h, w, l, ttl] = props;
 
   const noiseSteps = 6;
@@ -414,15 +416,12 @@ function drawAtherParticle(i) {
 
   l++;
 
-  ather.bufferCtx.save();
   ather.bufferCtx.lineWidth = dl * w + 1;
   ather.bufferCtx.strokeStyle = c;
   ather.bufferCtx.beginPath();
   ather.bufferCtx.moveTo(x, y);
   ather.bufferCtx.lineTo(dx, dy);
   ather.bufferCtx.stroke();
-  ather.bufferCtx.closePath();
-  ather.bufferCtx.restore();
 
   ather.particleProps.set([dx, dy, vx, vy, s, h, w, l, ttl], i);
 
@@ -517,18 +516,9 @@ function startAtherAnimation() {
 function stopAtherAnimation() {
   ather.isAnimating = false;
 
-  // Remove opacity class for fade out effect
   if (ather.wrapper) {
     ather.wrapper.classList.remove("opacity-100");
   }
-
-  // Continue rendering for a bit to allow fade out to complete
-  setTimeout(() => {
-    if (!ather.isAnimating && ather.animationId) {
-      window.cancelAnimationFrame(ather.animationId);
-      ather.animationId = null;
-    }
-  }, 1000); // Match the CSS transition duration
 }
 
 function setupAther() {
@@ -584,4 +574,188 @@ window.addEventListener("resize", () => {
   if (ather.canvas) {
     resizeAther();
   }
+  if (starfield.canvas) {
+    resizeStarfield();
+  }
 });
+
+// ── Starfield Canvas ──────────────────────────────────────────────
+
+const twinkleColors = [
+  [180, 210, 255], // blue
+  [255, 180, 100], // orange
+  [255, 100, 95],  // red
+  [255, 230, 120], // yellow
+];
+
+const starfield = {
+  canvas: null,
+  ctx: null,
+  stars: null,
+  animId: null,
+  shineTex: null,
+};
+
+let prevMouse = { x: 0, y: 0 };
+let mouseSpeed = 0;
+let prevScroll = 0;
+let scrollSpeed = 0;
+const MAX_SPEED_MUL = 6;
+
+function createStarfield() {
+  const container = document.getElementById("starfield");
+  if (!container) return false;
+
+  starfield.canvas = document.createElement("canvas");
+  starfield.canvas.className = "absolute inset-0";
+  starfield.ctx = starfield.canvas.getContext("2d");
+  container.appendChild(starfield.canvas);
+
+  resizeStarfield();
+  initStars();
+  return true;
+}
+
+function resizeStarfield() {
+  if (!starfield.canvas) return;
+  const dpr = window.devicePixelRatio || 1;
+  starfield.canvas.width = window.innerWidth * dpr;
+  starfield.canvas.height = window.innerHeight * dpr;
+  starfield.canvas.style.width = window.innerWidth + "px";
+  starfield.canvas.style.height = window.innerHeight + "px";
+  starfield.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  createShineTexture();
+}
+
+function createShineTexture() {
+  const size = 64;
+  const tex = document.createElement("canvas");
+  tex.width = size;
+  tex.height = size;
+  const tctx = tex.getContext("2d");
+
+  const grad = tctx.createRadialGradient(
+    size / 2, size / 2, 0,
+    size / 2, size / 2, size / 2,
+  );
+  grad.addColorStop(0, "rgba(255,255,255,1)");
+  grad.addColorStop(0.04, "rgba(255,255,255,0.9)");
+  grad.addColorStop(0.15, "rgba(255,255,255,0.4)");
+  grad.addColorStop(0.4, "rgba(255,255,255,0.05)");
+  grad.addColorStop(1, "rgba(255,255,255,0)");
+
+  tctx.fillStyle = grad;
+  tctx.fillRect(0, 0, size, size);
+  starfield.shineTex = tex;
+}
+
+function initStars() {
+  const count = 250;
+  starfield.stars = new Float32Array(count * 8);
+  for (let i = 0; i < count; i++) {
+    const off = i * 8;
+    const angle = Math.random() * Math.PI * 2;
+    const baseSpeed = Math.random() * 0.08 + 0.02;
+    starfield.stars[off] = Math.random() * window.innerWidth;     // x
+    starfield.stars[off + 1] = Math.random() * window.innerHeight; // y
+    starfield.stars[off + 2] = Math.random() * 1.5 + 0.3;         // radius
+    starfield.stars[off + 3] = Math.random() * 0.5 + 0.3;         // base opacity
+    starfield.stars[off + 4] = Math.random() * Math.PI * 2;        // twinkle phase
+    starfield.stars[off + 5] = Math.cos(angle) * baseSpeed;        // dx
+    starfield.stars[off + 6] = Math.sin(angle) * baseSpeed;        // dy
+    starfield.stars[off + 7] = Math.floor(Math.random() * twinkleColors.length); // glow color
+  }
+}
+
+function drawStarfield() {
+  const ctx = starfield.ctx;
+  const stars = starfield.stars;
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+
+  ctx.clearRect(0, 0, w, h);
+
+  const now = performance.now() * 0.001;
+  const dt = Math.min(0.05, 1 / 60);
+
+  // Mouse velocity
+  const mdx = mouse.x - prevMouse.x;
+  const mdy = mouse.y - prevMouse.y;
+  mouseSpeed = mouseSpeed * 0.9 + Math.sqrt(mdx * mdx + mdy * mdy) * 0.1;
+  prevMouse.x = mouse.x;
+  prevMouse.y = mouse.y;
+
+  // Scroll velocity
+  const sdy = scrollY - prevScroll;
+  scrollSpeed = scrollSpeed * 0.9 + Math.abs(sdy) * 0.1;
+  prevScroll = scrollY;
+
+  const speedMul = Math.min(MAX_SPEED_MUL, 1 + (mouseSpeed + scrollSpeed) * 0.5);
+
+  const px = (mouse.x / w - 0.5) * 30;
+  const py = (mouse.y / h - 0.5) * 30;
+  const scrolled = scrollY * 0.3;
+
+  for (let i = 0; i < stars.length; i += 8) {
+    const x = stars[i];
+    const y = stars[i + 1];
+    const r = stars[i + 2];
+    const baseAlpha = stars[i + 3];
+    const phase = stars[i + 4];
+    const dx = stars[i + 5];
+    const dy = stars[i + 6];
+    const glowIdx = stars[i + 7];
+
+    const depth = r / 1.8;
+
+    // Move star
+    stars[i] = ((x + dx * speedMul * dt * 60) % w + w) % w;
+    stars[i + 1] = ((y + dy * speedMul * dt * 60) % h + h) % h;
+
+    const parallaxX = stars[i] + px * depth - scrolled * 0.1 * depth;
+    const parallaxY = stars[i + 1] + py * depth + scrolled * 0.15 * depth;
+
+    const sx = ((parallaxX % w) + w) % w;
+    const sy = ((parallaxY % h) + h) % h;
+
+    const twinkle = Math.sin(now * 2.0 + phase) * 0.3 + 0.7;
+    const alpha = baseAlpha * twinkle * depth;
+
+    // Shine texture as core
+    const tex = starfield.shineTex;
+    const coreSize = r * 6;
+    ctx.globalAlpha = alpha;
+    ctx.drawImage(tex, sx - coreSize / 2, sy - coreSize / 2, coreSize, coreSize);
+    ctx.globalAlpha = 1;
+
+    // Colored glow
+    if (r > 0.7) {
+      const glowPulse = Math.sin(now * 1.7 + phase + 1.2) * 0.4 + 0.6;
+      const glowAlpha = alpha * 0.04 * glowPulse;
+      const [cr, cg, cb] = twinkleColors[glowIdx];
+
+      ctx.beginPath();
+      ctx.arc(sx, sy, r * 4, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${cr},${cg},${cb},${glowAlpha.toFixed(3)})`;
+      ctx.fill();
+    }
+  }
+
+  starfield.animId = requestAnimationFrame(drawStarfield);
+}
+
+function startStarfield() {
+  if (createStarfield()) {
+    drawStarfield();
+  }
+}
+
+function checkStarfield() {
+  if (document.getElementById("starfield")) {
+    startStarfield();
+  } else {
+    setTimeout(checkStarfield, 100);
+  }
+}
+
+checkStarfield();

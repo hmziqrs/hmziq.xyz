@@ -22,8 +22,7 @@ pub fn HomeScreen() -> Element {
             class: "bg-black text-white overflow-x-hidden leading-relaxed min-h-screen cursor-none",
 
             Asteroids {}
-            // Canvas placeholder - will be implemented later
-            div { id: "space-canvas", class: "fixed inset-0 -z-10" }
+            div { id: "starfield", class: "fixed inset-0 z-0 pointer-events-none" }
             CursorGlow { }
             Coordinates { }
             // Sections

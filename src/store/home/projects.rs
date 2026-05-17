@@ -122,19 +122,17 @@ pub fn get_projects() -> Vec<Project> {
             number: 7,
         },
         Project {
-            title: "Personal CV".to_string(),
-            short_description: "Modern responsive CV website built with Rust Dioxus SSG".to_string(),
-            description: "A personal CV/portfolio website built with Rust and Dioxus framework featuring static site generation. Showcases modern web development with Rust, responsive design, and custom icon components for professional presentation.".to_string(),
-            tags: vec!["rust".to_string(), "rust-ssr".to_string(), "dioxus".to_string(), "dioxus-web".to_string(), "dioxus-icons".to_string(), "rust-front".to_string(), "dioxus-ssg".to_string(), "dioxus-simple".to_string()],
-            clean_tags: vec!["rust".to_string(), "dioxus".to_string(), "dioxus-web".to_string()],
+            title: "Claude Multi".to_string(),
+            short_description: "TypeScript CLI to manage multiple 3rd-party integrated Claude Code instances".to_string(),
+            description: "A TypeScript-based CLI tool for orchestrating and managing multiple Claude Code instances with third-party integrations. Enables parallel agent workflows, multi-instance coordination, and streamlined AI-assisted development across different Claude Code environments.".to_string(),
+            tags: vec!["typescript".to_string(), "cli".to_string(), "ai".to_string(), "multi-agent".to_string(), "claude".to_string(), "developer-tools".to_string()],
+            clean_tags: vec!["typescript".to_string(), "cli".to_string(), "ai".to_string(), "developer-tools".to_string()],
             stars: 1,
             forks: 0,
             icon: "◉".to_string(),
             links: {
                 let mut links = HashMap::new();
-                links.insert("github".to_string(), "https://github.com/hmziqrs/cv".to_string());
-                links.insert("live_demo".to_string(), "https://cv.hmziq.rs".to_string());
-                links.insert("portfolio".to_string(), "https://hmziq.rs".to_string());
+                links.insert("github".to_string(), "https://github.com/hmziqrs/claude-multi".to_string());
                 links
             },
             number: 8,
@@ -174,17 +172,17 @@ pub fn get_projects() -> Vec<Project> {
             number: 10,
         },
         Project {
-            title: "next-blog".to_string(),
-            short_description: "Next.js blog application bootstrapped with create-next-app".to_string(),
-            description: "A standard Next.js project created with create-next-app template for building blog applications. Uses TypeScript as primary language and follows Next.js conventions for server-side rendering and static site generation. Includes standard development commands and deployment recommendations.".to_string(),
-            tags: vec!["react".to_string(), "ssr".to_string(), "nextjs".to_string(), "react-ssg".to_string()],
-            clean_tags: vec!["web".to_string(), "react".to_string(), "ssr".to_string()],
+            title: "RuxLog".to_string(),
+            short_description: "Full-stack Rust blog platform with Axum and Dioxus".to_string(),
+            description: "A complete blogging platform built end-to-end in Rust, featuring an Axum backend with authentication, authorization, and CRUD operations for posts, categories, and tags. Pairs with a modern frontend for content management and publishing.".to_string(),
+            tags: vec!["rust".to_string(), "axum".to_string(), "ssr".to_string(), "blog".to_string(), "dioxus".to_string(), "fullstack".to_string()],
+            clean_tags: vec!["rust".to_string(), "fullstack".to_string(), "blog".to_string()],
             stars: 1,
             forks: 0,
             icon: "◇".to_string(),
             links: {
                 let mut links = HashMap::new();
-                links.insert("github".to_string(), "https://github.com/hmziqrs/next-blog".to_string());
+                links.insert("github".to_string(), "https://github.com/hmziqrs/ruxlog".to_string());
                 links
             },
             number: 11,
