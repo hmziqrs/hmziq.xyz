@@ -25,7 +25,7 @@ fn main() {
             dioxus::server::ServeConfig::builder()
                 // Enable incremental rendering
                 .incremental(
-                    dioxus_isrg::IncrementalRendererConfig::new()
+                    dioxus::server::IncrementalRendererConfig::new()
                         .static_dir(router::static_dir())
                         .clear_cache(false)
                         // .pre_render(true)

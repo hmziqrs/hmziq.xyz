@@ -1,37 +1,66 @@
 name: Daily GitHub Activity Update
 
 on:
-  # Run daily at midnight UTC
   schedule:
     - cron: '0 0 * * *'
-  
-  # Allow manual trigger
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
   actions: write
 
 jobs:
-  trigger-deploy:
+  update-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: Fetch GitHub activity data
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          bun scripts/github-activity.ts
+          if [ ! -f "assets/github-activity.json" ]; then
+            echo "❌ Failed to generate activity data"
+            exit 1
+          fi
+          echo "✅ Activity data fetched"
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet assets/github-activity.json; then
+            echo "No changes to activity data, skipping commit"
+          else
+            git add assets/github-activity.json
+            git commit -m "chore: update GitHub activity data [skip ci]"
+            git push origin master
+            echo "✅ Activity data committed and pushed"
+          fi
+
       - name: Trigger deploy workflow
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "Triggering deploy workflow to update GitHub activity..."
-          
-          # Trigger the deploy workflow using GitHub API
-          curl -X POST \
+          echo "Triggering deploy workflow..."
+          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
             -H "Accept: application/vnd.github+json" \
             -H "Authorization: Bearer $GITHUB_TOKEN" \
             -H "X-GitHub-Api-Version: 2022-11-28" \
             https://api.github.com/repos/${{ github.repository }}/actions/workflows/deploy.yml/dispatches \
-            -d '{"ref":"master"}'
-          
-          echo "✅ Deploy workflow triggered successfully"
-          echo "The site will be updated with the latest GitHub activity shortly."
+            -d '{"ref":"master"}')
+
+          if [ "$HTTP_CODE" != "204" ]; then
+            echo "❌ Failed to trigger deploy: HTTP $HTTP_CODE"
+            exit 1
+          fi
+
+          echo "✅ Deploy workflow triggered (HTTP 204)"
