@@ -1,5 +1,3 @@
-console.log("Hello World!");
-
 const cursorId = "cursor";
 const cursorTrailId = "cursor-trail";
 const coordinatesId = "coordinates";
@@ -8,50 +6,41 @@ let mouse = { x: 0, y: 0 };
 let scrollY = 0;
 let isOverClickable = false;
 let isMouseDown = false;
+let cursorDirty = false;
 
 let dom = {
   cursor: null,
   cursorTrail: null,
   coordinates: null,
-};
-let custom = {
-  cursor: null,
+  coordSpan: null,
 };
 
 function main() {
   dom.cursor = document.getElementById(cursorId);
   dom.cursorTrail = document.getElementById(cursorTrailId);
   dom.coordinates = document.getElementById(coordinatesId);
+  if (dom.coordinates) {
+    dom.coordSpan = dom.coordinates.querySelector(".coord-text");
+  }
+}
+
+function isClickableTarget(el) {
+  let current = el;
+  while (current) {
+    if (current.tagName === "A" || current.classList.contains("btn")) {
+      return true;
+    }
+    current = current.parentElement;
+  }
+  return false;
 }
 
 function detectClickableElement(event) {
-  const target = event.target;
-
-  // Check if element is an anchor tag or has .btn class
-  const isClickable =
-    target.tagName === "A" || target.classList.contains("btn");
-
-  // Also check parent elements in case of nested structure
-  let parent = target.parentElement;
-  let foundClickable = isClickable;
-
-  while (parent && !foundClickable) {
-    foundClickable = parent.tagName === "A" || parent.classList.contains("btn");
-    parent = parent.parentElement;
+  const nowClickable = isClickableTarget(event.target);
+  if (nowClickable !== isOverClickable) {
+    isOverClickable = nowClickable;
+    cursorDirty = true;
   }
-
-  const wasOverClickable = isOverClickable;
-  isOverClickable = foundClickable;
-
-  // Log state changes for debugging
-  if (wasOverClickable !== isOverClickable) {
-    console.log(
-      `Cursor ${isOverClickable ? "entered" : "left"} clickable element`,
-    );
-    updateCursor();
-  }
-
-  return isOverClickable;
 }
 
 function calculateCoordinates() {
@@ -69,72 +58,86 @@ function calculateCoordinates() {
 
 function updateCoordinates() {
   if (dom.coordinates) {
-    const coordText = calculateCoordinates();
-    const coordSpan = dom.coordinates.querySelector(".coord-text");
-    if (coordSpan) {
-      coordSpan.textContent = coordText;
+    if (dom.coordSpan) {
+      dom.coordSpan.textContent = calculateCoordinates();
     }
-
-    // Update transform for scroll offset
     dom.coordinates.style.transform = `translate(0, ${scrollY}px)`;
   }
 }
 
 function updateCursor() {
-  if (dom.cursor) {
-    let scale = 1;
-    let shadowSpread = 20;
-    if (isMouseDown) {
-      scale = 0.5;
-    } else if (isOverClickable) {
-      scale = 2.2;
-      shadowSpread = 5;
-    }
-    dom.cursor.style.transform = `translate(${mouse.x}px, ${mouse.y}px) scale(${scale})`;
-    dom.cursor.style.boxShadow = `0 0 ${shadowSpread}px rgba(255,255,255,1.0)`;
+  if (!dom.cursor) return;
+
+  let scale = 1;
+  let shadowSpread = 20;
+  if (isMouseDown) {
+    scale = 0.5;
+  } else if (isOverClickable) {
+    scale = 2.2;
+    shadowSpread = 5;
   }
+
+  dom.cursor.style.transform = `translate(${mouse.x}px, ${mouse.y}px) scale(${scale})`;
+  dom.cursor.style.boxShadow = `0 0 ${shadowSpread}px rgba(255,255,255,1.0)`;
 }
 
 function updateCursorTrail() {
-  if (dom.cursorTrail) {
-    let x = mouse.x;
-    let y = mouse.y;
-    if (isOverClickable || isMouseDown) {
-      x += 7;
-      y += 7;
-    }
-    dom.cursorTrail.style.transform = `translate(${x}px, ${y}px) scale(1)`;
+  if (!dom.cursorTrail) return;
+
+  let x = mouse.x;
+  let y = mouse.y;
+  if (isOverClickable || isMouseDown) {
+    x += 7;
+    y += 7;
   }
+  dom.cursorTrail.style.transform = `translate(${x}px, ${y}px) scale(1)`;
 }
+
+function renderFrame() {
+  if (cursorDirty) {
+    updateCursor();
+    updateCursorTrail();
+    updateCoordinates();
+    cursorDirty = false;
+  }
+  requestAnimationFrame(renderFrame);
+}
+
+requestAnimationFrame(renderFrame);
 
 window.addEventListener("mousemove", (event) => {
   mouse.x = event.clientX;
   mouse.y = event.clientY;
-  updateCursor();
-  updateCursorTrail();
-  updateCoordinates();
+  if (!cursorDirty) {
+    cursorDirty = true;
+  }
+});
+
+document.addEventListener("mouseover", (event) => {
   detectClickableElement(event);
 });
 
 window.addEventListener("scroll", () => {
   scrollY = window.pageYOffset;
-  updateCoordinates();
+  cursorDirty = true;
 });
 
+let resizeDebounce = null;
 window.addEventListener("resize", () => {
-  updateCoordinates();
+  if (resizeDebounce) clearTimeout(resizeDebounce);
+  resizeDebounce = setTimeout(() => {
+    cursorDirty = true;
+  }, 100);
 });
 
 window.addEventListener("mousedown", () => {
   isMouseDown = true;
-  updateCursor();
-  updateCursorTrail();
+  cursorDirty = true;
 });
 
 window.addEventListener("mouseup", () => {
   isMouseDown = false;
-  updateCursor();
-  updateCursorTrail();
+  cursorDirty = true;
 });
 
 let duration = 50;
@@ -174,13 +177,16 @@ const fadeInOut = (t, m) => {
 };
 const lerp = (a, b, t) => a + (b - a) * t;
 
-function createRenderingContext() {
-  const canvas = document.createElement("canvas");
-  const ctx = canvas.getContext("2d");
-  const buffer = document.createElement("canvas");
-  const bufferCtx = buffer.getContext("2d");
-
-  return { ctx, buffer: bufferCtx };
+// Reusable particle props buffer to avoid per-frame allocation
+let _particlePropsBuf = null;
+function getParticleProps(i, len) {
+  if (!_particlePropsBuf || _particlePropsBuf.length !== len) {
+    _particlePropsBuf = new Float32Array(len);
+  }
+  for (let j = 0; j < len; j++) {
+    _particlePropsBuf[j] = ather.particleProps[i + j];
+  }
+  return _particlePropsBuf;
 }
 
 // SimplexNoise implementation
@@ -393,11 +399,7 @@ function initAtherParticle(i) {
 }
 
 function drawAtherParticle(i) {
-  const props = new Float32Array(ather.particlePropCount);
-  for (let j = 0; j < ather.particlePropCount; j++) {
-    props[j] = ather.particleProps[i + j];
-  }
-
+  const props = getParticleProps(i, ather.particlePropCount);
   let [x, y, vx, vy, s, h, w, l, ttl] = props;
 
   const noiseSteps = 6;
