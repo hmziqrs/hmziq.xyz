@@ -5,12 +5,12 @@ pub fn CursorGlow() -> Element {
     rsx! {
         div {
             id: "cursor",
-            class: "fixed pointer-events-none z-[9999] rounded-full w-[20px] h-[20px] border border-white",
+            class: "fixed pointer-events-none z-[9999] rounded-full w-[20px] h-[20px] border border-white transition-transform duration-100 ease-out",
             style: "mix-blend-mode: difference; will-change: transform;",
         }
         div {
             id: "cursor-trail",
-            class: "fixed pointer-events-none z-[9999] rounded-full w-[6px] h-[6px] shadow-[0_0_10px_rgba(255,255,255,1.0)] bg-white",
+            class: "fixed pointer-events-none z-[9999] rounded-full w-[6px] h-[6px] shadow-[0_0_10px_rgba(255,255,255,1.0)] bg-white transition-transform duration-200 ease-out",
             style: "mix-blend-mode: difference; will-change: transform;",
         }
         // div {

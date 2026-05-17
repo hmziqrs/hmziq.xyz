@@ -416,15 +416,12 @@ function drawAtherParticle(i) {
 
   l++;
 
-  ather.bufferCtx.save();
   ather.bufferCtx.lineWidth = dl * w + 1;
   ather.bufferCtx.strokeStyle = c;
   ather.bufferCtx.beginPath();
   ather.bufferCtx.moveTo(x, y);
   ather.bufferCtx.lineTo(dx, dy);
   ather.bufferCtx.stroke();
-  ather.bufferCtx.closePath();
-  ather.bufferCtx.restore();
 
   ather.particleProps.set([dx, dy, vx, vy, s, h, w, l, ttl], i);
 
@@ -519,18 +516,9 @@ function startAtherAnimation() {
 function stopAtherAnimation() {
   ather.isAnimating = false;
 
-  // Remove opacity class for fade out effect
   if (ather.wrapper) {
     ather.wrapper.classList.remove("opacity-100");
   }
-
-  // Continue rendering for a bit to allow fade out to complete
-  setTimeout(() => {
-    if (!ather.isAnimating && ather.animationId) {
-      window.cancelAnimationFrame(ather.animationId);
-      ather.animationId = null;
-    }
-  }, 1000); // Match the CSS transition duration
 }
 
 function setupAther() {
