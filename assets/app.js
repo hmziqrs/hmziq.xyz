@@ -574,4 +574,115 @@ window.addEventListener("resize", () => {
   if (ather.canvas) {
     resizeAther();
   }
+  if (starfield.canvas) {
+    resizeStarfield();
+  }
 });
+
+// ── Starfield Canvas ──────────────────────────────────────────────
+
+const starfield = {
+  canvas: null,
+  ctx: null,
+  stars: null,
+  animId: null,
+};
+
+function createStarfield() {
+  const container = document.getElementById("starfield");
+  if (!container) return false;
+
+  starfield.canvas = document.createElement("canvas");
+  starfield.canvas.className = "absolute inset-0";
+  starfield.ctx = starfield.canvas.getContext("2d");
+  container.appendChild(starfield.canvas);
+
+  resizeStarfield();
+  initStars();
+  return true;
+}
+
+function resizeStarfield() {
+  if (!starfield.canvas) return;
+  const dpr = window.devicePixelRatio || 1;
+  starfield.canvas.width = window.innerWidth * dpr;
+  starfield.canvas.height = window.innerHeight * dpr;
+  starfield.canvas.style.width = window.innerWidth + "px";
+  starfield.canvas.style.height = window.innerHeight + "px";
+  starfield.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+}
+
+function initStars() {
+  const count = 250;
+  starfield.stars = new Float32Array(count * 5);
+  for (let i = 0; i < count; i++) {
+    const off = i * 5;
+    starfield.stars[off] = Math.random() * window.innerWidth;     // x
+    starfield.stars[off + 1] = Math.random() * window.innerHeight; // y
+    starfield.stars[off + 2] = Math.random() * 1.5 + 0.3;         // radius
+    starfield.stars[off + 3] = Math.random() * 0.5 + 0.3;         // base opacity
+    starfield.stars[off + 4] = Math.random() * Math.PI * 2;        // twinkle phase
+  }
+}
+
+function drawStarfield() {
+  const ctx = starfield.ctx;
+  const stars = starfield.stars;
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+
+  ctx.clearRect(0, 0, w, h);
+
+  const now = performance.now() * 0.001;
+  const px = (mouse.x / w - 0.5) * 20;
+  const py = (mouse.y / h - 0.5) * 20;
+  const scrolled = scrollY * 0.3;
+
+  for (let i = 0; i < stars.length; i += 5) {
+    const x = stars[i];
+    const y = stars[i + 1];
+    const r = stars[i + 2];
+    const baseAlpha = stars[i + 3];
+    const phase = stars[i + 4];
+
+    const depth = r / 1.8;
+    const parallaxX = x + px * depth - scrolled * 0.1 * depth;
+    const parallaxY = y + py * depth + scrolled * 0.15 * depth;
+
+    const sx = ((parallaxX % w) + w) % w;
+    const sy = ((parallaxY % h) + h) % h;
+
+    const twinkle = Math.sin(now * 1.5 + phase) * 0.15 + 0.85;
+    const alpha = baseAlpha * twinkle * depth;
+
+    ctx.beginPath();
+    ctx.arc(sx, sy, r, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(255,255,255,${alpha.toFixed(2)})`;
+    ctx.fill();
+
+    if (r > 1.0) {
+      ctx.beginPath();
+      ctx.arc(sx, sy, r * 2.5, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(255,255,255,${(alpha * 0.08).toFixed(3)})`;
+      ctx.fill();
+    }
+  }
+
+  starfield.animId = requestAnimationFrame(drawStarfield);
+}
+
+function startStarfield() {
+  if (createStarfield()) {
+    drawStarfield();
+  }
+}
+
+function checkStarfield() {
+  if (document.getElementById("starfield")) {
+    startStarfield();
+  } else {
+    setTimeout(checkStarfield, 100);
+  }
+}
+
+checkStarfield();
