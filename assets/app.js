@@ -581,12 +581,26 @@ window.addEventListener("resize", () => {
 
 // ── Starfield Canvas ──────────────────────────────────────────────
 
+const twinkleColors = [
+  [180, 210, 255], // blue
+  [255, 180, 100], // orange
+  [255, 100, 95],  // red
+  [255, 230, 120], // yellow
+];
+
 const starfield = {
   canvas: null,
   ctx: null,
   stars: null,
   animId: null,
+  shineTex: null,
 };
+
+let prevMouse = { x: 0, y: 0 };
+let mouseSpeed = 0;
+let prevScroll = 0;
+let scrollSpeed = 0;
+const MAX_SPEED_MUL = 6;
 
 function createStarfield() {
   const container = document.getElementById("starfield");
@@ -610,18 +624,46 @@ function resizeStarfield() {
   starfield.canvas.style.width = window.innerWidth + "px";
   starfield.canvas.style.height = window.innerHeight + "px";
   starfield.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  createShineTexture();
+}
+
+function createShineTexture() {
+  const size = 64;
+  const tex = document.createElement("canvas");
+  tex.width = size;
+  tex.height = size;
+  const tctx = tex.getContext("2d");
+
+  const grad = tctx.createRadialGradient(
+    size / 2, size / 2, 0,
+    size / 2, size / 2, size / 2,
+  );
+  grad.addColorStop(0, "rgba(255,255,255,1)");
+  grad.addColorStop(0.04, "rgba(255,255,255,0.9)");
+  grad.addColorStop(0.15, "rgba(255,255,255,0.4)");
+  grad.addColorStop(0.4, "rgba(255,255,255,0.05)");
+  grad.addColorStop(1, "rgba(255,255,255,0)");
+
+  tctx.fillStyle = grad;
+  tctx.fillRect(0, 0, size, size);
+  starfield.shineTex = tex;
 }
 
 function initStars() {
   const count = 250;
-  starfield.stars = new Float32Array(count * 5);
+  starfield.stars = new Float32Array(count * 8);
   for (let i = 0; i < count; i++) {
-    const off = i * 5;
+    const off = i * 8;
+    const angle = Math.random() * Math.PI * 2;
+    const baseSpeed = Math.random() * 0.08 + 0.02;
     starfield.stars[off] = Math.random() * window.innerWidth;     // x
     starfield.stars[off + 1] = Math.random() * window.innerHeight; // y
     starfield.stars[off + 2] = Math.random() * 1.5 + 0.3;         // radius
     starfield.stars[off + 3] = Math.random() * 0.5 + 0.3;         // base opacity
     starfield.stars[off + 4] = Math.random() * Math.PI * 2;        // twinkle phase
+    starfield.stars[off + 5] = Math.cos(angle) * baseSpeed;        // dx
+    starfield.stars[off + 6] = Math.sin(angle) * baseSpeed;        // dy
+    starfield.stars[off + 7] = Math.floor(Math.random() * twinkleColors.length); // glow color
   }
 }
 
@@ -634,36 +676,67 @@ function drawStarfield() {
   ctx.clearRect(0, 0, w, h);
 
   const now = performance.now() * 0.001;
-  const px = (mouse.x / w - 0.5) * 20;
-  const py = (mouse.y / h - 0.5) * 20;
+  const dt = Math.min(0.05, 1 / 60);
+
+  // Mouse velocity
+  const mdx = mouse.x - prevMouse.x;
+  const mdy = mouse.y - prevMouse.y;
+  mouseSpeed = mouseSpeed * 0.9 + Math.sqrt(mdx * mdx + mdy * mdy) * 0.1;
+  prevMouse.x = mouse.x;
+  prevMouse.y = mouse.y;
+
+  // Scroll velocity
+  const sdy = scrollY - prevScroll;
+  scrollSpeed = scrollSpeed * 0.9 + Math.abs(sdy) * 0.1;
+  prevScroll = scrollY;
+
+  const speedMul = Math.min(MAX_SPEED_MUL, 1 + (mouseSpeed + scrollSpeed) * 0.5);
+
+  const px = (mouse.x / w - 0.5) * 30;
+  const py = (mouse.y / h - 0.5) * 30;
   const scrolled = scrollY * 0.3;
 
-  for (let i = 0; i < stars.length; i += 5) {
+  for (let i = 0; i < stars.length; i += 8) {
     const x = stars[i];
     const y = stars[i + 1];
     const r = stars[i + 2];
     const baseAlpha = stars[i + 3];
     const phase = stars[i + 4];
+    const dx = stars[i + 5];
+    const dy = stars[i + 6];
+    const glowIdx = stars[i + 7];
 
     const depth = r / 1.8;
-    const parallaxX = x + px * depth - scrolled * 0.1 * depth;
-    const parallaxY = y + py * depth + scrolled * 0.15 * depth;
+
+    // Move star
+    stars[i] = ((x + dx * speedMul * dt * 60) % w + w) % w;
+    stars[i + 1] = ((y + dy * speedMul * dt * 60) % h + h) % h;
+
+    const parallaxX = stars[i] + px * depth - scrolled * 0.1 * depth;
+    const parallaxY = stars[i + 1] + py * depth + scrolled * 0.15 * depth;
 
     const sx = ((parallaxX % w) + w) % w;
     const sy = ((parallaxY % h) + h) % h;
 
-    const twinkle = Math.sin(now * 1.5 + phase) * 0.15 + 0.85;
+    const twinkle = Math.sin(now * 2.0 + phase) * 0.3 + 0.7;
     const alpha = baseAlpha * twinkle * depth;
 
-    ctx.beginPath();
-    ctx.arc(sx, sy, r, 0, Math.PI * 2);
-    ctx.fillStyle = `rgba(255,255,255,${alpha.toFixed(2)})`;
-    ctx.fill();
+    // Shine texture as core
+    const tex = starfield.shineTex;
+    const coreSize = r * 6;
+    ctx.globalAlpha = alpha;
+    ctx.drawImage(tex, sx - coreSize / 2, sy - coreSize / 2, coreSize, coreSize);
+    ctx.globalAlpha = 1;
 
-    if (r > 1.0) {
+    // Colored glow
+    if (r > 0.7) {
+      const glowPulse = Math.sin(now * 1.7 + phase + 1.2) * 0.4 + 0.6;
+      const glowAlpha = alpha * 0.04 * glowPulse;
+      const [cr, cg, cb] = twinkleColors[glowIdx];
+
       ctx.beginPath();
-      ctx.arc(sx, sy, r * 2.5, 0, Math.PI * 2);
-      ctx.fillStyle = `rgba(255,255,255,${(alpha * 0.08).toFixed(3)})`;
+      ctx.arc(sx, sy, r * 4, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${cr},${cg},${cb},${glowAlpha.toFixed(3)})`;
       ctx.fill();
     }
   }
