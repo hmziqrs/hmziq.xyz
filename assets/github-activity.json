@@ -12,70 +12,120 @@
     {
       "type": "PushEvent",
       "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-17T21:45:50Z",
+      "createdAt": "2026-05-18T13:57:59Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/cv",
+      "createdAt": "2026-05-18T13:16:32Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "ReleaseEvent",
+      "repo": "hmziqrs/cv",
+      "createdAt": "2026-05-18T13:10:51Z"
+    },
+    {
+      "type": "ReleaseEvent",
+      "repo": "hmziqrs/cv",
+      "createdAt": "2026-05-18T13:10:46Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/cv",
+      "createdAt": "2026-05-18T13:08:17Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/cv",
+      "createdAt": "2026-05-18T13:02:42Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-17T21:29:24Z",
+      "createdAt": "2026-05-18T12:08:52Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-17T21:25:51Z",
+      "repo": "hmziqrs/cv",
+      "createdAt": "2026-05-18T12:00:47Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-17T21:08:10Z",
+      "repo": "hmziqrs/hmziq.rs",
+      "createdAt": "2026-05-18T11:59:03Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-17T21:04:07Z",
+      "repo": "hmziqrs/hmziq.rs",
+      "createdAt": "2026-05-18T11:53:33Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-17T20:48:45Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-17T20:47:02Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-17T20:38:08Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-17T19:45:43Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/hmziq.xyz",
-      "createdAt": "2026-05-17T15:11:39Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "flutter-ui-designs",
+      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
+      "language": "Dart",
+      "stars": 331,
+      "url": "https://github.com/hmziqrs/flutter-ui-designs",
+      "topics": [
+        "animations",
+        "cross-platform",
+        "dart",
+        "desktop-app",
+        "flutter",
+        "flutter-animations",
+        "flutter-app",
+        "flutter-apps",
+        "flutter-design",
+        "flutter-desktop",
+        "flutter-examples",
+        "flutter-web",
+        "offline-first",
+        "parallax",
+        "parallax-scrolling",
+        "ui-design",
+        "web-application"
+      ]
+    },
     {
       "name": "blog",
       "description": "blog",
       "language": "TypeScript",
       "stars": 0,
       "url": "https://github.com/hmziqrs/blog",
+      "topics": []
+    },
+    {
+      "name": "cv",
+      "description": "Personal CV build with dioxus SSG",
+      "language": "Rust",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/cv",
+      "topics": [
+        "dioxus",
+        "dioxus-icons",
+        "dioxus-simple",
+        "dioxus-ssg",
+        "dioxus-web",
+        "rust",
+        "rust-front",
+        "rust-ssr"
+      ]
+    },
+    {
+      "name": "hmziq.rs",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.rs",
       "topics": []
     },
     {
@@ -99,50 +149,12 @@
         "rust",
         "wasm"
       ]
-    },
-    {
-      "name": "claude-multi",
-      "description": "A tool to have multiple claude-code instance with different configs",
-      "language": "TypeScript",
-      "stars": 11,
-      "url": "https://github.com/hmziqrs/claude-multi",
-      "topics": [
-        "calude",
-        "claude-ai",
-        "claude-code"
-      ]
-    },
-    {
-      "name": "codex-glm",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/codex-glm",
-      "topics": []
-    },
-    {
-      "name": "invmovieconcept1",
-      "description": "True Cross platform UI design featuring complex scroll based animations powered by flutter",
-      "language": "Dart",
-      "stars": 63,
-      "url": "https://github.com/hmziqrs/invmovieconcept1",
-      "topics": [
-        "aneesh",
-        "concept",
-        "flutter",
-        "flutter-animation",
-        "flutter-desktop",
-        "flutter-examples",
-        "hacktoberfest",
-        "hacktoberfest2020",
-        "macos"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 3874,
+    "totalContributions": 3906,
     "calendar": {
-      "totalContributions": 3874,
+      "totalContributions": 3906,
       "weeks": [
         {
           "contributionDays": [
@@ -2180,14 +2192,19 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 17,
+              "contributionCount": 49,
               "date": "2026-05-18",
-              "color": "#9be9a8"
+              "color": "#40c463"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-05-19",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-05-18T00:23:42.449Z"
+  "lastUpdated": "2026-05-19T00:26:41.353Z"
 }
