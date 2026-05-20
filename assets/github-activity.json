@@ -11,69 +11,82 @@
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-18T13:57:59Z",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-19T23:03:45Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/cv",
-      "createdAt": "2026-05-18T13:16:32Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "ReleaseEvent",
-      "repo": "hmziqrs/cv",
-      "createdAt": "2026-05-18T13:10:51Z"
-    },
-    {
-      "type": "ReleaseEvent",
-      "repo": "hmziqrs/cv",
-      "createdAt": "2026-05-18T13:10:46Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/cv",
-      "createdAt": "2026-05-18T13:08:17Z",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-19T23:02:38Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/cv",
-      "createdAt": "2026-05-18T13:02:42Z",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-19T22:58:40Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-19T22:57:59Z"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-19T22:57:52Z",
+      "action": "merged"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-19T22:57:53Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-19T22:57:43Z",
+      "action": "opened"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-19T22:57:31Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-18T12:08:52Z",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-19T22:57:01Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/cv",
-      "createdAt": "2026-05-18T12:00:47Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/hmziq.rs",
-      "createdAt": "2026-05-18T11:59:03Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/hmziq.rs",
-      "createdAt": "2026-05-18T11:53:33Z",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-19T22:42:37Z",
       "message": "Pushed commits"
     }
   ],
   "topRepositories": [
     {
+      "name": "claude-multi",
+      "description": "A tool to have multiple claude-code instance with different configs",
+      "language": "TypeScript",
+      "stars": 12,
+      "url": "https://github.com/hmziqrs/claude-multi",
+      "topics": [
+        "calude",
+        "claude-ai",
+        "claude-code"
+      ]
+    },
+    {
       "name": "flutter-ui-designs",
       "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
       "language": "Dart",
-      "stars": 331,
+      "stars": 332,
       "url": "https://github.com/hmziqrs/flutter-ui-designs",
       "topics": [
         "animations",
@@ -94,6 +107,14 @@
         "ui-design",
         "web-application"
       ]
+    },
+    {
+      "name": "hmziq.xyz",
+      "description": null,
+      "language": "HTML",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": []
     },
     {
       "name": "blog",
@@ -127,34 +148,12 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/hmziq.rs",
       "topics": []
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": null,
-      "language": "HTML",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": []
-    },
-    {
-      "name": "ruxlog",
-      "description": "A full stack blog in dioxus",
-      "language": "Rust",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/ruxlog",
-      "topics": [
-        "dioxus",
-        "dioxus-fullstack",
-        "dioxus-web",
-        "rust",
-        "wasm"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 3906,
+    "totalContributions": 3953,
     "calendar": {
-      "totalContributions": 3906,
+      "totalContributions": 3953,
       "weeks": [
         {
           "contributionDays": [
@@ -2187,24 +2186,29 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 21,
+              "contributionCount": 28,
               "date": "2026-05-17",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 49,
-              "date": "2026-05-18",
               "color": "#40c463"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 60,
+              "date": "2026-05-18",
+              "color": "#30a14e"
+            },
+            {
+              "contributionCount": 11,
               "date": "2026-05-19",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 18,
+              "date": "2026-05-20",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-05-19T00:26:41.353Z"
+  "lastUpdated": "2026-05-20T00:27:34.227Z"
 }
