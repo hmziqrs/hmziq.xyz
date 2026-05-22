@@ -5,10 +5,22 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 99,
-    "publicRepos": 77,
+    "publicRepos": 78,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-21T21:23:45Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-21T21:22:34Z",
+      "message": "Pushed commits"
+    },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/claude-multi",
@@ -55,18 +67,6 @@
       "type": "DeleteEvent",
       "repo": "hmziqrs/claude-multi",
       "createdAt": "2026-05-19T22:57:59Z"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-19T22:57:52Z",
-      "action": "merged"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-19T22:57:53Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
@@ -81,6 +81,14 @@
         "claude-ai",
         "claude-code"
       ]
+    },
+    {
+      "name": "opengrammar",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/opengrammar",
+      "topics": []
     },
     {
       "name": "hmziq.xyz",
@@ -140,20 +148,12 @@
         "rust-front",
         "rust-ssr"
       ]
-    },
-    {
-      "name": "hmziq.rs",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.rs",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 3962,
+    "totalContributions": 3976,
     "calendar": {
-      "totalContributions": 3962,
+      "totalContributions": 3976,
       "weeks": [
         {
           "contributionDays": [
@@ -2206,14 +2206,19 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 5,
               "date": "2026-05-21",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 9,
+              "date": "2026-05-22",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-05-21T00:27:36.730Z"
+  "lastUpdated": "2026-05-22T00:25:50.735Z"
 }
