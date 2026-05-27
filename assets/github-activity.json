@@ -5,91 +5,122 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 99,
-    "publicRepos": 77,
+    "publicRepos": 78,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-24T22:19:57Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-24T21:44:52Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-24T21:37:13Z",
+      "repo": "hmziqrs/vibekit",
+      "createdAt": "2026-05-27T00:23:37Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-24T21:34:18Z",
+      "createdAt": "2026-05-27T00:10:07Z",
       "message": "Pushed commits"
     },
     {
-      "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-24T21:24:30Z",
-      "message": "Pushed commits"
+      "type": "PublicEvent",
+      "repo": "hmziqrs/gpui-boilerplate",
+      "createdAt": "2026-04-10T14:07:42Z"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-05-24T21:23:03Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-23T19:09:55Z",
+      "repo": "hmziqrs/vibekit",
+      "createdAt": "2026-05-26T22:16:25Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-23T19:07:06Z",
+      "createdAt": "2026-05-26T21:13:58Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-23T18:43:53Z",
+      "repo": "hmziqrs/vibekit",
+      "createdAt": "2026-05-26T19:30:48Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
+      "repo": "hmziqrs/vibekit",
+      "createdAt": "2026-05-26T16:24:54Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/vibekit",
+      "createdAt": "2026-05-26T15:05:44Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/vibekit",
+      "createdAt": "2026-05-26T14:56:11Z",
+      "action": "created branch",
+      "message": "master"
+    },
+    {
+      "type": "PushEvent",
       "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-23T18:41:25Z",
+      "createdAt": "2026-05-26T10:10:07Z",
       "message": "Pushed commits"
     }
   ],
   "topRepositories": [
     {
-      "name": "hmziq.xyz",
+      "name": "vibekit",
       "description": null,
-      "language": "HTML",
+      "language": "TypeScript",
       "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "url": "https://github.com/hmziqrs/vibekit",
       "topics": []
     },
     {
       "name": "claude-multi",
-      "description": "A tool to have multiple claude-code instance with different configs",
+      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
       "language": "TypeScript",
-      "stars": 12,
+      "stars": 14,
       "url": "https://github.com/hmziqrs/claude-multi",
       "topics": [
         "calude",
         "claude-ai",
-        "claude-code"
+        "claude-code",
+        "deepseek",
+        "deepseek-api",
+        "deepseek-v4",
+        "deepseek-v4-flash",
+        "deepseek-v4-pro",
+        "glm-5-1",
+        "glm-5-turbo",
+        "minimax",
+        "minimax-agent"
       ]
+    },
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
+    {
+      "name": "gpui-boilerplate",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/gpui-boilerplate",
+      "topics": []
     },
     {
       "name": "blog",
@@ -124,37 +155,12 @@
         "ui-design",
         "web-application"
       ]
-    },
-    {
-      "name": "cv",
-      "description": "Personal CV build with dioxus SSG",
-      "language": "Rust",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/cv",
-      "topics": [
-        "dioxus",
-        "dioxus-icons",
-        "dioxus-simple",
-        "dioxus-ssg",
-        "dioxus-web",
-        "rust",
-        "rust-front",
-        "rust-ssr"
-      ]
-    },
-    {
-      "name": "hmziq.rs",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.rs",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 3956,
+    "totalContributions": 4613,
     "calendar": {
-      "totalContributions": 3956,
+      "totalContributions": 4613,
       "weeks": [
         {
           "contributionDays": [
@@ -230,7 +236,7 @@
             {
               "contributionCount": 41,
               "date": "2025-06-07",
-              "color": "#40c463"
+              "color": "#9be9a8"
             }
           ]
         },
@@ -376,7 +382,7 @@
             {
               "contributionCount": 31,
               "date": "2025-07-03",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 13,
@@ -522,7 +528,7 @@
             {
               "contributionCount": 26,
               "date": "2025-07-29",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 2,
@@ -595,7 +601,7 @@
             {
               "contributionCount": 40,
               "date": "2025-08-11",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 13,
@@ -1044,12 +1050,12 @@
             {
               "contributionCount": 75,
               "date": "2025-10-31",
-              "color": "#30a14e"
+              "color": "#40c463"
             },
             {
               "contributionCount": 75,
               "date": "2025-11-01",
-              "color": "#30a14e"
+              "color": "#40c463"
             }
           ]
         },
@@ -1073,17 +1079,17 @@
             {
               "contributionCount": 34,
               "date": "2025-11-05",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 32,
               "date": "2025-11-06",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 41,
               "date": "2025-11-07",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 13,
@@ -1102,17 +1108,17 @@
             {
               "contributionCount": 56,
               "date": "2025-11-10",
-              "color": "#30a14e"
+              "color": "#40c463"
             },
             {
               "contributionCount": 53,
               "date": "2025-11-11",
-              "color": "#30a14e"
+              "color": "#40c463"
             },
             {
               "contributionCount": 44,
               "date": "2025-11-12",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 12,
@@ -1146,12 +1152,12 @@
             {
               "contributionCount": 29,
               "date": "2025-11-18",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 86,
               "date": "2025-11-19",
-              "color": "#216e39"
+              "color": "#40c463"
             },
             {
               "contributionCount": 22,
@@ -1185,7 +1191,7 @@
             {
               "contributionCount": 38,
               "date": "2025-11-25",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 2,
@@ -1195,7 +1201,7 @@
             {
               "contributionCount": 33,
               "date": "2025-11-27",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 1,
@@ -1380,7 +1386,7 @@
             {
               "contributionCount": 39,
               "date": "2025-12-30",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 2,
@@ -1458,7 +1464,7 @@
             {
               "contributionCount": 45,
               "date": "2026-01-13",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 144,
@@ -1473,7 +1479,7 @@
             {
               "contributionCount": 29,
               "date": "2026-01-16",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 0,
@@ -1497,12 +1503,12 @@
             {
               "contributionCount": 32,
               "date": "2026-01-20",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 27,
               "date": "2026-01-21",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 2,
@@ -1531,12 +1537,12 @@
             {
               "contributionCount": 34,
               "date": "2026-01-26",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 30,
               "date": "2026-01-27",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 12,
@@ -1887,7 +1893,7 @@
             {
               "contributionCount": 26,
               "date": "2026-03-31",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 7,
@@ -1929,24 +1935,24 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 9,
+              "contributionCount": 12,
               "date": "2026-04-08",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 5,
+              "contributionCount": 7,
               "date": "2026-04-09",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 32,
+              "contributionCount": 41,
               "date": "2026-04-10",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 42,
               "date": "2026-04-11",
-              "color": "#40c463"
+              "color": "#9be9a8"
             }
           ]
         },
@@ -1955,7 +1961,7 @@
             {
               "contributionCount": 27,
               "date": "2026-04-12",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 15,
@@ -1973,17 +1979,17 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 52,
+              "contributionCount": 67,
               "date": "2026-04-16",
-              "color": "#30a14e"
+              "color": "#40c463"
             },
             {
-              "contributionCount": 18,
+              "contributionCount": 31,
               "date": "2026-04-17",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 19,
+              "contributionCount": 28,
               "date": "2026-04-18",
               "color": "#9be9a8"
             }
@@ -1992,37 +1998,37 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 19,
+              "contributionCount": 27,
               "date": "2026-04-19",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 32,
+              "contributionCount": 49,
               "date": "2026-04-20",
               "color": "#40c463"
             },
             {
-              "contributionCount": 32,
+              "contributionCount": 43,
               "date": "2026-04-21",
-              "color": "#40c463"
-            },
-            {
-              "contributionCount": 16,
-              "date": "2026-04-22",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 42,
+              "contributionCount": 54,
+              "date": "2026-04-22",
+              "color": "#40c463"
+            },
+            {
+              "contributionCount": 66,
               "date": "2026-04-23",
               "color": "#40c463"
             },
             {
-              "contributionCount": 24,
+              "contributionCount": 36,
               "date": "2026-04-24",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 18,
+              "contributionCount": 23,
               "date": "2026-04-25",
               "color": "#9be9a8"
             }
@@ -2031,7 +2037,7 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 18,
+              "contributionCount": 29,
               "date": "2026-04-26",
               "color": "#9be9a8"
             },
@@ -2046,22 +2052,22 @@
               "color": "#ebedf0"
             },
             {
-              "contributionCount": 18,
+              "contributionCount": 23,
               "date": "2026-04-29",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 30,
+              "contributionCount": 43,
               "date": "2026-04-30",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
-              "contributionCount": 51,
+              "contributionCount": 61,
               "date": "2026-05-01",
               "color": "#40c463"
             },
             {
-              "contributionCount": 10,
+              "contributionCount": 15,
               "date": "2026-05-02",
               "color": "#9be9a8"
             }
@@ -2080,17 +2086,17 @@
               "color": "#ebedf0"
             },
             {
-              "contributionCount": 13,
+              "contributionCount": 16,
               "date": "2026-05-05",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 20,
+              "contributionCount": 27,
               "date": "2026-05-06",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 48,
+              "contributionCount": 61,
               "date": "2026-05-07",
               "color": "#40c463"
             },
@@ -2100,7 +2106,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 2,
+              "contributionCount": 7,
               "date": "2026-05-09",
               "color": "#9be9a8"
             }
@@ -2109,37 +2115,37 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 12,
+              "contributionCount": 15,
               "date": "2026-05-10",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 48,
+              "contributionCount": 74,
               "date": "2026-05-11",
               "color": "#40c463"
             },
             {
-              "contributionCount": 103,
+              "contributionCount": 185,
               "date": "2026-05-12",
               "color": "#216e39"
             },
             {
-              "contributionCount": 16,
+              "contributionCount": 82,
               "date": "2026-05-13",
-              "color": "#9be9a8"
+              "color": "#40c463"
             },
             {
-              "contributionCount": 89,
+              "contributionCount": 141,
               "date": "2026-05-14",
               "color": "#216e39"
             },
             {
-              "contributionCount": 64,
+              "contributionCount": 183,
               "date": "2026-05-15",
-              "color": "#30a14e"
+              "color": "#216e39"
             },
             {
-              "contributionCount": 29,
+              "contributionCount": 68,
               "date": "2026-05-16",
               "color": "#40c463"
             }
@@ -2148,14 +2154,14 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 28,
+              "contributionCount": 29,
               "date": "2026-05-17",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 60,
               "date": "2026-05-18",
-              "color": "#30a14e"
+              "color": "#40c463"
             },
             {
               "contributionCount": 11,
@@ -2165,7 +2171,7 @@
             {
               "contributionCount": 28,
               "date": "2026-05-20",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 5,
@@ -2175,12 +2181,12 @@
             {
               "contributionCount": 30,
               "date": "2026-05-22",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
-              "contributionCount": 28,
+              "contributionCount": 29,
               "date": "2026-05-23",
-              "color": "#40c463"
+              "color": "#9be9a8"
             }
           ]
         },
@@ -2192,19 +2198,24 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 12,
+              "contributionCount": 15,
               "date": "2026-05-25",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 14,
               "date": "2026-05-26",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 13,
+              "date": "2026-05-27",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-05-26T00:25:13.485Z"
+  "lastUpdated": "2026-05-27T00:27:09.569Z"
 }
