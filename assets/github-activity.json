@@ -4,86 +4,77 @@
     "name": "hmziq",
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
-    "followers": 99,
+    "followers": 100,
     "publicRepos": 78,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
     {
+      "type": "WatchEvent",
+      "repo": "run-llama/liteparse",
+      "createdAt": "2026-05-27T21:09:56Z",
+      "action": "starred"
+    },
+    {
       "type": "PushEvent",
-      "repo": "hmziqrs/vibekit",
-      "createdAt": "2026-05-27T00:23:37Z",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-27T19:52:14Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-27T00:10:07Z",
+      "createdAt": "2026-05-27T19:44:17Z",
       "message": "Pushed commits"
     },
     {
-      "type": "PublicEvent",
+      "type": "DeleteEvent",
       "repo": "hmziqrs/gpui-boilerplate",
-      "createdAt": "2026-04-10T14:07:42Z"
+      "createdAt": "2026-05-27T19:17:54Z"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/vibekit",
-      "createdAt": "2026-05-26T22:16:25Z",
+      "repo": "hmziqrs/gpui-boilerplate",
+      "createdAt": "2026-05-27T19:17:51Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/gpui-boilerplate",
+      "createdAt": "2026-05-27T19:17:50Z",
+      "action": "merged"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/gpui-boilerplate",
+      "createdAt": "2026-05-27T19:17:41Z",
+      "action": "opened"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-boilerplate",
+      "createdAt": "2026-05-27T19:14:28Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-boilerplate",
+      "createdAt": "2026-05-27T18:58:47Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-26T21:13:58Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/vibekit",
-      "createdAt": "2026-05-26T19:30:48Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/vibekit",
-      "createdAt": "2026-05-26T16:24:54Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/vibekit",
-      "createdAt": "2026-05-26T15:05:44Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/vibekit",
-      "createdAt": "2026-05-26T14:56:11Z",
-      "action": "created branch",
-      "message": "master"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-26T10:10:07Z",
+      "createdAt": "2026-05-27T16:23:01Z",
       "message": "Pushed commits"
     }
   ],
   "topRepositories": [
     {
-      "name": "vibekit",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/vibekit",
-      "topics": []
-    },
-    {
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
       "language": "TypeScript",
-      "stars": 14,
+      "stars": 15,
       "url": "https://github.com/hmziqrs/claude-multi",
       "topics": [
         "calude",
@@ -101,6 +92,29 @@
       ]
     },
     {
+      "name": "gpui-boilerplate",
+      "description": "GPUI starter boilerplate",
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/gpui-boilerplate",
+      "topics": [
+        "desktop-app",
+        "gpui",
+        "gpui-component",
+        "native",
+        "native-desktop-app",
+        "rust-lang"
+      ]
+    },
+    {
+      "name": "vibekit",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/vibekit",
+      "topics": []
+    },
+    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -113,14 +127,6 @@
         "rust",
         "rustlang"
       ]
-    },
-    {
-      "name": "gpui-boilerplate",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/gpui-boilerplate",
-      "topics": []
     },
     {
       "name": "blog",
@@ -158,9 +164,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 4613,
+    "totalContributions": 4672,
     "calendar": {
-      "totalContributions": 4613,
+      "totalContributions": 4672,
       "weeks": [
         {
           "contributionDays": [
@@ -2208,8 +2214,13 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 13,
+              "contributionCount": 63,
               "date": "2026-05-27",
+              "color": "#40c463"
+            },
+            {
+              "contributionCount": 9,
+              "date": "2026-05-28",
               "color": "#9be9a8"
             }
           ]
@@ -2217,5 +2228,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-05-27T00:27:09.569Z"
+  "lastUpdated": "2026-05-28T00:24:37.382Z"
 }
