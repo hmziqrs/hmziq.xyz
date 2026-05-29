@@ -10,62 +10,64 @@
   },
   "recentActivity": [
     {
-      "type": "WatchEvent",
-      "repo": "run-llama/liteparse",
-      "createdAt": "2026-05-27T21:09:56Z",
-      "action": "starred"
+      "type": "IssueCommentEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-28T21:27:09Z"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-27T19:52:14Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-27T19:44:17Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/gpui-boilerplate",
-      "createdAt": "2026-05-27T19:17:54Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-boilerplate",
-      "createdAt": "2026-05-27T19:17:51Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/gpui-boilerplate",
-      "createdAt": "2026-05-27T19:17:50Z",
-      "action": "merged"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/gpui-boilerplate",
-      "createdAt": "2026-05-27T19:17:41Z",
-      "action": "opened"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-boilerplate",
-      "createdAt": "2026-05-27T19:14:28Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-boilerplate",
-      "createdAt": "2026-05-27T18:58:47Z",
+      "createdAt": "2026-05-28T20:57:08Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-27T16:23:01Z",
+      "createdAt": "2026-05-28T20:30:21Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-28T20:29:39Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "IssuesEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-28T19:54:32Z",
+      "action": "opened",
+      "message": "3rd party API provider no longer working with Claude Code v2.1.154"
+    },
+    {
+      "type": "IssuesEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-28T19:54:03Z",
+      "action": "assigned",
+      "message": "3rd party API provider no longer working with Claude Code v2.1.154"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-28T14:43:38Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-28T14:31:41Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-boilerplate",
+      "createdAt": "2026-05-28T14:23:16Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-boilerplate",
+      "createdAt": "2026-05-28T09:36:50Z",
       "message": "Pushed commits"
     }
   ],
@@ -74,7 +76,7 @@
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
       "language": "TypeScript",
-      "stars": 15,
+      "stars": 20,
       "url": "https://github.com/hmziqrs/claude-multi",
       "topics": [
         "calude",
@@ -87,8 +89,11 @@
         "deepseek-v4-pro",
         "glm-5-1",
         "glm-5-turbo",
+        "mimo-v25",
+        "mimo-v25-pro",
         "minimax",
-        "minimax-agent"
+        "minimax-agent",
+        "xiaomi-mimo"
       ]
     },
     {
@@ -107,14 +112,6 @@
       ]
     },
     {
-      "name": "vibekit",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/vibekit",
-      "topics": []
-    },
-    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -127,6 +124,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "vibekit",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/vibekit",
+      "topics": []
     },
     {
       "name": "blog",
@@ -164,9 +169,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 4672,
+    "totalContributions": 4710,
     "calendar": {
-      "totalContributions": 4672,
+      "totalContributions": 4710,
       "weeks": [
         {
           "contributionDays": [
@@ -2219,8 +2224,13 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 9,
+              "contributionCount": 37,
               "date": "2026-05-28",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 10,
+              "date": "2026-05-29",
               "color": "#9be9a8"
             }
           ]
@@ -2228,5 +2238,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-05-28T00:24:37.382Z"
+  "lastUpdated": "2026-05-29T00:28:54.347Z"
 }
