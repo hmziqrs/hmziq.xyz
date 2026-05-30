@@ -10,6 +10,35 @@
   },
   "recentActivity": [
     {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-29T17:40:29Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-29T13:38:53Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-29T12:31:21Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-29T12:27:50Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "IssueCommentEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-05-29T11:30:16Z"
+    },
+    {
       "type": "IssueCommentEvent",
       "repo": "hmziqrs/claude-multi",
       "createdAt": "2026-05-28T21:27:09Z"
@@ -38,45 +67,28 @@
       "createdAt": "2026-05-28T19:54:32Z",
       "action": "opened",
       "message": "3rd party API provider no longer working with Claude Code v2.1.154"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-28T19:54:03Z",
-      "action": "assigned",
-      "message": "3rd party API provider no longer working with Claude Code v2.1.154"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-28T14:43:38Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-28T14:31:41Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-boilerplate",
-      "createdAt": "2026-05-28T14:23:16Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-boilerplate",
-      "createdAt": "2026-05-28T09:36:50Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
     {
+      "name": "ruxlog",
+      "description": "A full stack blog in dioxus",
+      "language": "Rust",
+      "stars": 2,
+      "url": "https://github.com/hmziqrs/ruxlog",
+      "topics": [
+        "dioxus",
+        "dioxus-fullstack",
+        "dioxus-web",
+        "rust",
+        "wasm"
+      ]
+    },
+    {
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
       "language": "TypeScript",
-      "stars": 20,
+      "stars": 22,
       "url": "https://github.com/hmziqrs/claude-multi",
       "topics": [
         "calude",
@@ -97,6 +109,20 @@
       ]
     },
     {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
+    {
       "name": "gpui-boilerplate",
       "description": "GPUI starter boilerplate",
       "language": "Rust",
@@ -109,20 +135,6 @@
         "native",
         "native-desktop-app",
         "rust-lang"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -140,38 +152,12 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/blog",
       "topics": []
-    },
-    {
-      "name": "flutter-ui-designs",
-      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
-      "language": "Dart",
-      "stars": 332,
-      "url": "https://github.com/hmziqrs/flutter-ui-designs",
-      "topics": [
-        "animations",
-        "cross-platform",
-        "dart",
-        "desktop-app",
-        "flutter",
-        "flutter-animations",
-        "flutter-app",
-        "flutter-apps",
-        "flutter-design",
-        "flutter-desktop",
-        "flutter-examples",
-        "flutter-web",
-        "offline-first",
-        "parallax",
-        "parallax-scrolling",
-        "ui-design",
-        "web-application"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 4710,
+    "totalContributions": 4753,
     "calendar": {
-      "totalContributions": 4710,
+      "totalContributions": 4753,
       "weeks": [
         {
           "contributionDays": [
@@ -2224,13 +2210,18 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 37,
+              "contributionCount": 42,
               "date": "2026-05-28",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 10,
+              "contributionCount": 42,
               "date": "2026-05-29",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 6,
+              "date": "2026-05-30",
               "color": "#9be9a8"
             }
           ]
@@ -2238,5 +2229,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-05-29T00:28:54.347Z"
+  "lastUpdated": "2026-05-30T00:26:20.075Z"
 }
