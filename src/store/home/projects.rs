@@ -179,6 +179,7 @@ pub fn get_projects() -> Vec<Project> {
                 links: {
                     let mut links = HashMap::new();
                     links.insert("github".to_string(), "https://github.com/hmziqrs/claude-multi".to_string());
+                    links.insert("live".to_string(), "https://claude-multi.hmziq.xyz/".to_string());
                     links
                 },
                 number: 8,
