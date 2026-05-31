@@ -12,6 +12,12 @@
     {
       "type": "PushEvent",
       "repo": "hmziqrs/gpui-starter",
+      "createdAt": "2026-05-31T01:26:09Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-starter",
       "createdAt": "2026-05-30T22:57:17Z",
       "message": "Pushed commits"
     },
@@ -61,11 +67,6 @@
       "type": "IssueCommentEvent",
       "repo": "hmziqrs/claude-multi",
       "createdAt": "2026-05-29T11:30:16Z"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-05-28T21:27:09Z"
     }
   ],
   "topRepositories": [
@@ -86,6 +87,20 @@
         "native",
         "native-desktop-app",
         "rust-lang"
+      ]
+    },
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
       ]
     },
     {
@@ -110,20 +125,6 @@
         "minimax",
         "minimax-agent",
         "xiaomi-mimo"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -158,9 +159,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 4791,
+    "totalContributions": 4738,
     "calendar": {
-      "totalContributions": 4791,
+      "totalContributions": 4738,
       "weeks": [
         {
           "contributionDays": [
@@ -711,12 +712,12 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 24,
+              "contributionCount": 23,
               "date": "2025-09-07",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 14,
+              "contributionCount": 15,
               "date": "2025-09-08",
               "color": "#9be9a8"
             },
@@ -877,14 +878,14 @@
               "color": "#ebedf0"
             },
             {
-              "contributionCount": 20,
+              "contributionCount": 0,
               "date": "2025-10-07",
-              "color": "#9be9a8"
+              "color": "#ebedf0"
             },
             {
-              "contributionCount": 21,
+              "contributionCount": 0,
               "date": "2025-10-08",
-              "color": "#9be9a8"
+              "color": "#ebedf0"
             },
             {
               "contributionCount": 0,
@@ -1014,7 +1015,7 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 75,
+              "contributionCount": 74,
               "date": "2025-11-01",
               "color": "#40c463"
             }
@@ -1023,7 +1024,7 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 7,
+              "contributionCount": 8,
               "date": "2025-11-02",
               "color": "#9be9a8"
             },
@@ -1072,12 +1073,12 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 53,
+              "contributionCount": 52,
               "date": "2025-11-11",
               "color": "#40c463"
             },
             {
-              "contributionCount": 44,
+              "contributionCount": 45,
               "date": "2025-11-12",
               "color": "#9be9a8"
             },
@@ -2091,12 +2092,12 @@
               "color": "#216e39"
             },
             {
-              "contributionCount": 82,
+              "contributionCount": 81,
               "date": "2026-05-13",
               "color": "#40c463"
             },
             {
-              "contributionCount": 141,
+              "contributionCount": 142,
               "date": "2026-05-14",
               "color": "#216e39"
             },
@@ -2135,12 +2136,12 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 5,
+              "contributionCount": 3,
               "date": "2026-05-21",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 30,
+              "contributionCount": 32,
               "date": "2026-05-22",
               "color": "#9be9a8"
             },
@@ -2164,7 +2165,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 14,
+              "contributionCount": 13,
               "date": "2026-05-26",
               "color": "#9be9a8"
             },
@@ -2174,7 +2175,7 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 44,
+              "contributionCount": 42,
               "date": "2026-05-28",
               "color": "#9be9a8"
             },
@@ -2184,7 +2185,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 33,
+              "contributionCount": 23,
               "date": "2026-05-30",
               "color": "#9be9a8"
             }
@@ -2193,7 +2194,7 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 6,
+              "contributionCount": 7,
               "date": "2026-05-31",
               "color": "#9be9a8"
             }
@@ -2202,5 +2203,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-05-31T00:26:52.246Z"
+  "lastUpdated": "2026-05-31T01:46:59.098Z"
 }

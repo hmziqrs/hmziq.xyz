@@ -14,8 +14,8 @@
  *   GITHUB_TOKEN=your_token_here bun run scripts/github-activity.ts
  */
 
-import { writeFileSync } from "fs";
-import { join } from "path";
+import { writeFileSync } from "node:fs";
+import { join } from "node:path";
 
 const GITHUB_USERNAME = "hmziqrs";
 const OUTPUT_FILE = join("assets", "github-activity.json");
