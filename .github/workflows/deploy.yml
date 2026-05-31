@@ -87,6 +87,20 @@ jobs:
             exit 1
           fi
 
+      - name: Fetch project stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          echo "Fetching project stats..."
+          bun scripts/project-stats.ts
+
+          if [ -f "assets/project-stats.json" ]; then
+            echo "✅ Project stats successfully fetched"
+          else
+            echo "❌ Error: Project stats file not found"
+            exit 1
+          fi
+
       - name: Build static site
         run: |
           dx build --release

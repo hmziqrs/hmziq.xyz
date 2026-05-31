@@ -31,7 +31,7 @@ pub fn ProjectCard(props: ProjectCardProps) -> Element {
                 "{props.project.title}"
             }
 
-            // Stars and Forks
+            // Stars, Forks, Last Commit
             div {
                 class: "flex gap-4 mb-4 text-xs opacity-60",
                 span {
@@ -42,6 +42,12 @@ pub fn ProjectCard(props: ProjectCardProps) -> Element {
                     span {
                         class: "flex items-center gap-1",
                         "⎇ {props.project.forks}"
+                    }
+                }
+                if !props.project.last_commit.is_empty() && props.project.last_commit != "unknown" {
+                    span {
+                        class: "flex items-center gap-1",
+                        "⟳ {props.project.last_commit}"
                     }
                 }
             }

@@ -9,6 +9,7 @@ pub struct Project {
     pub clean_tags: Vec<String>,
     pub stars: usize,
     pub forks: usize,
+    pub last_commit: String,
     pub icon: String,
     pub links: HashMap<String, String>,
     pub number: usize,

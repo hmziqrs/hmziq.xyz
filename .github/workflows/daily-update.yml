@@ -32,18 +32,29 @@ jobs:
           fi
           echo "✅ Activity data fetched"
 
+      - name: Fetch project stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          bun scripts/project-stats.ts
+          if [ ! -f "assets/project-stats.json" ]; then
+            echo "❌ Failed to generate project stats"
+            exit 1
+          fi
+          echo "✅ Project stats fetched"
+
       - name: Commit and push updated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet assets/github-activity.json; then
-            echo "No changes to activity data, skipping commit"
+          if git diff --quiet assets/github-activity.json assets/project-stats.json; then
+            echo "No changes to data files, skipping commit"
           else
-            git add assets/github-activity.json
-            git commit -m "chore: update GitHub activity data [skip ci]"
+            git add assets/github-activity.json assets/project-stats.json
+            git commit -m "chore: update GitHub activity and project stats [skip ci]"
             git push origin master
-            echo "✅ Activity data committed and pushed"
+            echo "✅ Data committed and pushed"
           fi
 
       - name: Trigger deploy workflow
