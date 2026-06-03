@@ -5,92 +5,72 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 100,
-    "publicRepos": 78,
+    "publicRepos": 79,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-06-01T21:10:43Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "WatchEvent",
-      "repo": "Far-Beyond-Pulsar/WGPUI",
-      "createdAt": "2026-06-01T20:42:09Z",
-      "action": "starred"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-06-01T16:58:39Z",
-      "action": "closed",
-      "message": "3rd party API provider no longer working with Claude Code v2.1.154"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-06-01T16:48:46Z",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-03T00:11:30Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-06-01T16:15:41Z",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-03T00:04:16Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-06-01T00:24:17Z",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-03T00:00:58Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-02T23:53:15Z",
+      "action": "merged"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-02T23:53:22Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-02T23:53:16Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-05-31T22:27:09Z",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-02T23:50:44Z",
       "message": "Pushed commits"
     },
     {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-05-31T20:40:23Z",
-      "message": "Pushed commits"
+      "type": "PullRequestEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-02T23:38:16Z",
+      "action": "opened"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/hmziq.xyz",
-      "createdAt": "2026-05-31T14:58:03Z",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-02T23:39:28Z",
       "message": "Pushed commits"
     },
     {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-05-31T01:26:09Z",
-      "message": "Pushed commits"
+      "type": "CreateEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-02T23:36:28Z",
+      "action": "created branch",
+      "message": "feat/sveltekit-deploy"
     }
   ],
   "topRepositories": [
-    {
-      "name": "gpui-starter",
-      "description": "GPUI starter boilerplate",
-      "language": "Rust",
-      "stars": 3,
-      "url": "https://github.com/hmziqrs/gpui-starter",
-      "topics": [
-        "boilerplate",
-        "desktop-app",
-        "gpui",
-        "gpui-boilerplate",
-        "gpui-component",
-        "gpui-starter",
-        "gpui-starter-kit",
-        "native",
-        "native-desktop-app",
-        "rust-lang"
-      ]
-    },
     {
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
@@ -116,6 +96,24 @@
       ]
     },
     {
+      "name": "llmproxy",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/llmproxy",
+      "topics": []
+    },
+    {
+      "name": "gandalf-sax",
+      "description": "Behold the glory of epic infinite gandalf",
+      "language": "Dart",
+      "stars": 2,
+      "url": "https://github.com/hmziqrs/gandalf-sax",
+      "topics": [
+        "gandalf"
+      ]
+    },
+    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -127,6 +125,25 @@
         "dioxus-web",
         "rust",
         "rustlang"
+      ]
+    },
+    {
+      "name": "gpui-starter",
+      "description": "GPUI starter boilerplate",
+      "language": "Rust",
+      "stars": 3,
+      "url": "https://github.com/hmziqrs/gpui-starter",
+      "topics": [
+        "boilerplate",
+        "desktop-app",
+        "gpui",
+        "gpui-boilerplate",
+        "gpui-component",
+        "gpui-starter",
+        "gpui-starter-kit",
+        "native",
+        "native-desktop-app",
+        "rust-lang"
       ]
     },
     {
@@ -142,28 +159,12 @@
         "rust",
         "wasm"
       ]
-    },
-    {
-      "name": "vibekit",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/vibekit",
-      "topics": []
-    },
-    {
-      "name": "blog",
-      "description": "blog",
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/blog",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 4927,
+    "totalContributions": 4966,
     "calendar": {
-      "totalContributions": 4927,
+      "totalContributions": 4966,
       "weeks": [
         {
           "contributionDays": [
@@ -2201,13 +2202,18 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 59,
+              "contributionCount": 60,
               "date": "2026-06-01",
               "color": "#40c463"
             },
             {
-              "contributionCount": 6,
+              "contributionCount": 30,
               "date": "2026-06-02",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 14,
+              "date": "2026-06-03",
               "color": "#9be9a8"
             }
           ]
@@ -2215,5 +2221,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-06-02T00:32:09.706Z"
+  "lastUpdated": "2026-06-03T00:36:44.767Z"
 }
