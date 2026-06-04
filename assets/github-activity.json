@@ -5,10 +5,34 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 100,
-    "publicRepos": 79,
+    "publicRepos": 80,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-06-03T02:10:04Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-06-03T02:03:32Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-06-03T01:50:39Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-03T01:48:31Z",
+      "message": "Pushed commits"
+    },
     {
       "type": "PushEvent",
       "repo": "freeoxide/website",
@@ -43,34 +67,41 @@
       "repo": "freeoxide/website",
       "createdAt": "2026-06-02T23:53:16Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/website",
-      "createdAt": "2026-06-02T23:50:44Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "freeoxide/website",
-      "createdAt": "2026-06-02T23:38:16Z",
-      "action": "opened"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/website",
-      "createdAt": "2026-06-02T23:39:28Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "freeoxide/website",
-      "createdAt": "2026-06-02T23:36:28Z",
-      "action": "created branch",
-      "message": "feat/sveltekit-deploy"
     }
   ],
   "topRepositories": [
+    {
+      "name": "gpui-query",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/gpui-query",
+      "topics": []
+    },
+    {
+      "name": "gandalf-sax",
+      "description": "Behold the glory of epic infinite gandalf",
+      "language": "Dart",
+      "stars": 2,
+      "url": "https://github.com/hmziqrs/gandalf-sax",
+      "topics": [
+        "cross-platform",
+        "gandalf",
+        "gandalf-github",
+        "gandalf-sax",
+        "lotr",
+        "macos",
+        "macos-app",
+        "ntp-safe",
+        "ntp-synchronization",
+        "sax",
+        "saxophone",
+        "svelete",
+        "svelete5",
+        "sveletekit",
+        "website"
+      ]
+    },
     {
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
@@ -96,24 +127,6 @@
       ]
     },
     {
-      "name": "llmproxy",
-      "description": null,
-      "language": null,
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/llmproxy",
-      "topics": []
-    },
-    {
-      "name": "gandalf-sax",
-      "description": "Behold the glory of epic infinite gandalf",
-      "language": "Dart",
-      "stars": 2,
-      "url": "https://github.com/hmziqrs/gandalf-sax",
-      "topics": [
-        "gandalf"
-      ]
-    },
-    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -126,6 +139,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "llmproxy",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/llmproxy",
+      "topics": []
     },
     {
       "name": "gpui-starter",
@@ -145,26 +166,12 @@
         "native-desktop-app",
         "rust-lang"
       ]
-    },
-    {
-      "name": "ruxlog",
-      "description": "A full stack blog in dioxus",
-      "language": "Rust",
-      "stars": 2,
-      "url": "https://github.com/hmziqrs/ruxlog",
-      "topics": [
-        "dioxus",
-        "dioxus-fullstack",
-        "dioxus-web",
-        "rust",
-        "wasm"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 4966,
+    "totalContributions": 4998,
     "calendar": {
-      "totalContributions": 4966,
+      "totalContributions": 4998,
       "weeks": [
         {
           "contributionDays": [
@@ -2207,19 +2214,24 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 30,
+              "contributionCount": 38,
               "date": "2026-06-02",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 14,
+              "contributionCount": 38,
               "date": "2026-06-03",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-06-04",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-03T00:36:44.767Z"
+  "lastUpdated": "2026-06-04T00:37:08.827Z"
 }
