@@ -11,6 +11,18 @@
   "recentActivity": [
     {
       "type": "PushEvent",
+      "repo": "hmziqrs/blog",
+      "createdAt": "2026-06-05T02:54:38Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-starter",
+      "createdAt": "2026-06-05T00:20:08Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
       "repo": "hmziqrs/gpui-starter",
       "createdAt": "2026-06-04T14:24:57Z",
       "message": "Pushed commits"
@@ -56,20 +68,31 @@
       "repo": "freeoxide/website",
       "createdAt": "2026-06-03T00:00:58Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "freeoxide/website",
-      "createdAt": "2026-06-02T23:53:15Z",
-      "action": "merged"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "freeoxide/website",
-      "createdAt": "2026-06-02T23:53:22Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "blog",
+      "description": "blog",
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/blog",
+      "topics": []
+    },
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
     {
       "name": "gpui-starter",
       "description": "GPUI starter boilerplate",
@@ -87,20 +110,6 @@
         "native",
         "native-desktop-app",
         "rust-lang"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -158,20 +167,12 @@
         "minimax-agent",
         "xiaomi-mimo"
       ]
-    },
-    {
-      "name": "llmproxy",
-      "description": null,
-      "language": null,
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/llmproxy",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 5081,
+    "totalContributions": 5096,
     "calendar": {
-      "totalContributions": 5081,
+      "totalContributions": 5096,
       "weeks": [
         {
           "contributionDays": [
@@ -2170,7 +2171,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 15,
+              "contributionCount": 17,
               "date": "2026-05-25",
               "color": "#9be9a8"
             },
@@ -2214,14 +2215,14 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 44,
+              "contributionCount": 49,
               "date": "2026-06-02",
-              "color": "#9be9a8"
+              "color": "#40c463"
             },
             {
-              "contributionCount": 43,
+              "contributionCount": 46,
               "date": "2026-06-03",
-              "color": "#9be9a8"
+              "color": "#40c463"
             },
             {
               "contributionCount": 59,
@@ -2229,14 +2230,19 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 13,
+              "contributionCount": 18,
               "date": "2026-06-05",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-06-06",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-05T00:29:03.142Z"
+  "lastUpdated": "2026-06-06T00:27:45.000Z"
 }
