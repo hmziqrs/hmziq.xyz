@@ -4,7 +4,7 @@
     "name": "hmziq",
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
-    "followers": 100,
+    "followers": 101,
     "publicRepos": 80,
     "profileUrl": "https://github.com/hmziqrs"
   },
@@ -72,14 +72,6 @@
   ],
   "topRepositories": [
     {
-      "name": "blog",
-      "description": "blog",
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/blog",
-      "topics": []
-    },
-    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -92,6 +84,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "blog",
+      "description": "blog",
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/blog",
+      "topics": []
     },
     {
       "name": "gpui-starter",
@@ -174,45 +174,6 @@
     "calendar": {
       "totalContributions": 5096,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 1,
-              "date": "2025-06-01",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 4,
-              "date": "2025-06-02",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-06-03",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-06-04",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-06-05",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 22,
-              "date": "2025-06-06",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 41,
-              "date": "2025-06-07",
-              "color": "#9be9a8"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2240,9 +2201,18 @@
               "color": "#ebedf0"
             }
           ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 0,
+              "date": "2026-06-07",
+              "color": "#ebedf0"
+            }
+          ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-06T00:27:45.000Z"
+  "lastUpdated": "2026-06-07T00:28:25.433Z"
 }
