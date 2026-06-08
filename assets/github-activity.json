@@ -72,6 +72,25 @@
   ],
   "topRepositories": [
     {
+      "name": "gpui-starter",
+      "description": "GPUI starter boilerplate",
+      "language": "Rust",
+      "stars": 4,
+      "url": "https://github.com/hmziqrs/gpui-starter",
+      "topics": [
+        "boilerplate",
+        "desktop-app",
+        "gpui",
+        "gpui-boilerplate",
+        "gpui-component",
+        "gpui-starter",
+        "gpui-starter-kit",
+        "native",
+        "native-desktop-app",
+        "rust-lang"
+      ]
+    },
+    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -92,25 +111,6 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/blog",
       "topics": []
-    },
-    {
-      "name": "gpui-starter",
-      "description": "GPUI starter boilerplate",
-      "language": "Rust",
-      "stars": 3,
-      "url": "https://github.com/hmziqrs/gpui-starter",
-      "topics": [
-        "boilerplate",
-        "desktop-app",
-        "gpui",
-        "gpui-boilerplate",
-        "gpui-component",
-        "gpui-starter",
-        "gpui-starter-kit",
-        "native",
-        "native-desktop-app",
-        "rust-lang"
-      ]
     },
     {
       "name": "gpui-query",
@@ -170,9 +170,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 5096,
+    "totalContributions": 5028,
     "calendar": {
-      "totalContributions": 5096,
+      "totalContributions": 5028,
       "weeks": [
         {
           "contributionDays": [
@@ -2208,11 +2208,16 @@
               "contributionCount": 0,
               "date": "2026-06-07",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-06-08",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-07T00:28:25.433Z"
+  "lastUpdated": "2026-06-08T00:29:40.968Z"
 }
