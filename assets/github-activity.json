@@ -4,7 +4,7 @@
     "name": "hmziq",
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
-    "followers": 101,
+    "followers": 102,
     "publicRepos": 80,
     "profileUrl": "https://github.com/hmziqrs"
   },
@@ -75,7 +75,7 @@
       "name": "gpui-starter",
       "description": "GPUI starter boilerplate",
       "language": "Rust",
-      "stars": 4,
+      "stars": 5,
       "url": "https://github.com/hmziqrs/gpui-starter",
       "topics": [
         "boilerplate",
@@ -88,6 +88,32 @@
         "native",
         "native-desktop-app",
         "rust-lang"
+      ]
+    },
+    {
+      "name": "flutter-ui-designs",
+      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
+      "language": "Dart",
+      "stars": 331,
+      "url": "https://github.com/hmziqrs/flutter-ui-designs",
+      "topics": [
+        "animations",
+        "cross-platform",
+        "dart",
+        "desktop-app",
+        "flutter",
+        "flutter-animations",
+        "flutter-app",
+        "flutter-apps",
+        "flutter-design",
+        "flutter-desktop",
+        "flutter-examples",
+        "flutter-web",
+        "offline-first",
+        "parallax",
+        "parallax-scrolling",
+        "ui-design",
+        "web-application"
       ]
     },
     {
@@ -142,30 +168,6 @@
         "svelete5",
         "sveletekit",
         "website"
-      ]
-    },
-    {
-      "name": "claude-multi",
-      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
-      "language": "TypeScript",
-      "stars": 22,
-      "url": "https://github.com/hmziqrs/claude-multi",
-      "topics": [
-        "calude",
-        "claude-ai",
-        "claude-code",
-        "deepseek",
-        "deepseek-api",
-        "deepseek-v4",
-        "deepseek-v4-flash",
-        "deepseek-v4-pro",
-        "glm-5-1",
-        "glm-5-turbo",
-        "mimo-v25",
-        "mimo-v25-pro",
-        "minimax",
-        "minimax-agent",
-        "xiaomi-mimo"
       ]
     }
   ],
@@ -2218,11 +2220,16 @@
               "contributionCount": 4,
               "date": "2026-06-09",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-06-10",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-09T00:24:35.124Z"
+  "lastUpdated": "2026-06-10T00:31:08.125Z"
 }
