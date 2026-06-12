@@ -72,6 +72,20 @@
   ],
   "topRepositories": [
     {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
+    {
       "name": "blog",
       "description": "blog",
       "language": "TypeScript",
@@ -101,20 +115,6 @@
         "minimax",
         "minimax-agent",
         "xiaomi-mimo"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -2230,11 +2230,16 @@
               "contributionCount": 4,
               "date": "2026-06-11",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-06-12",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-11T00:32:42.294Z"
+  "lastUpdated": "2026-06-12T00:32:44.084Z"
 }
