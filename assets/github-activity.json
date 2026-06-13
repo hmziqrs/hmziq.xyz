@@ -11,87 +11,113 @@
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-06-10T22:48:13Z",
+      "repo": "hmziqrs/hmziq.rs",
+      "createdAt": "2026-06-12T22:07:15Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-06-10T22:42:18Z",
+      "repo": "hmziqrs/hmziq.rs",
+      "createdAt": "2026-06-12T21:37:12Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-12T21:24:49Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-12T21:24:35Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-06-10T22:33:47Z",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-12T21:22:01Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-06-08T22:27:25Z",
+      "repo": "hmziqrs/ruxlog",
+      "createdAt": "2026-06-12T21:06:56Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-06-08T21:27:51Z",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-12T21:05:31Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-06-08T19:37:22Z",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-12T20:52:48Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-06-05T02:54:38Z",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-12T20:41:50Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-06-05T00:20:08Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-06-04T14:24:57Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-06-03T02:10:04Z",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-12T20:41:00Z",
       "message": "Pushed commits"
     }
   ],
   "topRepositories": [
     {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
+      "name": "hmziq.rs",
+      "description": null,
+      "language": "TypeScript",
       "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "url": "https://github.com/hmziqrs/hmziq.rs",
+      "topics": []
+    },
+    {
+      "name": "gpui-query",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/gpui-query",
+      "topics": []
+    },
+    {
+      "name": "ruxlog",
+      "description": "A full stack blog in dioxus",
+      "language": "Rust",
+      "stars": 2,
+      "url": "https://github.com/hmziqrs/ruxlog",
       "topics": [
         "dioxus",
-        "dioxus-router",
+        "dioxus-fullstack",
         "dioxus-web",
         "rust",
-        "rustlang"
+        "wasm"
       ]
     },
     {
-      "name": "blog",
-      "description": "blog",
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/blog",
-      "topics": []
+      "name": "gpui-starter",
+      "description": "GPUI starter boilerplate",
+      "language": "Rust",
+      "stars": 5,
+      "url": "https://github.com/hmziqrs/gpui-starter",
+      "topics": [
+        "boilerplate",
+        "desktop-app",
+        "gpui",
+        "gpui-boilerplate",
+        "gpui-component",
+        "gpui-starter",
+        "gpui-starter-kit",
+        "native",
+        "native-desktop-app",
+        "rust-lang"
+      ]
     },
     {
       "name": "claude-multi",
@@ -118,63 +144,24 @@
       ]
     },
     {
-      "name": "gpui-starter",
-      "description": "GPUI starter boilerplate",
-      "language": "Rust",
-      "stars": 5,
-      "url": "https://github.com/hmziqrs/gpui-starter",
-      "topics": [
-        "boilerplate",
-        "desktop-app",
-        "gpui",
-        "gpui-boilerplate",
-        "gpui-component",
-        "gpui-starter",
-        "gpui-starter-kit",
-        "native",
-        "native-desktop-app",
-        "rust-lang"
-      ]
-    },
-    {
-      "name": "flutter-ui-designs",
-      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
-      "language": "Dart",
-      "stars": 331,
-      "url": "https://github.com/hmziqrs/flutter-ui-designs",
-      "topics": [
-        "animations",
-        "cross-platform",
-        "dart",
-        "desktop-app",
-        "flutter",
-        "flutter-animations",
-        "flutter-app",
-        "flutter-apps",
-        "flutter-design",
-        "flutter-desktop",
-        "flutter-examples",
-        "flutter-web",
-        "offline-first",
-        "parallax",
-        "parallax-scrolling",
-        "ui-design",
-        "web-application"
-      ]
-    },
-    {
-      "name": "gpui-query",
-      "description": null,
-      "language": null,
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
       "stars": 0,
-      "url": "https://github.com/hmziqrs/gpui-query",
-      "topics": []
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
     }
   ],
   "contributions": {
-    "totalContributions": 5042,
+    "totalContributions": 5181,
     "calendar": {
-      "totalContributions": 5042,
+      "totalContributions": 5181,
       "weeks": [
         {
           "contributionDays": [
@@ -2178,7 +2165,7 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 49,
+              "contributionCount": 64,
               "date": "2026-06-02",
               "color": "#40c463"
             },
@@ -2188,19 +2175,19 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 59,
+              "contributionCount": 77,
               "date": "2026-06-04",
               "color": "#40c463"
             },
             {
-              "contributionCount": 20,
+              "contributionCount": 39,
               "date": "2026-06-05",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 2,
               "date": "2026-06-06",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
             }
           ]
         },
@@ -2217,29 +2204,34 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 4,
+              "contributionCount": 8,
               "date": "2026-06-09",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 3,
+              "contributionCount": 18,
               "date": "2026-06-10",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 4,
+              "contributionCount": 13,
               "date": "2026-06-11",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 46,
               "date": "2026-06-12",
-              "color": "#ebedf0"
+              "color": "#40c463"
+            },
+            {
+              "contributionCount": 11,
+              "date": "2026-06-13",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-12T00:32:44.084Z"
+  "lastUpdated": "2026-06-13T00:32:43.412Z"
 }
