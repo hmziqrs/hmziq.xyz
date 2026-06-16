@@ -71,14 +71,6 @@
   ],
   "topRepositories": [
     {
-      "name": "gpui-query",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/gpui-query",
-      "topics": []
-    },
-    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -91,6 +83,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "gpui-query",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/gpui-query",
+      "topics": []
     },
     {
       "name": "claude-multi",
@@ -2202,11 +2202,16 @@
               "contributionCount": 0,
               "date": "2026-06-15",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-06-16",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-15T00:31:35.921Z"
+  "lastUpdated": "2026-06-16T00:37:13.466Z"
 }
