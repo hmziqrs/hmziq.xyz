@@ -12,6 +12,12 @@
     {
       "type": "PushEvent",
       "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-16T22:30:55Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-query",
       "createdAt": "2026-06-14T14:56:30Z",
       "message": "Pushed commits"
     },
@@ -61,15 +67,43 @@
       "repo": "hmziqrs/gpui-query",
       "createdAt": "2026-06-12T21:24:35Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-12T21:22:01Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
+    {
+      "name": "gpui-query",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/gpui-query",
+      "topics": []
+    },
+    {
+      "name": "flutter-ui-designs",
+      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
+      "language": "Dart",
+      "stars": 332,
+      "url": "https://github.com/hmziqrs/flutter-ui-designs",
+      "topics": [
+        "animations",
+        "cross-platform",
+        "dart",
+        "desktop-app",
+        "flutter",
+        "flutter-animations",
+        "flutter-app",
+        "flutter-apps",
+        "flutter-design",
+        "flutter-desktop",
+        "flutter-examples",
+        "flutter-web",
+        "offline-first",
+        "parallax",
+        "parallax-scrolling",
+        "ui-design",
+        "web-application"
+      ]
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -83,14 +117,6 @@
         "rust",
         "rustlang"
       ]
-    },
-    {
-      "name": "gpui-query",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/gpui-query",
-      "topics": []
     },
     {
       "name": "claude-multi",
@@ -137,31 +163,12 @@
         "rust",
         "wasm"
       ]
-    },
-    {
-      "name": "gpui-starter",
-      "description": "GPUI starter boilerplate",
-      "language": "Rust",
-      "stars": 5,
-      "url": "https://github.com/hmziqrs/gpui-starter",
-      "topics": [
-        "boilerplate",
-        "desktop-app",
-        "gpui",
-        "gpui-boilerplate",
-        "gpui-component",
-        "gpui-starter",
-        "gpui-starter-kit",
-        "native",
-        "native-desktop-app",
-        "rust-lang"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 5127,
+    "totalContributions": 5128,
     "calendar": {
-      "totalContributions": 5127,
+      "totalContributions": 5128,
       "weeks": [
         {
           "contributionDays": [
@@ -2207,11 +2214,16 @@
               "contributionCount": 0,
               "date": "2026-06-16",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 1,
+              "date": "2026-06-17",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-16T00:37:13.466Z"
+  "lastUpdated": "2026-06-17T00:32:33.884Z"
 }
