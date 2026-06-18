@@ -11,6 +11,48 @@
   "recentActivity": [
     {
       "type": "PushEvent",
+      "repo": "hmziqrs/gpui-starter",
+      "createdAt": "2026-06-17T23:14:25Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-17T22:43:41Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/hmziq.rs",
+      "createdAt": "2026-06-17T22:28:36Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/hmziq.rs",
+      "createdAt": "2026-06-17T20:52:36Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-17T16:08:06Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-17T10:54:11Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-17T10:02:43Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
       "repo": "hmziqrs/gpui-query",
       "createdAt": "2026-06-16T22:30:55Z",
       "message": "Pushed commits"
@@ -26,50 +68,28 @@
       "repo": "hmziqrs/gpui-query",
       "createdAt": "2026-06-13T14:56:34Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-13T13:38:26Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-06-13T13:07:51Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-13T09:49:53Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/hmziq.rs",
-      "createdAt": "2026-06-12T22:07:15Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/hmziq.rs",
-      "createdAt": "2026-06-12T21:37:12Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-12T21:24:49Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-12T21:24:35Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
+    {
+      "name": "gpui-starter",
+      "description": "GPUI starter boilerplate",
+      "language": "Rust",
+      "stars": 5,
+      "url": "https://github.com/hmziqrs/gpui-starter",
+      "topics": [
+        "boilerplate",
+        "desktop-app",
+        "gpui",
+        "gpui-boilerplate",
+        "gpui-component",
+        "gpui-starter",
+        "gpui-starter-kit",
+        "native",
+        "native-desktop-app",
+        "rust-lang"
+      ]
+    },
     {
       "name": "gpui-query",
       "description": null,
@@ -77,6 +97,28 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/gpui-query",
       "topics": []
+    },
+    {
+      "name": "hmziq.rs",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.rs",
+      "topics": []
+    },
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
     },
     {
       "name": "flutter-ui-designs",
@@ -105,20 +147,6 @@
       ]
     },
     {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
-      ]
-    },
-    {
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
       "language": "TypeScript",
@@ -141,34 +169,12 @@
         "minimax-agent",
         "xiaomi-mimo"
       ]
-    },
-    {
-      "name": "hmziq.rs",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.rs",
-      "topics": []
-    },
-    {
-      "name": "ruxlog",
-      "description": "A full stack blog in dioxus",
-      "language": "Rust",
-      "stars": 2,
-      "url": "https://github.com/hmziqrs/ruxlog",
-      "topics": [
-        "dioxus",
-        "dioxus-fullstack",
-        "dioxus-web",
-        "rust",
-        "wasm"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 5128,
+    "totalContributions": 5150,
     "calendar": {
-      "totalContributions": 5128,
+      "totalContributions": 5150,
       "weeks": [
         {
           "contributionDays": [
@@ -2192,7 +2198,7 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 18,
+              "contributionCount": 20,
               "date": "2026-06-13",
               "color": "#9be9a8"
             }
@@ -2216,8 +2222,13 @@
               "color": "#ebedf0"
             },
             {
-              "contributionCount": 1,
+              "contributionCount": 8,
               "date": "2026-06-17",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 13,
+              "date": "2026-06-18",
               "color": "#9be9a8"
             }
           ]
@@ -2225,5 +2236,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-06-17T00:32:33.884Z"
+  "lastUpdated": "2026-06-18T00:33:31.211Z"
 }
