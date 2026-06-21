@@ -5,10 +5,60 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 102,
-    "publicRepos": 80,
+    "publicRepos": 81,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-20T05:13:09Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/superai",
+      "createdAt": "2026-06-20T03:05:48Z",
+      "action": "created branch",
+      "message": "master"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/hmziq.rs",
+      "createdAt": "2026-06-20T02:18:09Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-20T02:10:51Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-20T01:40:22Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-20T01:39:25Z",
+      "action": "opened"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-20T01:38:12Z",
+      "action": "created branch",
+      "message": "refactor/audit-remaining"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-form",
+      "createdAt": "2026-06-20T00:58:02Z",
+      "message": "Pushed commits"
+    },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/gpui-query",
@@ -20,55 +70,6 @@
       "repo": "hmziqrs/gpui-query",
       "createdAt": "2026-06-19T22:39:21Z",
       "action": "merged"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-19T22:39:11Z",
-      "action": "opened"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-19T22:38:32Z",
-      "action": "created branch",
-      "message": "refactor/gpui-query-audit-followup"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/hmziq.rs",
-      "createdAt": "2026-06-19T14:31:23Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-06-18T15:35:49Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-06-18T12:36:44Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-06-18T12:22:30Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-06-18T11:40:37Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-starter",
-      "createdAt": "2026-06-18T11:11:37Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
@@ -79,6 +80,36 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/gpui-query",
       "topics": []
+    },
+    {
+      "name": "superai",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/superai",
+      "topics": []
+    },
+    {
+      "name": "hmziq.rs",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.rs",
+      "topics": []
+    },
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
     },
     {
       "name": "claude-multi",
@@ -106,28 +137,6 @@
       ]
     },
     {
-      "name": "hmziq.rs",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.rs",
-      "topics": []
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
-      ]
-    },
-    {
       "name": "gpui-starter",
       "description": "GPUI starter boilerplate",
       "language": "Rust",
@@ -145,78 +154,13 @@
         "native-desktop-app",
         "rust-lang"
       ]
-    },
-    {
-      "name": "flutter-ui-designs",
-      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
-      "language": "Dart",
-      "stars": 332,
-      "url": "https://github.com/hmziqrs/flutter-ui-designs",
-      "topics": [
-        "animations",
-        "cross-platform",
-        "dart",
-        "desktop-app",
-        "flutter",
-        "flutter-animations",
-        "flutter-app",
-        "flutter-apps",
-        "flutter-design",
-        "flutter-desktop",
-        "flutter-examples",
-        "flutter-web",
-        "offline-first",
-        "parallax",
-        "parallax-scrolling",
-        "ui-design",
-        "web-application"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 5171,
+    "totalContributions": 5179,
     "calendar": {
-      "totalContributions": 5171,
+      "totalContributions": 5179,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 0,
-              "date": "2025-06-15",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 6,
-              "date": "2025-06-16",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 4,
-              "date": "2025-06-17",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-06-18",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-06-19",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-06-20",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-06-21",
-              "color": "#ebedf0"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2239,14 +2183,23 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 7,
+              "contributionCount": 15,
               "date": "2026-06-20",
               "color": "#9be9a8"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 0,
+              "date": "2026-06-21",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-20T00:28:19.699Z"
+  "lastUpdated": "2026-06-21T00:30:26.706Z"
 }
