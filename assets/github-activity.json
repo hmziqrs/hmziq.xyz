@@ -74,6 +74,20 @@
   ],
   "topRepositories": [
     {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
+    {
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
       "language": "TypeScript",
@@ -96,20 +110,6 @@
         "minimax",
         "minimax-agent",
         "xiaomi-mimo"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -2200,11 +2200,16 @@
               "contributionCount": 0,
               "date": "2026-06-22",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-06-23",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-22T00:30:26.424Z"
+  "lastUpdated": "2026-06-23T00:29:08.727Z"
 }
