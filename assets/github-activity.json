@@ -10,66 +10,103 @@
   },
   "recentActivity": [
     {
-      "type": "PushEvent",
-      "repo": "hmziqrs/ruxlog",
-      "createdAt": "2026-06-27T00:15:23Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/toride",
-      "createdAt": "2026-06-26T18:49:53Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/toride",
-      "createdAt": "2026-06-26T18:46:36Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/toride",
-      "createdAt": "2026-06-26T18:08:30Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/toride",
-      "createdAt": "2026-06-26T17:36:56Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PublicEvent",
-      "repo": "hmziqrs/toride",
-      "createdAt": "2026-05-13T21:08:43Z"
-    },
-    {
-      "type": "ForkEvent",
-      "repo": "stayhydated/gpui-form",
-      "createdAt": "2026-06-19T20:40:59Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-20T05:13:09Z",
-      "message": "Pushed commits"
-    },
-    {
       "type": "CreateEvent",
-      "repo": "hmziqrs/superai",
-      "createdAt": "2026-06-20T03:05:48Z",
+      "repo": "hmziqrs/llmproxy",
+      "createdAt": "2026-06-27T21:57:26Z",
       "action": "created branch",
       "message": "master"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/hmziq.rs",
-      "createdAt": "2026-06-20T02:18:09Z",
+      "repo": "freeoxide/gpui-form",
+      "createdAt": "2026-06-27T21:51:30Z",
       "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/hmziqrs",
+      "createdAt": "2026-06-27T04:23:01Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-27T02:22:57Z"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-27T02:22:56Z"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-27T02:22:54Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-27T02:22:38Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-27T02:22:37Z",
+      "action": "merged"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-27T02:20:30Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-27T02:08:43Z",
+      "action": "opened"
     }
   ],
   "topRepositories": [
+    {
+      "name": "llmproxy",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/llmproxy",
+      "topics": []
+    },
+    {
+      "name": "hmziqrs",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziqrs",
+      "topics": []
+    },
+    {
+      "name": "gpui-query",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/gpui-query",
+      "topics": []
+    },
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
     {
       "name": "ruxlog",
       "description": "A full stack blog in dioxus",
@@ -91,107 +128,13 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/toride",
       "topics": []
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
-      ]
-    },
-    {
-      "name": "claude-multi",
-      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
-      "language": "TypeScript",
-      "stars": 25,
-      "url": "https://github.com/hmziqrs/claude-multi",
-      "topics": [
-        "calude",
-        "claude-ai",
-        "claude-code",
-        "deepseek",
-        "deepseek-api",
-        "deepseek-v4",
-        "deepseek-v4-flash",
-        "deepseek-v4-pro",
-        "glm-5-1",
-        "glm-5-2",
-        "glm-5-turbo",
-        "mimo-v25",
-        "mimo-v25-pro",
-        "minimax",
-        "minimax-agent",
-        "xiaomi-mimo"
-      ]
-    },
-    {
-      "name": "gpui-query",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/gpui-query",
-      "topics": []
-    },
-    {
-      "name": "superai",
-      "description": null,
-      "language": null,
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/superai",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 5825,
+    "totalContributions": 5958,
     "calendar": {
-      "totalContributions": 5825,
+      "totalContributions": 5958,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 0,
-              "date": "2025-06-22",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-06-23",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-06-24",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 3,
-              "date": "2025-06-25",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 21,
-              "date": "2025-06-26",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 1,
-              "date": "2025-06-27",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 2,
-              "date": "2025-06-28",
-              "color": "#9be9a8"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2077,27 +2020,27 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 64,
+              "contributionCount": 67,
               "date": "2026-06-02",
               "color": "#40c463"
             },
             {
-              "contributionCount": 46,
+              "contributionCount": 48,
               "date": "2026-06-03",
               "color": "#40c463"
             },
             {
-              "contributionCount": 77,
+              "contributionCount": 93,
               "date": "2026-06-04",
-              "color": "#40c463"
+              "color": "#30a14e"
             },
             {
-              "contributionCount": 55,
+              "contributionCount": 90,
               "date": "2026-06-05",
               "color": "#40c463"
             },
             {
-              "contributionCount": 2,
+              "contributionCount": 39,
               "date": "2026-06-06",
               "color": "#9be9a8"
             }
@@ -2111,32 +2054,32 @@
               "color": "#ebedf0"
             },
             {
-              "contributionCount": 3,
+              "contributionCount": 8,
               "date": "2026-06-08",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 17,
+              "contributionCount": 19,
               "date": "2026-06-09",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 21,
+              "contributionCount": 27,
               "date": "2026-06-10",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 23,
+              "contributionCount": 25,
               "date": "2026-06-11",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 52,
+              "contributionCount": 55,
               "date": "2026-06-12",
               "color": "#40c463"
             },
             {
-              "contributionCount": 25,
+              "contributionCount": 28,
               "date": "2026-06-13",
               "color": "#9be9a8"
             }
@@ -2145,7 +2088,7 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 2,
+              "contributionCount": 3,
               "date": "2026-06-14",
               "color": "#9be9a8"
             },
@@ -2165,17 +2108,17 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 29,
+              "contributionCount": 35,
               "date": "2026-06-18",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 1,
+              "contributionCount": 2,
               "date": "2026-06-19",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 26,
+              "contributionCount": 31,
               "date": "2026-06-20",
               "color": "#9be9a8"
             }
@@ -2214,14 +2157,23 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 5,
               "date": "2026-06-27",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 1,
+              "date": "2026-06-28",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-27T00:27:42.451Z"
+  "lastUpdated": "2026-06-28T00:26:33.665Z"
 }
