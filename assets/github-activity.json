@@ -4,11 +4,55 @@
     "name": "hmziq",
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
-    "followers": 102,
+    "followers": 103,
     "publicRepos": 82,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-28T23:01:45Z",
+      "action": "created branch",
+      "message": "feat/query-extensions"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-28T22:48:43Z",
+      "action": "opened"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-28T18:16:26Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-28T17:52:39Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-28T17:02:03Z",
+      "action": "created branch",
+      "message": "feat/activity-page"
+    },
+    {
+      "type": "MemberEvent",
+      "repo": "freeoxide/tunnel",
+      "createdAt": "2026-06-28T13:53:09Z"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "freeoxide/tunnel",
+      "createdAt": "2026-06-28T13:20:49Z",
+      "action": "created branch",
+      "message": "main"
+    },
     {
       "type": "CreateEvent",
       "repo": "hmziqrs/llmproxy",
@@ -27,48 +71,23 @@
       "repo": "hmziqrs/hmziqrs",
       "createdAt": "2026-06-27T04:23:01Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-27T02:22:57Z"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-27T02:22:56Z"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-27T02:22:54Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-27T02:22:38Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-27T02:22:37Z",
-      "action": "merged"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-27T02:20:30Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-27T02:08:43Z",
-      "action": "opened"
     }
   ],
   "topRepositories": [
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
     {
       "name": "llmproxy",
       "description": null,
@@ -94,20 +113,6 @@
       "topics": []
     },
     {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
-      ]
-    },
-    {
       "name": "ruxlog",
       "description": "A full stack blog in dioxus",
       "language": "Rust",
@@ -131,9 +136,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 5958,
+    "totalContributions": 5933,
     "calendar": {
-      "totalContributions": 5958,
+      "totalContributions": 5933,
       "weeks": [
         {
           "contributionDays": [
@@ -2166,8 +2171,13 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 1,
+              "contributionCount": 2,
               "date": "2026-06-28",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 1,
+              "date": "2026-06-29",
               "color": "#9be9a8"
             }
           ]
@@ -2175,5 +2185,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-06-28T00:26:33.665Z"
+  "lastUpdated": "2026-06-29T00:28:14.131Z"
 }
