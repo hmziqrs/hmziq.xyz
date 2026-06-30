@@ -11,69 +11,101 @@
   "recentActivity": [
     {
       "type": "CreateEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-28T23:01:45Z",
-      "action": "created branch",
-      "message": "feat/query-extensions"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "freeoxide/website",
-      "createdAt": "2026-06-28T22:48:43Z",
-      "action": "opened"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/website",
-      "createdAt": "2026-06-28T18:16:26Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/website",
-      "createdAt": "2026-06-28T17:52:39Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "freeoxide/website",
-      "createdAt": "2026-06-28T17:02:03Z",
-      "action": "created branch",
-      "message": "feat/activity-page"
-    },
-    {
-      "type": "MemberEvent",
-      "repo": "freeoxide/tunnel",
-      "createdAt": "2026-06-28T13:53:09Z"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "freeoxide/tunnel",
-      "createdAt": "2026-06-28T13:20:49Z",
+      "repo": "freeoxide/awake",
+      "createdAt": "2026-06-29T14:09:33Z",
       "action": "created branch",
       "message": "main"
     },
     {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/llmproxy",
-      "createdAt": "2026-06-27T21:57:26Z",
-      "action": "created branch",
-      "message": "master"
+      "type": "PushEvent",
+      "repo": "hmziqrs/ruxlog",
+      "createdAt": "2026-06-29T07:16:48Z",
+      "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
+      "repo": "hmziqrs/ruxlog",
+      "createdAt": "2026-06-29T07:16:23Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gpui-starter",
+      "createdAt": "2026-06-29T06:57:52Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
       "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-06-27T21:51:30Z",
-      "message": "Pushed commits"
+      "createdAt": "2026-06-29T02:33:21Z",
+      "action": "opened"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "freeoxide/gpui-form",
+      "createdAt": "2026-06-29T02:28:37Z",
+      "action": "created branch",
+      "message": "fix/audit-findings"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-29T02:26:40Z"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/hmziqrs",
-      "createdAt": "2026-06-27T04:23:01Z",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-29T02:24:04Z",
       "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-06-29T02:24:03Z",
+      "action": "merged"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/gpui-query",
+      "createdAt": "2026-06-28T23:01:45Z",
+      "action": "created branch",
+      "message": "feat/query-extensions"
     }
   ],
   "topRepositories": [
+    {
+      "name": "ruxlog",
+      "description": "A full stack blog in dioxus",
+      "language": "Rust",
+      "stars": 2,
+      "url": "https://github.com/hmziqrs/ruxlog",
+      "topics": [
+        "dioxus",
+        "dioxus-fullstack",
+        "dioxus-web",
+        "rust",
+        "wasm"
+      ]
+    },
+    {
+      "name": "gpui-starter",
+      "description": "GPUI starter boilerplate",
+      "language": "Rust",
+      "stars": 5,
+      "url": "https://github.com/hmziqrs/gpui-starter",
+      "topics": [
+        "boilerplate",
+        "desktop-app",
+        "gpui",
+        "gpui-boilerplate",
+        "gpui-component",
+        "gpui-starter",
+        "gpui-starter-kit",
+        "native",
+        "native-desktop-app",
+        "rust-lang"
+      ]
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -111,34 +143,12 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/gpui-query",
       "topics": []
-    },
-    {
-      "name": "ruxlog",
-      "description": "A full stack blog in dioxus",
-      "language": "Rust",
-      "stars": 2,
-      "url": "https://github.com/hmziqrs/ruxlog",
-      "topics": [
-        "dioxus",
-        "dioxus-fullstack",
-        "dioxus-web",
-        "rust",
-        "wasm"
-      ]
-    },
-    {
-      "name": "toride",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/toride",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 5933,
+    "totalContributions": 5946,
     "calendar": {
-      "totalContributions": 5933,
+      "totalContributions": 5946,
       "weeks": [
         {
           "contributionDays": [
@@ -2162,7 +2172,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 5,
+              "contributionCount": 8,
               "date": "2026-06-27",
               "color": "#9be9a8"
             }
@@ -2171,19 +2181,24 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 2,
+              "contributionCount": 6,
               "date": "2026-06-28",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 1,
+              "contributionCount": 7,
               "date": "2026-06-29",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-06-30",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-06-29T00:28:14.131Z"
+  "lastUpdated": "2026-06-30T00:27:43.985Z"
 }
