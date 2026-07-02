@@ -5,80 +5,70 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 103,
-    "publicRepos": 82,
+    "publicRepos": 81,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
     {
+      "type": "DeleteEvent",
+      "repo": "freeoxide/wake",
+      "createdAt": "2026-07-01T19:00:57Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/wake",
+      "createdAt": "2026-07-01T19:00:56Z",
+      "message": "Pushed commits"
+    },
+    {
       "type": "PullRequestEvent",
-      "repo": "hmziqrs/gpui-query",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-07-01T12:50:42Z",
+      "action": "closed"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-07-01T13:38:11Z"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-07-01T12:49:56Z",
+      "action": "opened"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-07-01T12:49:43Z",
+      "action": "created branch",
+      "message": "chore/move-to-freeoxide"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/ruxlog",
+      "createdAt": "2026-07-01T12:23:25Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-07-01T12:19:19Z"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "freeoxide/gpui-query",
       "createdAt": "2026-06-30T15:13:31Z",
       "action": "merged"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/gpui-query",
+      "repo": "freeoxide/gpui-query",
       "createdAt": "2026-06-30T15:13:32Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-30T15:13:18Z",
-      "action": "opened"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-30T15:12:36Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-30T14:57:06Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-30T14:57:01Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-30T14:57:00Z",
-      "action": "merged"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-30T14:56:47Z",
-      "action": "opened"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/gpui-query",
-      "createdAt": "2026-06-30T14:56:45Z",
-      "action": "created branch",
-      "message": "chore/remove-internal-docs"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/llmproxy",
-      "createdAt": "2026-06-30T14:42:53Z",
       "message": "Pushed commits"
     }
   ],
   "topRepositories": [
-    {
-      "name": "gpui-query",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/gpui-query",
-      "topics": []
-    },
     {
       "name": "ruxlog",
       "description": "A full stack blog in dioxus",
@@ -94,14 +84,6 @@
       ]
     },
     {
-      "name": "blog",
-      "description": "blog",
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/blog",
-      "topics": []
-    },
-    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -114,6 +96,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "blog",
+      "description": "blog",
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/blog",
+      "topics": []
     },
     {
       "name": "gpui-starter",
@@ -141,12 +131,20 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/llmproxy",
       "topics": []
+    },
+    {
+      "name": "hmziqrs",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziqrs",
+      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 5972,
+    "totalContributions": 5974,
     "calendar": {
-      "totalContributions": 5972,
+      "totalContributions": 5974,
       "weeks": [
         {
           "contributionDays": [
@@ -2087,7 +2085,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 55,
+              "contributionCount": 54,
               "date": "2026-06-12",
               "color": "#40c463"
             },
@@ -2194,14 +2192,19 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 2,
               "date": "2026-07-01",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 1,
+              "date": "2026-07-02",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-07-01T00:28:37.326Z"
+  "lastUpdated": "2026-07-02T00:28:08.824Z"
 }
