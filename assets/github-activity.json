@@ -70,20 +70,6 @@
   ],
   "topRepositories": [
     {
-      "name": "ruxlog",
-      "description": "A full stack blog in dioxus",
-      "language": "Rust",
-      "stars": 2,
-      "url": "https://github.com/hmziqrs/ruxlog",
-      "topics": [
-        "dioxus",
-        "dioxus-fullstack",
-        "dioxus-web",
-        "rust",
-        "wasm"
-      ]
-    },
-    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -95,6 +81,20 @@
         "dioxus-web",
         "rust",
         "rustlang"
+      ]
+    },
+    {
+      "name": "ruxlog",
+      "description": "A full stack blog in dioxus",
+      "language": "Rust",
+      "stars": 2,
+      "url": "https://github.com/hmziqrs/ruxlog",
+      "topics": [
+        "dioxus",
+        "dioxus-fullstack",
+        "dioxus-web",
+        "rust",
+        "wasm"
       ]
     },
     {
@@ -2200,11 +2200,16 @@
               "contributionCount": 1,
               "date": "2026-07-02",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-07-03",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-07-02T00:28:08.824Z"
+  "lastUpdated": "2026-07-03T01:52:12.604Z"
 }
