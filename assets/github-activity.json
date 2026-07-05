@@ -70,6 +70,14 @@
   ],
   "topRepositories": [
     {
+      "name": "toride",
+      "description": null,
+      "language": "Rust",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/toride",
+      "topics": []
+    },
+    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -131,14 +139,6 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/llmproxy",
       "topics": []
-    },
-    {
-      "name": "hmziqrs",
-      "description": null,
-      "language": null,
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziqrs",
-      "topics": []
     }
   ],
   "contributions": {
@@ -146,45 +146,6 @@
     "calendar": {
       "totalContributions": 5975,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 0,
-              "date": "2025-06-29",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-06-30",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 11,
-              "date": "2025-07-01",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 11,
-              "date": "2025-07-02",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 31,
-              "date": "2025-07-03",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 13,
-              "date": "2025-07-04",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 1,
-              "date": "2025-07-05",
-              "color": "#9be9a8"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2212,9 +2173,18 @@
               "color": "#ebedf0"
             }
           ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 0,
+              "date": "2026-07-05",
+              "color": "#ebedf0"
+            }
+          ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-07-04T01:51:28.004Z"
+  "lastUpdated": "2026-07-05T01:58:13.061Z"
 }
