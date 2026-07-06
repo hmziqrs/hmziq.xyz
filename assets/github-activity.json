@@ -70,14 +70,6 @@
   ],
   "topRepositories": [
     {
-      "name": "toride",
-      "description": null,
-      "language": "Rust",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/toride",
-      "topics": []
-    },
-    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -90,6 +82,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "toride",
+      "description": null,
+      "language": "Rust",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/toride",
+      "topics": []
     },
     {
       "name": "ruxlog",
@@ -142,9 +142,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 5975,
+    "totalContributions": 5908,
     "calendar": {
-      "totalContributions": 5975,
+      "totalContributions": 5908,
       "weeks": [
         {
           "contributionDays": [
@@ -2180,11 +2180,16 @@
               "contributionCount": 0,
               "date": "2026-07-05",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-07-06",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-07-05T01:58:13.061Z"
+  "lastUpdated": "2026-07-06T02:04:20.926Z"
 }
