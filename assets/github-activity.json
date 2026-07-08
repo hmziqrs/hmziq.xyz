@@ -70,6 +70,31 @@
   ],
   "topRepositories": [
     {
+      "name": "claude-multi",
+      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
+      "language": "TypeScript",
+      "stars": 26,
+      "url": "https://github.com/hmziqrs/claude-multi",
+      "topics": [
+        "calude",
+        "claude-ai",
+        "claude-code",
+        "deepseek",
+        "deepseek-api",
+        "deepseek-v4",
+        "deepseek-v4-flash",
+        "deepseek-v4-pro",
+        "glm-5-1",
+        "glm-5-2",
+        "glm-5-turbo",
+        "mimo-v25",
+        "mimo-v25-pro",
+        "minimax",
+        "minimax-agent",
+        "xiaomi-mimo"
+      ]
+    },
+    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -131,14 +156,6 @@
         "native-desktop-app",
         "rust-lang"
       ]
-    },
-    {
-      "name": "llmproxy",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/llmproxy",
-      "topics": []
     }
   ],
   "contributions": {
@@ -2190,11 +2207,16 @@
               "contributionCount": 0,
               "date": "2026-07-07",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-07-08",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-07-07T01:59:47.019Z"
+  "lastUpdated": "2026-07-08T01:29:17.619Z"
 }
