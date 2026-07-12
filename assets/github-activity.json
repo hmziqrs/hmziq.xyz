@@ -4,11 +4,17 @@
     "name": "hmziq",
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
-    "followers": 103,
+    "followers": 104,
     "publicRepos": 81,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/blog",
+      "createdAt": "2026-07-11T14:10:16Z",
+      "message": "Pushed commits"
+    },
     {
       "type": "PushEvent",
       "repo": "freeoxide/website",
@@ -60,15 +66,31 @@
       "type": "DeleteEvent",
       "repo": "freeoxide/gpui-query",
       "createdAt": "2026-07-01T12:19:19Z"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-06-30T15:13:31Z",
-      "action": "merged"
     }
   ],
   "topRepositories": [
+    {
+      "name": "blog",
+      "description": "blog",
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/blog",
+      "topics": []
+    },
+    {
+      "name": "ruxlog",
+      "description": "A full stack blog in dioxus",
+      "language": "Rust",
+      "stars": 3,
+      "url": "https://github.com/hmziqrs/ruxlog",
+      "topics": [
+        "dioxus",
+        "dioxus-fullstack",
+        "dioxus-web",
+        "rust",
+        "wasm"
+      ]
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -117,28 +139,6 @@
       "topics": []
     },
     {
-      "name": "ruxlog",
-      "description": "A full stack blog in dioxus",
-      "language": "Rust",
-      "stars": 2,
-      "url": "https://github.com/hmziqrs/ruxlog",
-      "topics": [
-        "dioxus",
-        "dioxus-fullstack",
-        "dioxus-web",
-        "rust",
-        "wasm"
-      ]
-    },
-    {
-      "name": "blog",
-      "description": "blog",
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/blog",
-      "topics": []
-    },
-    {
       "name": "gpui-starter",
       "description": "GPUI starter boilerplate",
       "language": "Rust",
@@ -159,49 +159,10 @@
     }
   ],
   "contributions": {
-    "totalContributions": 5908,
+    "totalContributions": 5912,
     "calendar": {
-      "totalContributions": 5908,
+      "totalContributions": 5912,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 0,
-              "date": "2025-07-06",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-07-07",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-07-08",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-07-09",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-07-10",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 6,
-              "date": "2025-07-11",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 47,
-              "date": "2025-07-12",
-              "color": "#40c463"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2214,14 +2175,14 @@
               "color": "#ebedf0"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 2,
               "date": "2026-07-09",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 2,
               "date": "2026-07-10",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 0,
@@ -2229,9 +2190,18 @@
               "color": "#ebedf0"
             }
           ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 0,
+              "date": "2026-07-12",
+              "color": "#ebedf0"
+            }
+          ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-07-11T01:28:59.362Z"
+  "lastUpdated": "2026-07-12T01:41:47.239Z"
 }
