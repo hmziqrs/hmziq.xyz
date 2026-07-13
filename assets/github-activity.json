@@ -70,6 +70,20 @@
   ],
   "topRepositories": [
     {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
+    {
       "name": "blog",
       "description": "blog",
       "language": "TypeScript",
@@ -89,20 +103,6 @@
         "dioxus-web",
         "rust",
         "wasm"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -159,9 +159,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 5912,
+    "totalContributions": 5859,
     "calendar": {
-      "totalContributions": 5912,
+      "totalContributions": 5859,
       "weeks": [
         {
           "contributionDays": [
@@ -2197,11 +2197,16 @@
               "contributionCount": 0,
               "date": "2026-07-12",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-07-13",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-07-12T01:41:47.239Z"
+  "lastUpdated": "2026-07-13T01:46:27.615Z"
 }
