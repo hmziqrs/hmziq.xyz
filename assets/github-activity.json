@@ -70,6 +70,20 @@
   ],
   "topRepositories": [
     {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
+    {
       "name": "flutter-ui-designs",
       "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
       "language": "Dart",
@@ -93,20 +107,6 @@
         "parallax-scrolling",
         "ui-design",
         "web-application"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -170,45 +170,6 @@
     "calendar": {
       "totalContributions": 5859,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 8,
-              "date": "2025-07-13",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-07-14",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 8,
-              "date": "2025-07-15",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-07-16",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 24,
-              "date": "2025-07-17",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 14,
-              "date": "2025-07-18",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-07-19",
-              "color": "#ebedf0"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2236,9 +2197,18 @@
               "color": "#ebedf0"
             }
           ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 0,
+              "date": "2026-07-19",
+              "color": "#ebedf0"
+            }
+          ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-07-18T01:22:24.943Z"
+  "lastUpdated": "2026-07-19T01:28:35.471Z"
 }
