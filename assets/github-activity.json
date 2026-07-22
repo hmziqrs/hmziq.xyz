@@ -5,70 +5,103 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 103,
-    "publicRepos": 81,
+    "publicRepos": 80,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-07-11T14:10:16Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/website",
-      "createdAt": "2026-07-03T14:32:41Z",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-07-22T00:15:42Z",
       "message": "Pushed commits"
     },
     {
       "type": "DeleteEvent",
-      "repo": "freeoxide/wake",
-      "createdAt": "2026-07-01T19:00:57Z"
+      "repo": "freeoxide/toride",
+      "createdAt": "2026-07-22T00:13:42Z"
     },
     {
       "type": "PushEvent",
-      "repo": "freeoxide/wake",
-      "createdAt": "2026-07-01T19:00:56Z",
+      "repo": "freeoxide/toride",
+      "createdAt": "2026-07-22T00:13:17Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-07-21T23:52:08Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-07-21T20:51:44Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-07-21T20:51:34Z",
       "message": "Pushed commits"
     },
     {
       "type": "PullRequestEvent",
       "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-07-01T12:50:42Z",
-      "action": "closed"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-07-01T13:38:11Z"
+      "createdAt": "2026-07-21T20:51:33Z",
+      "action": "merged"
     },
     {
       "type": "PullRequestEvent",
       "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-07-01T12:49:56Z",
+      "createdAt": "2026-07-21T20:50:55Z",
       "action": "opened"
     },
     {
       "type": "CreateEvent",
       "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-07-01T12:49:43Z",
+      "createdAt": "2026-07-21T20:50:35Z",
       "action": "created branch",
-      "message": "chore/move-to-freeoxide"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/ruxlog",
-      "createdAt": "2026-07-01T12:23:25Z",
-      "message": "Pushed commits"
+      "message": "ci/drop-stale-docs-steps"
     },
     {
       "type": "DeleteEvent",
       "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-07-01T12:19:19Z"
+      "createdAt": "2026-07-21T20:43:58Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "flutter-starter",
+      "description": null,
+      "language": "Dart",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/flutter-starter",
+      "topics": []
+    },
+    {
+      "name": "claude-multi",
+      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
+      "language": "TypeScript",
+      "stars": 28,
+      "url": "https://github.com/hmziqrs/claude-multi",
+      "topics": [
+        "calude",
+        "claude-ai",
+        "claude-code",
+        "deepseek",
+        "deepseek-api",
+        "deepseek-v4",
+        "deepseek-v4-flash",
+        "deepseek-v4-pro",
+        "glm-5-1",
+        "glm-5-2",
+        "glm-5-turbo",
+        "mimo-v25",
+        "mimo-v25-pro",
+        "minimax",
+        "minimax-agent",
+        "xiaomi-mimo"
+      ]
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -130,45 +163,12 @@
         "rust",
         "wasm"
       ]
-    },
-    {
-      "name": "claude-multi",
-      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
-      "language": "TypeScript",
-      "stars": 27,
-      "url": "https://github.com/hmziqrs/claude-multi",
-      "topics": [
-        "calude",
-        "claude-ai",
-        "claude-code",
-        "deepseek",
-        "deepseek-api",
-        "deepseek-v4",
-        "deepseek-v4-flash",
-        "deepseek-v4-pro",
-        "glm-5-1",
-        "glm-5-2",
-        "glm-5-turbo",
-        "mimo-v25",
-        "mimo-v25-pro",
-        "minimax",
-        "minimax-agent",
-        "xiaomi-mimo"
-      ]
-    },
-    {
-      "name": "toride",
-      "description": null,
-      "language": "Rust",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/toride",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 5805,
+    "totalContributions": 5867,
     "calendar": {
-      "totalContributions": 5805,
+      "totalContributions": 5867,
       "weeks": [
         {
           "contributionDays": [
@@ -1641,7 +1641,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 41,
+              "contributionCount": 40,
               "date": "2026-04-10",
               "color": "#9be9a8"
             },
@@ -1826,7 +1826,7 @@
               "color": "#216e39"
             },
             {
-              "contributionCount": 82,
+              "contributionCount": 81,
               "date": "2026-05-13",
               "color": "#40c463"
             },
@@ -2026,7 +2026,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 35,
+              "contributionCount": 38,
               "date": "2026-06-18",
               "color": "#9be9a8"
             },
@@ -2036,7 +2036,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 31,
+              "contributionCount": 40,
               "date": "2026-06-20",
               "color": "#9be9a8"
             }
@@ -2099,7 +2099,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 2,
+              "contributionCount": 3,
               "date": "2026-07-01",
               "color": "#9be9a8"
             },
@@ -2109,7 +2109,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 1,
+              "contributionCount": 2,
               "date": "2026-07-03",
               "color": "#9be9a8"
             },
@@ -2143,12 +2143,12 @@
               "color": "#ebedf0"
             },
             {
-              "contributionCount": 2,
+              "contributionCount": 16,
               "date": "2026-07-09",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 2,
+              "contributionCount": 9,
               "date": "2026-07-10",
               "color": "#9be9a8"
             },
@@ -2211,14 +2211,19 @@
               "color": "#ebedf0"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 18,
               "date": "2026-07-21",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 11,
+              "date": "2026-07-22",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-07-21T01:28:09.345Z"
+  "lastUpdated": "2026-07-22T01:27:14.422Z"
 }
