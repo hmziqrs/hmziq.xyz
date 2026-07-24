@@ -4,7 +4,7 @@
     "name": "hmziq",
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
-    "followers": 103,
+    "followers": 102,
     "publicRepos": 80,
     "profileUrl": "https://github.com/hmziqrs"
   },
@@ -71,14 +71,6 @@
   ],
   "topRepositories": [
     {
-      "name": "flutter-starter",
-      "description": null,
-      "language": "Dart",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/flutter-starter",
-      "topics": []
-    },
-    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -91,6 +83,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "flutter-starter",
+      "description": null,
+      "language": "Dart",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/flutter-starter",
+      "topics": []
     },
     {
       "name": "claude-multi",
@@ -2225,11 +2225,16 @@
               "contributionCount": 0,
               "date": "2026-07-23",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-07-24",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-07-23T01:46:40.147Z"
+  "lastUpdated": "2026-07-24T01:42:18.463Z"
 }
