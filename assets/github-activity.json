@@ -10,6 +10,13 @@
   },
   "recentActivity": [
     {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-07-25T10:50:08Z",
+      "action": "created branch",
+      "message": "docs/feature-roadmap"
+    },
+    {
       "type": "PushEvent",
       "repo": "hmziqrs/flutter-starter",
       "createdAt": "2026-07-22T08:38:45Z",
@@ -60,13 +67,6 @@
       "repo": "freeoxide/gpui-query",
       "createdAt": "2026-07-21T20:50:55Z",
       "action": "opened"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-07-21T20:50:35Z",
-      "action": "created branch",
-      "message": "ci/drop-stale-docs-steps"
     }
   ],
   "topRepositories": [
@@ -171,45 +171,6 @@
     "calendar": {
       "totalContributions": 5868,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 0,
-              "date": "2025-07-20",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 18,
-              "date": "2025-07-21",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 19,
-              "date": "2025-07-22",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 4,
-              "date": "2025-07-23",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 7,
-              "date": "2025-07-24",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-07-25",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 8,
-              "date": "2025-07-26",
-              "color": "#9be9a8"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2237,9 +2198,18 @@
               "color": "#ebedf0"
             }
           ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 0,
+              "date": "2026-07-26",
+              "color": "#ebedf0"
+            }
+          ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-07-25T01:42:24.679Z"
+  "lastUpdated": "2026-07-26T01:45:10.772Z"
 }
