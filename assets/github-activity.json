@@ -10,77 +10,81 @@
   },
   "recentActivity": [
     {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/ruxlog",
-      "createdAt": "2026-07-27T20:45:10Z",
-      "action": "closed",
-      "message": "Serde serialize."
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-07-28T23:24:57Z",
+      "message": "Pushed commits"
     },
     {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/ruxlog",
-      "createdAt": "2026-07-27T20:43:35Z",
-      "action": "closed",
-      "message": "Better error handling"
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-07-28T22:58:55Z",
+      "message": "Pushed commits"
     },
     {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/ruxlog",
-      "createdAt": "2026-07-27T20:42:16Z",
-      "action": "closed",
-      "message": "Remove deisel ORM"
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-07-28T22:33:52Z",
+      "message": "Pushed commits"
     },
     {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/ruxlog",
-      "createdAt": "2026-07-27T20:40:07Z",
-      "action": "closed",
-      "message": "Create deployment strategy"
+      "type": "PushEvent",
+      "repo": "oxlabs-dev/website",
+      "createdAt": "2026-07-28T22:14:21Z",
+      "message": "Pushed commits"
     },
     {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/ruxlog",
-      "createdAt": "2026-07-27T20:40:07Z",
-      "action": "closed",
-      "message": "Forget password crud"
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-07-28T22:13:26Z",
+      "message": "Pushed commits"
     },
     {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/ruxlog",
-      "createdAt": "2026-07-27T20:40:07Z",
-      "action": "closed",
-      "message": "Email verification curd"
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-07-28T22:04:30Z",
+      "message": "Pushed commits"
     },
     {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/ruxlog",
-      "createdAt": "2026-07-27T20:40:07Z",
-      "action": "closed",
-      "message": "e2e testing for release"
+      "type": "PushEvent",
+      "repo": "oxlabs-dev/website",
+      "createdAt": "2026-07-28T21:59:50Z",
+      "message": "Pushed commits"
     },
     {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/ruxlog",
-      "createdAt": "2026-07-27T20:40:07Z",
-      "action": "closed",
-      "message": "in app notifications"
+      "type": "PublicEvent",
+      "repo": "oxlabs-dev/website",
+      "createdAt": "2026-07-27T08:16:48Z"
     },
     {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/ruxlog",
-      "createdAt": "2026-07-27T20:40:07Z",
-      "action": "closed",
-      "message": "Database queries."
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-07-28T15:31:21Z"
     },
     {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/ruxlog",
-      "createdAt": "2026-07-27T20:40:06Z",
-      "action": "closed",
-      "message": "Feature flags"
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-07-28T15:31:14Z",
+      "action": "merged"
     }
   ],
   "topRepositories": [
+    {
+      "name": "flutter-starter",
+      "description": null,
+      "language": "Dart",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/flutter-starter",
+      "topics": []
+    },
+    {
+      "name": "hmziq.rs",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/hmziq.rs",
+      "topics": []
+    },
     {
       "name": "ruxlog",
       "description": "A full stack blog in dioxus",
@@ -96,12 +100,18 @@
       ]
     },
     {
-      "name": "flutter-starter",
-      "description": null,
-      "language": "Dart",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/flutter-starter",
-      "topics": []
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
     },
     {
       "name": "react-native-loop-game",
@@ -116,20 +126,6 @@
         "react-native",
         "react-native-animation",
         "react-native-game"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -156,38 +152,12 @@
         "minimax-agent",
         "xiaomi-mimo"
       ]
-    },
-    {
-      "name": "flutter-ui-designs",
-      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
-      "language": "Dart",
-      "stars": 331,
-      "url": "https://github.com/hmziqrs/flutter-ui-designs",
-      "topics": [
-        "animations",
-        "cross-platform",
-        "dart",
-        "desktop-app",
-        "flutter",
-        "flutter-animations",
-        "flutter-app",
-        "flutter-apps",
-        "flutter-design",
-        "flutter-desktop",
-        "flutter-examples",
-        "flutter-web",
-        "offline-first",
-        "parallax",
-        "parallax-scrolling",
-        "ui-design",
-        "web-application"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 5874,
+    "totalContributions": 5964,
     "calendar": {
-      "totalContributions": 5874,
+      "totalContributions": 5964,
       "weeks": [
         {
           "contributionDays": [
@@ -2016,7 +1986,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 40,
+              "contributionCount": 41,
               "date": "2026-06-20",
               "color": "#9be9a8"
             }
@@ -2191,12 +2161,12 @@
               "color": "#ebedf0"
             },
             {
-              "contributionCount": 18,
+              "contributionCount": 51,
               "date": "2026-07-21",
-              "color": "#9be9a8"
+              "color": "#40c463"
             },
             {
-              "contributionCount": 17,
+              "contributionCount": 21,
               "date": "2026-07-22",
               "color": "#9be9a8"
             },
@@ -2225,13 +2195,18 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 39,
+              "contributionCount": 45,
               "date": "2026-07-27",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 2,
+              "contributionCount": 36,
               "date": "2026-07-28",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 12,
+              "date": "2026-07-29",
               "color": "#9be9a8"
             }
           ]
@@ -2239,5 +2214,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-07-28T01:26:51.149Z"
+  "lastUpdated": "2026-07-29T01:26:59.531Z"
 }
