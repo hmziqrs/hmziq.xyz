@@ -11,6 +11,18 @@
   "recentActivity": [
     {
       "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-07-30T22:21:32Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-07-30T21:30:52Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
       "repo": "freeoxide/tunnel",
       "createdAt": "2026-07-29T20:52:49Z",
       "message": "Pushed commits"
@@ -53,35 +65,9 @@
       "repo": "freeoxide/tunnel",
       "createdAt": "2026-07-29T16:36:02Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-07-29T16:14:16Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-07-29T14:57:51Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
-    {
-      "name": "ruxlog",
-      "description": "A full stack blog in dioxus",
-      "language": "Rust",
-      "stars": 3,
-      "url": "https://github.com/hmziqrs/ruxlog",
-      "topics": [
-        "dioxus",
-        "dioxus-fullstack",
-        "dioxus-web",
-        "rust",
-        "wasm"
-      ]
-    },
     {
       "name": "flutter-starter",
       "description": null,
@@ -89,6 +75,32 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/flutter-starter",
       "topics": []
+    },
+    {
+      "name": "flutter-ui-designs",
+      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
+      "language": "Dart",
+      "stars": 332,
+      "url": "https://github.com/hmziqrs/flutter-ui-designs",
+      "topics": [
+        "animations",
+        "cross-platform",
+        "dart",
+        "desktop-app",
+        "flutter",
+        "flutter-animations",
+        "flutter-app",
+        "flutter-apps",
+        "flutter-design",
+        "flutter-desktop",
+        "flutter-examples",
+        "flutter-web",
+        "offline-first",
+        "parallax",
+        "parallax-scrolling",
+        "ui-design",
+        "web-application"
+      ]
     },
     {
       "name": "hmziq.xyz",
@@ -102,6 +114,20 @@
         "dioxus-web",
         "rust",
         "rustlang"
+      ]
+    },
+    {
+      "name": "ruxlog",
+      "description": "A full stack blog in dioxus",
+      "language": "Rust",
+      "stars": 3,
+      "url": "https://github.com/hmziqrs/ruxlog",
+      "topics": [
+        "dioxus",
+        "dioxus-fullstack",
+        "dioxus-web",
+        "rust",
+        "wasm"
       ]
     },
     {
@@ -126,37 +152,12 @@
         "react-native-animation",
         "react-native-game"
       ]
-    },
-    {
-      "name": "claude-multi",
-      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
-      "language": "TypeScript",
-      "stars": 28,
-      "url": "https://github.com/hmziqrs/claude-multi",
-      "topics": [
-        "calude",
-        "claude-ai",
-        "claude-code",
-        "deepseek",
-        "deepseek-api",
-        "deepseek-v4",
-        "deepseek-v4-flash",
-        "deepseek-v4-pro",
-        "glm-5-1",
-        "glm-5-2",
-        "glm-5-turbo",
-        "mimo-v25",
-        "mimo-v25-pro",
-        "minimax",
-        "minimax-agent",
-        "xiaomi-mimo"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 6021,
+    "totalContributions": 6062,
     "calendar": {
-      "totalContributions": 6021,
+      "totalContributions": 6062,
       "weeks": [
         {
           "contributionDays": [
@@ -2209,8 +2210,13 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 20,
+              "contributionCount": 50,
               "date": "2026-07-30",
+              "color": "#40c463"
+            },
+            {
+              "contributionCount": 11,
+              "date": "2026-07-31",
               "color": "#9be9a8"
             }
           ]
@@ -2218,5 +2224,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-07-30T01:19:44.745Z"
+  "lastUpdated": "2026-07-31T01:46:57.351Z"
 }
