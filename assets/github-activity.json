@@ -72,14 +72,6 @@
   ],
   "topRepositories": [
     {
-      "name": "flutter-starter",
-      "description": null,
-      "language": "Dart",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/flutter-starter",
-      "topics": []
-    },
-    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -92,6 +84,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "flutter-starter",
+      "description": null,
+      "language": "Dart",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/flutter-starter",
+      "topics": []
     },
     {
       "name": "flutter-ui-designs",
@@ -158,9 +158,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 6119,
+    "totalContributions": 6050,
     "calendar": {
-      "totalContributions": 6119,
+      "totalContributions": 6050,
       "weeks": [
         {
           "contributionDays": [
@@ -2196,11 +2196,16 @@
               "contributionCount": 2,
               "date": "2026-08-02",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-08-03",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-08-02T01:44:29.285Z"
+  "lastUpdated": "2026-08-03T01:46:43.701Z"
 }
