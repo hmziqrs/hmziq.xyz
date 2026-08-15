@@ -11,6 +11,12 @@
   "recentActivity": [
     {
       "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-08-14T13:39:15Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
       "repo": "hmziqrs/pppd",
       "createdAt": "2026-08-13T16:04:25Z",
       "message": "Pushed commits"
@@ -63,23 +69,33 @@
       "repo": "hmziqrs/flutter-starter",
       "createdAt": "2026-08-01T21:29:54Z",
       "action": "opened"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-08-01T21:29:34Z",
-      "action": "created branch",
-      "message": "refactor/readability-cleanup"
     }
   ],
   "topRepositories": [
     {
-      "name": "pppd",
-      "description": null,
-      "language": "HTML",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/pppd",
-      "topics": []
+      "name": "claude-multi",
+      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
+      "language": "TypeScript",
+      "stars": 28,
+      "url": "https://github.com/hmziqrs/claude-multi",
+      "topics": [
+        "calude",
+        "claude-ai",
+        "claude-code",
+        "deepseek",
+        "deepseek-api",
+        "deepseek-v4",
+        "deepseek-v4-flash",
+        "deepseek-v4-pro",
+        "glm-5-1",
+        "glm-5-2",
+        "glm-5-turbo",
+        "mimo-v25",
+        "mimo-v25-pro",
+        "minimax",
+        "minimax-agent",
+        "xiaomi-mimo"
+      ]
     },
     {
       "name": "hmziq.xyz",
@@ -94,6 +110,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "pppd",
+      "description": null,
+      "language": "HTML",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/pppd",
+      "topics": []
     },
     {
       "name": "flutter-starter",
@@ -152,26 +176,12 @@
         "ui-design",
         "web-application"
       ]
-    },
-    {
-      "name": "ruxlog",
-      "description": "A full stack blog in dioxus",
-      "language": "Rust",
-      "stars": 3,
-      "url": "https://github.com/hmziqrs/ruxlog",
-      "topics": [
-        "dioxus",
-        "dioxus-fullstack",
-        "dioxus-web",
-        "rust",
-        "wasm"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 6318,
+    "totalContributions": 6320,
     "calendar": {
-      "totalContributions": 6318,
+      "totalContributions": 6320,
       "weeks": [
         {
           "contributionDays": [
@@ -2229,14 +2239,19 @@
               "color": "#30a14e"
             },
             {
-              "contributionCount": 2,
+              "contributionCount": 4,
               "date": "2026-08-14",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-08-15",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-08-14T01:00:23.223Z"
+  "lastUpdated": "2026-08-15T00:35:37.576Z"
 }
