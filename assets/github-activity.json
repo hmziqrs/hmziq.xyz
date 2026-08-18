@@ -5,73 +5,78 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 102,
-    "publicRepos": 81,
+    "publicRepos": 82,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
     {
-      "type": "WatchEvent",
-      "repo": "gaitco/quran-database",
-      "createdAt": "2026-08-16T22:41:51Z",
-      "action": "starred"
-    },
-    {
       "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-08-14T13:39:15Z",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-17T22:49:10Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/pppd",
-      "createdAt": "2026-08-13T16:04:25Z",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-17T22:05:25Z",
       "message": "Pushed commits"
     },
     {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/pppd",
-      "createdAt": "2026-08-13T11:51:09Z",
-      "action": "created branch",
-      "message": "master"
+      "type": "PullRequestReviewEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-17T22:05:06Z"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-08-05T12:14:22Z",
+      "repo": "huzidev/easyquran",
+      "createdAt": "2026-08-17T21:25:18Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-08-04T14:23:34Z",
-      "action": "created branch",
-      "message": "refactor/abstraction-sweep"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-08-04T14:24:20Z",
-      "action": "opened"
     },
     {
       "type": "DeleteEvent",
-      "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-08-01T21:44:36Z"
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-17T20:14:57Z"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-08-01T21:44:31Z",
+      "repo": "huzidev/easyquran",
+      "createdAt": "2026-08-17T20:14:45Z",
       "message": "Pushed commits"
     },
     {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-08-01T21:44:30Z",
-      "action": "merged"
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-17T21:13:46Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-17T20:13:13Z",
+      "action": "created branch",
+      "message": "fix/cold-translations-local-sqlite"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-17T16:39:06Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PublicEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-07-28T09:17:31Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "easyquran",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/easyquran",
+      "topics": []
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -150,38 +155,12 @@
         "sveletekit",
         "website"
       ]
-    },
-    {
-      "name": "flutter-ui-designs",
-      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
-      "language": "Dart",
-      "stars": 332,
-      "url": "https://github.com/hmziqrs/flutter-ui-designs",
-      "topics": [
-        "animations",
-        "cross-platform",
-        "dart",
-        "desktop-app",
-        "flutter",
-        "flutter-animations",
-        "flutter-app",
-        "flutter-apps",
-        "flutter-design",
-        "flutter-desktop",
-        "flutter-examples",
-        "flutter-web",
-        "offline-first",
-        "parallax",
-        "parallax-scrolling",
-        "ui-design",
-        "web-application"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 6150,
+    "totalContributions": 6188,
     "calendar": {
-      "totalContributions": 6150,
+      "totalContributions": 6188,
       "weeks": [
         {
           "contributionDays": [
@@ -2195,12 +2174,12 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 114,
+              "contributionCount": 117,
               "date": "2026-08-13",
               "color": "#30a14e"
             },
             {
-              "contributionCount": 4,
+              "contributionCount": 24,
               "date": "2026-08-14",
               "color": "#9be9a8"
             },
@@ -2219,14 +2198,19 @@
               "color": "#ebedf0"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 7,
               "date": "2026-08-17",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 8,
+              "date": "2026-08-18",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-08-17T00:35:29.979Z"
+  "lastUpdated": "2026-08-18T00:35:01.473Z"
 }
