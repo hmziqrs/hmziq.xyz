@@ -70,14 +70,6 @@
   ],
   "topRepositories": [
     {
-      "name": "easyquran",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/easyquran",
-      "topics": []
-    },
-    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -90,6 +82,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "easyquran",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/easyquran",
+      "topics": []
     },
     {
       "name": "claude-multi",
@@ -2206,11 +2206,16 @@
               "contributionCount": 8,
               "date": "2026-08-18",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-08-19",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-08-18T00:35:01.473Z"
+  "lastUpdated": "2026-08-19T00:35:45.200Z"
 }
