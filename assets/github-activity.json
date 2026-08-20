@@ -10,6 +10,42 @@
   },
   "recentActivity": [
     {
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-19T22:24:44Z"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-19T22:08:28Z",
+      "action": "created branch",
+      "message": "wip/security-followup"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-19T22:09:13Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-19T20:56:48Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-19T22:09:11Z",
+      "action": "merged"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-19T22:08:51Z",
+      "action": "opened"
+    },
+    {
       "type": "PushEvent",
       "repo": "hmziqrs/easyquran",
       "createdAt": "2026-08-17T22:49:10Z",
@@ -31,44 +67,17 @@
       "repo": "huzidev/easyquran",
       "createdAt": "2026-08-17T21:25:18Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-17T20:14:57Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "huzidev/easyquran",
-      "createdAt": "2026-08-17T20:14:45Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-17T21:13:46Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-17T20:13:13Z",
-      "action": "created branch",
-      "message": "fix/cold-translations-local-sqlite"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-17T16:39:06Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PublicEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-07-28T09:17:31Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "easyquran",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/easyquran",
+      "topics": []
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -82,14 +91,6 @@
         "rust",
         "rustlang"
       ]
-    },
-    {
-      "name": "easyquran",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/easyquran",
-      "topics": []
     },
     {
       "name": "claude-multi",
@@ -158,9 +159,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 6188,
+    "totalContributions": 6195,
     "calendar": {
-      "totalContributions": 6188,
+      "totalContributions": 6195,
       "weeks": [
         {
           "contributionDays": [
@@ -2203,7 +2204,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 8,
+              "contributionCount": 10,
               "date": "2026-08-18",
               "color": "#9be9a8"
             },
@@ -2211,11 +2212,16 @@
               "contributionCount": 0,
               "date": "2026-08-19",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 5,
+              "date": "2026-08-20",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-08-19T00:35:45.200Z"
+  "lastUpdated": "2026-08-20T00:35:18.390Z"
 }
