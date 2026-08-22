@@ -11,60 +11,63 @@
   "recentActivity": [
     {
       "type": "CreateEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-20T23:00:25Z",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-08-22T00:13:52Z",
       "action": "created branch",
-      "message": "codex/web-baked-quran-metadata"
+      "message": "revert-4-fix/ci-restore-vendored-gpui-form"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-08-22T00:14:08Z",
+      "action": "merged"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-08-22T00:13:58Z",
+      "action": "opened"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-21T09:57:50Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-21T09:54:24Z",
+      "action": "created branch",
+      "message": "codex/web-duplicate-work-cleanup"
     },
     {
       "type": "PullRequestEvent",
       "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-20T23:00:51Z",
+      "createdAt": "2026-08-21T09:57:49Z",
       "action": "merged"
     },
     {
       "type": "PullRequestEvent",
       "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-20T23:00:35Z",
+      "createdAt": "2026-08-21T09:54:32Z",
       "action": "opened"
     },
     {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-19T22:24:44Z"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-19T22:18:32Z"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-19T22:24:44Z"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-19T22:24:44Z"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-19T22:08:28Z",
-      "action": "created branch",
-      "message": "wip/security-followup"
-    },
-    {
       "type": "PushEvent",
       "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-19T22:09:13Z",
+      "createdAt": "2026-08-20T22:41:29Z",
       "message": "Pushed commits"
     },
     {
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-20T23:00:54Z"
+    },
+    {
       "type": "PushEvent",
       "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-19T20:56:48Z",
+      "createdAt": "2026-08-20T23:00:52Z",
       "message": "Pushed commits"
     }
   ],
@@ -158,9 +161,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 6202,
+    "totalContributions": 6221,
     "calendar": {
-      "totalContributions": 6202,
+      "totalContributions": 6221,
       "weeks": [
         {
           "contributionDays": [
@@ -2218,8 +2221,13 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 7,
+              "contributionCount": 14,
               "date": "2026-08-21",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 12,
+              "date": "2026-08-22",
               "color": "#9be9a8"
             }
           ]
@@ -2227,5 +2235,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-08-21T00:37:54.369Z"
+  "lastUpdated": "2026-08-22T00:35:21.104Z"
 }
