@@ -10,6 +10,54 @@
   },
   "recentActivity": [
     {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-22T11:13:06Z",
+      "action": "opened"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-22T11:12:45Z",
+      "action": "created branch",
+      "message": "worktree-settings-subsystem"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-08-22T10:28:16Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-08-22T10:22:27Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-08-22T09:44:26Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/website",
+      "createdAt": "2026-08-22T07:44:57Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-08-22T00:14:09Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-08-22T00:12:05Z",
+      "message": "Pushed commits"
+    },
+    {
       "type": "CreateEvent",
       "repo": "freeoxide/gpui-starter",
       "createdAt": "2026-08-22T00:13:52Z",
@@ -21,79 +69,9 @@
       "repo": "freeoxide/gpui-starter",
       "createdAt": "2026-08-22T00:14:08Z",
       "action": "merged"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-08-22T00:13:58Z",
-      "action": "opened"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-21T09:57:50Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-21T09:54:24Z",
-      "action": "created branch",
-      "message": "codex/web-duplicate-work-cleanup"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-21T09:57:49Z",
-      "action": "merged"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-21T09:54:32Z",
-      "action": "opened"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-20T22:41:29Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-20T23:00:54Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-20T23:00:52Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
-    {
-      "name": "easyquran",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/easyquran",
-      "topics": []
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
-      ]
-    },
     {
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
@@ -118,6 +96,28 @@
         "minimax-agent",
         "xiaomi-mimo"
       ]
+    },
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
+    {
+      "name": "easyquran",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/easyquran",
+      "topics": []
     },
     {
       "name": "pppd",
@@ -161,49 +161,10 @@
     }
   ],
   "contributions": {
-    "totalContributions": 6221,
+    "totalContributions": 6227,
     "calendar": {
-      "totalContributions": 6221,
+      "totalContributions": 6227,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 19,
-              "date": "2025-08-17",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 16,
-              "date": "2025-08-18",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 6,
-              "date": "2025-08-19",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 25,
-              "date": "2025-08-20",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 10,
-              "date": "2025-08-21",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 9,
-              "date": "2025-08-22",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-08-23",
-              "color": "#ebedf0"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2226,14 +2187,23 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 12,
+              "contributionCount": 18,
               "date": "2026-08-22",
               "color": "#9be9a8"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 0,
+              "date": "2026-08-23",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-08-22T00:35:21.104Z"
+  "lastUpdated": "2026-08-23T00:38:00.551Z"
 }
