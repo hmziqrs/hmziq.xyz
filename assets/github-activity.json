@@ -10,6 +10,36 @@
   },
   "recentActivity": [
     {
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-08-25T00:10:57Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-08-25T00:10:55Z",
+      "action": "merged"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-24T23:20:09Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/vibekit",
+      "createdAt": "2026-08-24T17:41:45Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-24T04:24:17Z",
+      "message": "Pushed commits"
+    },
+    {
       "type": "PullRequestEvent",
       "repo": "freeoxide/gpui-form",
       "createdAt": "2026-08-23T20:00:43Z",
@@ -39,38 +69,17 @@
       "repo": "hmziqrs/easyquran",
       "createdAt": "2026-08-23T19:39:11Z",
       "action": "merged"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-23T19:39:12Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-23T19:38:32Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-08-23T19:34:22Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-08-23T19:34:17Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-08-23T19:25:12Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
+    {
+      "name": "flutter-starter",
+      "description": null,
+      "language": "Dart",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/flutter-starter",
+      "topics": []
+    },
     {
       "name": "easyquran",
       "description": null,
@@ -88,24 +97,10 @@
       "topics": []
     },
     {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
-      ]
-    },
-    {
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
       "language": "TypeScript",
-      "stars": 28,
+      "stars": 29,
       "url": "https://github.com/hmziqrs/claude-multi",
       "topics": [
         "calude",
@@ -127,26 +122,32 @@
       ]
     },
     {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
+    {
       "name": "pppd",
       "description": null,
       "language": "HTML",
       "stars": 0,
       "url": "https://github.com/hmziqrs/pppd",
       "topics": []
-    },
-    {
-      "name": "flutter-starter",
-      "description": null,
-      "language": "Dart",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/flutter-starter",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 6171,
+    "totalContributions": 6307,
     "calendar": {
-      "totalContributions": 6171,
+      "totalContributions": 6307,
       "weeks": [
         {
           "contributionDays": [
@@ -2072,7 +2073,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 22,
+              "contributionCount": 25,
               "date": "2026-08-04",
               "color": "#9be9a8"
             },
@@ -2184,8 +2185,13 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 4,
+              "contributionCount": 129,
               "date": "2026-08-24",
+              "color": "#30a14e"
+            },
+            {
+              "contributionCount": 8,
+              "date": "2026-08-25",
               "color": "#9be9a8"
             }
           ]
@@ -2193,5 +2199,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-08-24T00:36:59.669Z"
+  "lastUpdated": "2026-08-25T00:36:28.863Z"
 }
