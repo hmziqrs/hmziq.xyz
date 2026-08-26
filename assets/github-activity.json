@@ -5,10 +5,40 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 102,
-    "publicRepos": 82,
+    "publicRepos": 81,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-form",
+      "createdAt": "2026-08-26T00:11:18Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-08-25T00:05:50Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-08-25T00:21:21Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-08-25T00:06:05Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-08-24T23:52:18Z",
+      "message": "Pushed commits"
+    },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/flutter-starter",
@@ -38,40 +68,23 @@
       "repo": "hmziqrs/easyquran",
       "createdAt": "2026-08-24T04:24:17Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-08-23T20:00:43Z",
-      "action": "merged"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-08-23T20:00:44Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-08-23T20:00:34Z",
-      "action": "opened"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-08-23T20:00:28Z",
-      "action": "created branch",
-      "message": "revert-2-port/upstream-0.6.0"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-23T19:39:11Z",
-      "action": "merged"
     }
   ],
   "topRepositories": [
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
     {
       "name": "flutter-starter",
       "description": null,
@@ -122,20 +135,6 @@
       ]
     },
     {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
-      ]
-    },
-    {
       "name": "pppd",
       "description": null,
       "language": "HTML",
@@ -145,9 +144,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 6307,
+    "totalContributions": 6308,
     "calendar": {
-      "totalContributions": 6307,
+      "totalContributions": 6308,
       "weeks": [
         {
           "contributionDays": [
@@ -2193,11 +2192,16 @@
               "contributionCount": 8,
               "date": "2026-08-25",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 1,
+              "date": "2026-08-26",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-08-25T00:36:28.863Z"
+  "lastUpdated": "2026-08-26T00:37:23.024Z"
 }
