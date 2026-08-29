@@ -10,6 +10,17 @@
   },
   "recentActivity": [
     {
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-08-28T00:24:14Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/superai",
+      "createdAt": "2026-08-28T20:19:57Z",
+      "message": "Pushed commits"
+    },
+    {
       "type": "PushEvent",
       "repo": "hmziqrs/easyquran",
       "createdAt": "2026-08-27T01:57:35Z",
@@ -53,18 +64,6 @@
       "type": "PullRequestReviewEvent",
       "repo": "hmziqrs/easyquran",
       "createdAt": "2026-08-27T01:57:31Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-08-27T00:31:29Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-27T00:30:50Z",
-      "action": "merged"
     }
   ],
   "topRepositories": [
@@ -94,14 +93,6 @@
       ]
     },
     {
-      "name": "easyquran",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/easyquran",
-      "topics": []
-    },
-    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -114,6 +105,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "easyquran",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/easyquran",
+      "topics": []
     },
     {
       "name": "oc-dynamic-workflow",
@@ -141,9 +140,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 6937,
+    "totalContributions": 6940,
     "calendar": {
-      "totalContributions": 6937,
+      "totalContributions": 6940,
       "weeks": [
         {
           "contributionDays": [
@@ -2201,8 +2200,13 @@
               "color": "#216e39"
             },
             {
-              "contributionCount": 13,
+              "contributionCount": 15,
               "date": "2026-08-28",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 1,
+              "date": "2026-08-29",
               "color": "#9be9a8"
             }
           ]
@@ -2210,5 +2214,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-08-28T07:44:24.612Z"
+  "lastUpdated": "2026-08-29T04:40:49.827Z"
 }
