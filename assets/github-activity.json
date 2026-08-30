@@ -10,6 +10,17 @@
   },
   "recentActivity": [
     {
+      "type": "PublicEvent",
+      "repo": "freeoxide/superai",
+      "createdAt": "2026-08-25T19:22:00Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-08-28T08:35:09Z",
+      "message": "Pushed commits"
+    },
+    {
       "type": "DeleteEvent",
       "repo": "hmziqrs/easyquran",
       "createdAt": "2026-08-28T00:24:14Z"
@@ -53,20 +64,23 @@
       "repo": "hmziqrs/easyquran",
       "createdAt": "2026-08-26T14:14:57Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-27T17:12:22Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-27T01:57:31Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
     {
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
@@ -90,20 +104,6 @@
         "minimax",
         "minimax-agent",
         "xiaomi-mimo"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -144,45 +144,6 @@
     "calendar": {
       "totalContributions": 6940,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 0,
-              "date": "2025-08-24",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-08-25",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-08-26",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-08-27",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-08-28",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-08-29",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-08-30",
-              "color": "#ebedf0"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2210,9 +2171,18 @@
               "color": "#9be9a8"
             }
           ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 0,
+              "date": "2026-08-30",
+              "color": "#ebedf0"
+            }
+          ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-08-29T04:40:49.827Z"
+  "lastUpdated": "2026-08-30T02:14:54.999Z"
 }
