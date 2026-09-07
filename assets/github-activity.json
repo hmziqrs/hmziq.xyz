@@ -5,10 +5,48 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 102,
-    "publicRepos": 81,
+    "publicRepos": 82,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-09-07T01:42:30Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-09-07T01:33:54Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-09-07T01:30:53Z",
+      "action": "created branch",
+      "message": "main"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-09-07T01:09:29Z",
+      "action": "merged"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-09-07T01:08:45Z",
+      "action": "opened"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-09-07T01:08:36Z",
+      "action": "created branch",
+      "message": "design/warm-technical"
+    },
     {
       "type": "PushEvent",
       "repo": "freeoxide/tunnel",
@@ -32,43 +70,17 @@
       "repo": "hmziqrs/easyquran",
       "createdAt": "2026-08-31T15:05:49Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-31T14:08:13Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-31T11:52:26Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-31T03:51:57Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PublicEvent",
-      "repo": "freeoxide/superai",
-      "createdAt": "2026-08-25T19:22:00Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-08-28T08:35:09Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-08-28T00:24:14Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "ai",
+      "description": null,
+      "language": "JavaScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/ai",
+      "topics": []
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -130,14 +142,6 @@
       "language": "Dart",
       "stars": 0,
       "url": "https://github.com/hmziqrs/flutter-starter",
-      "topics": []
-    },
-    {
-      "name": "vibekit",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/vibekit",
       "topics": []
     }
   ],
@@ -2148,12 +2152,12 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 1,
+              "contributionCount": 2,
               "date": "2026-09-01",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 1,
+              "contributionCount": 4,
               "date": "2026-09-02",
               "color": "#9be9a8"
             },
@@ -2177,14 +2181,19 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 0,
+              "contributionCount": 2,
               "date": "2026-09-06",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 6,
+              "date": "2026-09-07",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-09-06T01:46:43.329Z"
+  "lastUpdated": "2026-09-07T01:43:52.074Z"
 }
