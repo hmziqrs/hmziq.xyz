@@ -11,6 +11,12 @@
   "recentActivity": [
     {
       "type": "PushEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-09-08T01:03:15Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
       "repo": "hmziqrs/ai",
       "createdAt": "2026-09-07T12:53:50Z",
       "message": "Pushed commits"
@@ -61,14 +67,35 @@
       "repo": "freeoxide/tunnel",
       "createdAt": "2026-09-06T15:43:58Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "ReleaseEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-09-08T01:21:42Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "flutter-ui-designs",
+      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
+      "language": "Dart",
+      "stars": 333,
+      "url": "https://github.com/hmziqrs/flutter-ui-designs",
+      "topics": [
+        "animations",
+        "cross-platform",
+        "dart",
+        "desktop-app",
+        "flutter",
+        "flutter-animations",
+        "flutter-app",
+        "flutter-apps",
+        "flutter-design",
+        "flutter-desktop",
+        "flutter-examples",
+        "flutter-web",
+        "offline-first",
+        "parallax",
+        "parallax-scrolling",
+        "ui-design",
+        "web-application"
+      ]
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -130,14 +157,6 @@
       "language": null,
       "stars": 0,
       "url": "https://github.com/hmziqrs/oc-dynamic-workflow",
-      "topics": []
-    },
-    {
-      "name": "flutter-starter",
-      "description": null,
-      "language": "Dart",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/flutter-starter",
       "topics": []
     }
   ],
@@ -2195,11 +2214,16 @@
               "contributionCount": 0,
               "date": "2026-09-09",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-09-10",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-09-09T02:00:27.362Z"
+  "lastUpdated": "2026-09-10T01:57:18.077Z"
 }
