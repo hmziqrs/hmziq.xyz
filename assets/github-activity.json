@@ -71,6 +71,20 @@
   ],
   "topRepositories": [
     {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
+    {
       "name": "flutter-ui-designs",
       "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
       "language": "Dart",
@@ -94,20 +108,6 @@
         "parallax-scrolling",
         "ui-design",
         "web-application"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -2219,11 +2219,16 @@
               "contributionCount": 0,
               "date": "2026-09-10",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-09-11",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-09-10T01:57:18.077Z"
+  "lastUpdated": "2026-09-11T01:55:54.262Z"
 }
