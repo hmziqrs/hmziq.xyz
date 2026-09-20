@@ -11,63 +11,77 @@
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "rustslop/languagetool",
-      "createdAt": "2026-09-17T12:46:30Z",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-09-19T21:08:05Z",
       "message": "Pushed commits"
     },
     {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/dokploy",
-      "createdAt": "2026-09-17T13:02:25Z",
-      "action": "created branch",
-      "message": "reference"
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-09-19T21:07:56Z"
     },
     {
       "type": "PushEvent",
-      "repo": "rustslop/languagetool",
-      "createdAt": "2026-09-17T13:03:44Z",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-09-19T18:59:53Z",
       "message": "Pushed commits"
     },
     {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-13T23:06:51Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "freeoxide/tunnel",
-      "createdAt": "2026-09-13T13:54:06Z"
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/superai",
+      "createdAt": "2026-09-19T14:43:32Z"
     },
     {
       "type": "PushEvent",
       "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-13T13:51:18Z",
+      "createdAt": "2026-09-19T09:58:38Z",
       "message": "Pushed commits"
     },
     {
       "type": "PullRequestReviewEvent",
       "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-13T23:05:38Z"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "freeoxide/tunnel",
-      "createdAt": "2026-09-13T13:54:07Z"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-13T13:51:11Z"
+      "createdAt": "2026-09-19T09:58:31Z"
     },
     {
       "type": "PushEvent",
       "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-08T01:03:15Z",
+      "createdAt": "2026-09-19T09:58:01Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-09-19T09:57:55Z"
+    },
+    {
+      "type": "ReleaseEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-09-19T09:31:19Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-09-19T09:31:14Z",
       "message": "Pushed commits"
     }
   ],
   "topRepositories": [
+    {
+      "name": "easyquran",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/easyquran",
+      "topics": []
+    },
+    {
+      "name": "ai",
+      "description": null,
+      "language": "JavaScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/ai",
+      "topics": []
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -109,22 +123,6 @@
       ]
     },
     {
-      "name": "ai",
-      "description": null,
-      "language": "JavaScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/ai",
-      "topics": []
-    },
-    {
-      "name": "easyquran",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/easyquran",
-      "topics": []
-    },
-    {
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
       "language": "TypeScript",
@@ -159,49 +157,10 @@
     }
   ],
   "contributions": {
-    "totalContributions": 7311,
+    "totalContributions": 7362,
     "calendar": {
-      "totalContributions": 7311,
+      "totalContributions": 7362,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 7,
-              "date": "2025-09-14",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 16,
-              "date": "2025-09-15",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 23,
-              "date": "2025-09-16",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 20,
-              "date": "2025-09-17",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-09-18",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-09-19",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-09-20",
-              "color": "#ebedf0"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2126,12 +2085,12 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 42,
+              "contributionCount": 48,
               "date": "2026-09-01",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 34,
+              "contributionCount": 35,
               "date": "2026-09-02",
               "color": "#9be9a8"
             },
@@ -2199,9 +2158,9 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 50,
+              "contributionCount": 64,
               "date": "2026-09-14",
-              "color": "#9be9a8"
+              "color": "#40c463"
             },
             {
               "contributionCount": 5,
@@ -2219,13 +2178,22 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 1,
+              "contributionCount": 11,
               "date": "2026-09-18",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 4,
+              "contributionCount": 22,
               "date": "2026-09-19",
+              "color": "#9be9a8"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 2,
+              "date": "2026-09-20",
               "color": "#9be9a8"
             }
           ]
@@ -2233,5 +2201,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-09-19T02:06:41.855Z"
+  "lastUpdated": "2026-09-20T02:12:16.864Z"
 }
