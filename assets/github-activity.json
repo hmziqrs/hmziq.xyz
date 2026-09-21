@@ -11,68 +11,86 @@
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-09-19T21:08:05Z",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-09-20T23:16:58Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/claude-multi",
+      "createdAt": "2026-09-20T23:12:50Z",
       "message": "Pushed commits"
     },
     {
       "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-09-19T21:07:56Z"
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-09-20T21:12:48Z"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-09-19T18:59:53Z",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-09-20T18:50:59Z",
       "message": "Pushed commits"
     },
     {
       "type": "PullRequestReviewEvent",
       "repo": "freeoxide/superai",
-      "createdAt": "2026-09-19T14:43:32Z"
+      "createdAt": "2026-09-20T17:14:12Z"
     },
     {
       "type": "PushEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-19T09:58:38Z",
+      "repo": "freeoxide/tunnel",
+      "createdAt": "2026-09-20T16:35:17Z",
       "message": "Pushed commits"
     },
     {
       "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-19T09:58:31Z"
+      "repo": "freeoxide/tunnel",
+      "createdAt": "2026-09-20T16:35:02Z"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "freeoxide/tunnel",
+      "createdAt": "2026-09-19T09:21:16Z"
     },
     {
       "type": "PushEvent",
       "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-19T09:58:01Z",
+      "createdAt": "2026-09-19T08:50:24Z",
       "message": "Pushed commits"
     },
     {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-19T09:57:55Z"
-    },
-    {
-      "type": "ReleaseEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-09-19T09:31:19Z"
-    },
-    {
       "type": "PushEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-09-19T09:31:14Z",
+      "repo": "freeoxide/superai",
+      "createdAt": "2026-09-19T14:44:24Z",
       "message": "Pushed commits"
     }
   ],
   "topRepositories": [
     {
-      "name": "easyquran",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/easyquran",
-      "topics": []
+      "name": "claude-multi",
+      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
+      "language": "TypeScript",
+      "stars": 29,
+      "url": "https://github.com/hmziqrs/claude-multi",
+      "topics": [
+        "calude",
+        "claude-ai",
+        "claude-code",
+        "deepseek",
+        "deepseek-api",
+        "deepseek-v4",
+        "deepseek-v4-flash",
+        "deepseek-v4-pro",
+        "glm-5-1",
+        "glm-5-2",
+        "glm-5-turbo",
+        "mimo-v25",
+        "mimo-v25-pro",
+        "minimax",
+        "minimax-agent",
+        "xiaomi-mimo"
+      ]
     },
     {
       "name": "ai",
@@ -95,6 +113,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "easyquran",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/easyquran",
+      "topics": []
     },
     {
       "name": "flutter-ui-designs",
@@ -123,31 +149,6 @@
       ]
     },
     {
-      "name": "claude-multi",
-      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
-      "language": "TypeScript",
-      "stars": 29,
-      "url": "https://github.com/hmziqrs/claude-multi",
-      "topics": [
-        "calude",
-        "claude-ai",
-        "claude-code",
-        "deepseek",
-        "deepseek-api",
-        "deepseek-v4",
-        "deepseek-v4-flash",
-        "deepseek-v4-pro",
-        "glm-5-1",
-        "glm-5-2",
-        "glm-5-turbo",
-        "mimo-v25",
-        "mimo-v25-pro",
-        "minimax",
-        "minimax-agent",
-        "xiaomi-mimo"
-      ]
-    },
-    {
       "name": "oc-dynamic-workflow",
       "description": null,
       "language": null,
@@ -157,9 +158,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 7362,
+    "totalContributions": 7389,
     "calendar": {
-      "totalContributions": 7362,
+      "totalContributions": 7389,
       "weeks": [
         {
           "contributionDays": [
@@ -2183,7 +2184,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 22,
+              "contributionCount": 48,
               "date": "2026-09-19",
               "color": "#9be9a8"
             }
@@ -2192,8 +2193,13 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 2,
+              "contributionCount": 57,
               "date": "2026-09-20",
+              "color": "#40c463"
+            },
+            {
+              "contributionCount": 12,
+              "date": "2026-09-21",
               "color": "#9be9a8"
             }
           ]
@@ -2201,5 +2207,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-09-20T02:12:16.864Z"
+  "lastUpdated": "2026-09-21T02:12:22.400Z"
 }
