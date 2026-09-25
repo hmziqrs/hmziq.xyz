@@ -5,10 +5,41 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 102,
-    "publicRepos": 82,
+    "publicRepos": 83,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/brand",
+      "createdAt": "2026-09-24T21:59:00Z",
+      "action": "created branch",
+      "message": "master"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-09-24T12:01:27Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-09-24T10:20:21Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-09-24T09:22:04Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-09-24T09:31:29Z",
+      "message": "Pushed commits"
+    },
     {
       "type": "PushEvent",
       "repo": "freeoxide/toride",
@@ -37,38 +68,25 @@
       "repo": "freeoxide/gpui-starter",
       "createdAt": "2026-09-21T18:16:20Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-09-21T11:29:48Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-20T21:12:55Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-09-20T23:16:58Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/claude-multi",
-      "createdAt": "2026-09-20T23:12:50Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-20T21:12:48Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "brand",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/brand",
+      "topics": []
+    },
+    {
+      "name": "ai",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/ai",
+      "topics": []
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -117,52 +135,18 @@
       ]
     },
     {
-      "name": "ai",
-      "description": null,
-      "language": "JavaScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/ai",
-      "topics": []
-    },
-    {
       "name": "easyquran",
       "description": null,
       "language": "Rust",
       "stars": 0,
       "url": "https://github.com/hmziqrs/easyquran",
       "topics": []
-    },
-    {
-      "name": "flutter-ui-designs",
-      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
-      "language": "Dart",
-      "stars": 333,
-      "url": "https://github.com/hmziqrs/flutter-ui-designs",
-      "topics": [
-        "animations",
-        "cross-platform",
-        "dart",
-        "desktop-app",
-        "flutter",
-        "flutter-animations",
-        "flutter-app",
-        "flutter-apps",
-        "flutter-design",
-        "flutter-desktop",
-        "flutter-examples",
-        "flutter-web",
-        "offline-first",
-        "parallax",
-        "parallax-scrolling",
-        "ui-design",
-        "web-application"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 7399,
+    "totalContributions": 7409,
     "calendar": {
-      "totalContributions": 7399,
+      "totalContributions": 7409,
       "weeks": [
         {
           "contributionDays": [
@@ -2205,9 +2189,9 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 1,
               "date": "2026-09-22",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 8,
@@ -2215,8 +2199,13 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 1,
+              "contributionCount": 7,
               "date": "2026-09-24",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 3,
+              "date": "2026-09-25",
               "color": "#9be9a8"
             }
           ]
@@ -2224,5 +2213,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-09-24T02:04:14.588Z"
+  "lastUpdated": "2026-09-25T02:21:26.743Z"
 }
