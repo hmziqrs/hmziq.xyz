@@ -10,6 +10,18 @@
   },
   "recentActivity": [
     {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-09-26T04:16:37Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/gandalf-sax",
+      "createdAt": "2026-09-26T03:38:23Z",
+      "message": "Pushed commits"
+    },
+    {
       "type": "CreateEvent",
       "repo": "hmziqrs/brand",
       "createdAt": "2026-09-24T21:59:00Z",
@@ -56,21 +68,67 @@
       "type": "PullRequestReviewEvent",
       "repo": "freeoxide/superai",
       "createdAt": "2026-09-23T07:22:03Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/hmziq.rs",
-      "createdAt": "2026-09-22T20:50:46Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-21T18:16:20Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
+    {
+      "name": "flutter-ui-designs",
+      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
+      "language": "Dart",
+      "stars": 334,
+      "url": "https://github.com/hmziqrs/flutter-ui-designs",
+      "topics": [
+        "animations",
+        "cross-platform",
+        "dart",
+        "desktop-app",
+        "flutter",
+        "flutter-animations",
+        "flutter-app",
+        "flutter-apps",
+        "flutter-design",
+        "flutter-desktop",
+        "flutter-examples",
+        "flutter-web",
+        "offline-first",
+        "parallax",
+        "parallax-scrolling",
+        "ui-design",
+        "web-application"
+      ]
+    },
+    {
+      "name": "easyquran",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/easyquran",
+      "topics": []
+    },
+    {
+      "name": "gandalf-sax",
+      "description": "Behold the glory of epic infinite gandalf",
+      "language": "Swift",
+      "stars": 3,
+      "url": "https://github.com/hmziqrs/gandalf-sax",
+      "topics": [
+        "cross-platform",
+        "gandalf",
+        "gandalf-github",
+        "gandalf-sax",
+        "lotr",
+        "macos",
+        "macos-app",
+        "ntp-safe",
+        "ntp-synchronization",
+        "sax",
+        "saxophone",
+        "svelete",
+        "svelete5",
+        "sveletekit",
+        "website"
+      ]
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -100,93 +158,13 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/ai",
       "topics": []
-    },
-    {
-      "name": "hmziq.rs",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/hmziq.rs",
-      "topics": []
-    },
-    {
-      "name": "claude-multi",
-      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
-      "language": "TypeScript",
-      "stars": 29,
-      "url": "https://github.com/hmziqrs/claude-multi",
-      "topics": [
-        "calude",
-        "claude-ai",
-        "claude-code",
-        "deepseek",
-        "deepseek-api",
-        "deepseek-v4",
-        "deepseek-v4-flash",
-        "deepseek-v4-pro",
-        "glm-5-1",
-        "glm-5-2",
-        "glm-5-turbo",
-        "mimo-v25",
-        "mimo-v25-pro",
-        "minimax",
-        "minimax-agent",
-        "xiaomi-mimo"
-      ]
-    },
-    {
-      "name": "easyquran",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/easyquran",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 7409,
+    "totalContributions": 7492,
     "calendar": {
-      "totalContributions": 7409,
+      "totalContributions": 7492,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 0,
-              "date": "2025-09-21",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-09-22",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-09-23",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-09-24",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 7,
-              "date": "2025-09-25",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 10,
-              "date": "2025-09-26",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-09-27",
-              "color": "#ebedf0"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -936,7 +914,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 10,
+              "contributionCount": 11,
               "date": "2026-02-09",
               "color": "#9be9a8"
             },
@@ -980,12 +958,12 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 10,
+              "contributionCount": 12,
               "date": "2026-02-17",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 12,
+              "contributionCount": 14,
               "date": "2026-02-18",
               "color": "#9be9a8"
             },
@@ -1565,27 +1543,27 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 66,
+              "contributionCount": 72,
               "date": "2026-06-02",
               "color": "#40c463"
             },
             {
-              "contributionCount": 48,
+              "contributionCount": 78,
               "date": "2026-06-03",
-              "color": "#9be9a8"
+              "color": "#40c463"
             },
             {
-              "contributionCount": 93,
+              "contributionCount": 99,
               "date": "2026-06-04",
               "color": "#40c463"
             },
             {
-              "contributionCount": 90,
+              "contributionCount": 91,
               "date": "2026-06-05",
               "color": "#40c463"
             },
             {
-              "contributionCount": 39,
+              "contributionCount": 40,
               "date": "2026-06-06",
               "color": "#9be9a8"
             }
@@ -1599,32 +1577,32 @@
               "color": "#ebedf0"
             },
             {
-              "contributionCount": 8,
+              "contributionCount": 12,
               "date": "2026-06-08",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 19,
+              "contributionCount": 22,
               "date": "2026-06-09",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 27,
+              "contributionCount": 29,
               "date": "2026-06-10",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 25,
+              "contributionCount": 26,
               "date": "2026-06-11",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 54,
+              "contributionCount": 57,
               "date": "2026-06-12",
               "color": "#40c463"
             },
             {
-              "contributionCount": 28,
+              "contributionCount": 33,
               "date": "2026-06-13",
               "color": "#9be9a8"
             }
@@ -1633,7 +1611,7 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 3,
+              "contributionCount": 4,
               "date": "2026-06-14",
               "color": "#9be9a8"
             },
@@ -1653,7 +1631,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 38,
+              "contributionCount": 39,
               "date": "2026-06-18",
               "color": "#9be9a8"
             },
@@ -2179,12 +2157,12 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 56,
+              "contributionCount": 65,
               "date": "2026-09-20",
               "color": "#40c463"
             },
             {
-              "contributionCount": 14,
+              "contributionCount": 19,
               "date": "2026-09-21",
               "color": "#9be9a8"
             },
@@ -2214,9 +2192,18 @@
               "color": "#ebedf0"
             }
           ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 0,
+              "date": "2026-09-27",
+              "color": "#ebedf0"
+            }
+          ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-09-26T02:25:55.952Z"
+  "lastUpdated": "2026-09-27T02:21:52.019Z"
 }
