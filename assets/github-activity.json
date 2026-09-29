@@ -10,6 +10,39 @@
   },
   "recentActivity": [
     {
+      "type": "PullRequestEvent",
+      "repo": "freeoxide/gpui-form",
+      "createdAt": "2026-09-28T20:01:23Z",
+      "action": "merged"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "freeoxide/gpui-form",
+      "createdAt": "2026-09-28T19:51:40Z",
+      "action": "opened"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/toride",
+      "createdAt": "2026-09-28T07:39:46Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "freeoxide/tunnel",
+      "createdAt": "2026-09-28T10:59:30Z"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "freeoxide/tunnel",
+      "createdAt": "2026-09-28T10:59:28Z"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/toride",
+      "createdAt": "2026-09-28T07:39:34Z"
+    },
+    {
       "type": "PushEvent",
       "repo": "hmziqrs/claude-multi",
       "createdAt": "2026-09-27T04:48:57Z",
@@ -33,45 +66,31 @@
       "createdAt": "2026-09-24T21:59:00Z",
       "action": "created branch",
       "message": "master"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-09-24T12:01:27Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-09-24T10:20:21Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-24T09:22:04Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-09-24T09:31:29Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/toride",
-      "createdAt": "2026-09-23T22:04:52Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/superai",
-      "createdAt": "2026-09-23T07:22:11Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
+    {
+      "name": "ai",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/ai",
+      "topics": []
+    },
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
     {
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
@@ -95,20 +114,6 @@
         "minimax",
         "minimax-agent",
         "xiaomi-mimo"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -168,20 +173,12 @@
         "sveletekit",
         "website"
       ]
-    },
-    {
-      "name": "brand",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/brand",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 7480,
+    "totalContributions": 7484,
     "calendar": {
-      "totalContributions": 7480,
+      "totalContributions": 7484,
       "weeks": [
         {
           "contributionDays": [
@@ -2219,14 +2216,19 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 3,
               "date": "2026-09-28",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 1,
+              "date": "2026-09-29",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-09-28T02:25:59.469Z"
+  "lastUpdated": "2026-09-29T03:09:22.048Z"
 }
