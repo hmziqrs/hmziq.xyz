@@ -10,6 +10,35 @@
   },
   "recentActivity": [
     {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-02T19:43:19Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-02T19:01:53Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-10-02T14:24:56Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-02T08:41:41Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/superai",
+      "createdAt": "2026-09-30T20:36:02Z",
+      "message": "Pushed commits"
+    },
+    {
       "type": "DeleteEvent",
       "repo": "freeoxide/tunnel",
       "createdAt": "2026-10-01T20:20:11Z"
@@ -35,34 +64,17 @@
       "type": "DeleteEvent",
       "repo": "hmziqrs/flutter-starter",
       "createdAt": "2026-09-30T10:18:13Z"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-09-30T09:50:20Z"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/tunnel",
-      "createdAt": "2026-10-01T08:12:31Z"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/superai",
-      "createdAt": "2026-09-30T20:35:54Z"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-09-30T10:18:08Z"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-09-30T08:47:13Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "easyquran",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/easyquran",
+      "topics": []
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -143,20 +155,12 @@
         "ui-design",
         "web-application"
       ]
-    },
-    {
-      "name": "easyquran",
-      "description": null,
-      "language": "Rust",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/easyquran",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 8637,
+    "totalContributions": 8688,
     "calendar": {
-      "totalContributions": 8637,
+      "totalContributions": 8688,
       "weeks": [
         {
           "contributionDays": [
@@ -2199,23 +2203,28 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 11,
+              "contributionCount": 17,
               "date": "2026-09-29",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 8,
+              "contributionCount": 13,
               "date": "2026-09-30",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 2,
+              "contributionCount": 9,
               "date": "2026-10-01",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 2,
+              "contributionCount": 29,
               "date": "2026-10-02",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 6,
+              "date": "2026-10-03",
               "color": "#9be9a8"
             }
           ]
@@ -2223,5 +2232,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-10-02T03:00:17.884Z"
+  "lastUpdated": "2026-10-03T02:46:14.262Z"
 }
