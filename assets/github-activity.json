@@ -10,62 +10,64 @@
   },
   "recentActivity": [
     {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-04T19:29:11Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-04T19:29:36Z"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-04T19:29:10Z",
+      "action": "merged"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-04T19:28:55Z",
+      "action": "opened"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-04T19:28:36Z",
+      "action": "created branch",
+      "message": "ui-optimizations"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-04T13:11:57Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-10-02T19:59:24Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-10-04T11:50:03Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-query",
+      "createdAt": "2026-10-04T08:37:11Z",
+      "message": "Pushed commits"
+    },
+    {
       "type": "PullRequestEvent",
       "repo": "freeoxide/gpui-query",
       "createdAt": "2026-10-03T20:57:23Z",
       "action": "closed"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-03T20:57:23Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-03T20:39:32Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-10-02T19:57:51Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-03T10:55:44Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-02T19:11:55Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-02T14:25:04Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-02T19:43:19Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-10-02T19:01:53Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-02T14:24:56Z"
     }
   ],
   "topRepositories": [
@@ -160,9 +162,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 8691,
+    "totalContributions": 8672,
     "calendar": {
-      "totalContributions": 8691,
+      "totalContributions": 8672,
       "weeks": [
         {
           "contributionDays": [
@@ -2195,8 +2197,13 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 2,
+              "contributionCount": 21,
               "date": "2026-10-04",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 3,
+              "date": "2026-10-05",
               "color": "#9be9a8"
             }
           ]
@@ -2204,5 +2211,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-10-04T03:16:58.592Z"
+  "lastUpdated": "2026-10-05T02:52:58.086Z"
 }
