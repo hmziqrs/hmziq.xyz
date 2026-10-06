@@ -11,72 +11,79 @@
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-04T19:29:11Z",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-10-05T18:47:48Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-10-05T17:16:40Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-10-05T19:09:17Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-10-05T18:16:46Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-10-05T17:33:05Z",
       "message": "Pushed commits"
     },
     {
       "type": "DeleteEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-04T19:29:36Z"
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-10-05T17:16:42Z"
     },
     {
       "type": "PullRequestEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-04T19:29:10Z",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-10-05T17:16:38Z",
       "action": "merged"
     },
     {
       "type": "PullRequestEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-04T19:28:55Z",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-10-05T17:00:18Z",
       "action": "opened"
     },
     {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-04T19:28:36Z",
-      "action": "created branch",
-      "message": "ui-optimizations"
-    },
-    {
       "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-04T13:11:57Z",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-10-05T16:56:00Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-02T19:59:24Z",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-05T11:18:03Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-04T11:50:03Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-04T08:37:11Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-03T20:57:23Z",
-      "action": "closed"
     }
   ],
   "topRepositories": [
     {
-      "name": "easyquran",
+      "name": "flutter-starter",
       "description": null,
-      "language": "Rust",
+      "language": "Dart",
       "stars": 0,
-      "url": "https://github.com/hmziqrs/easyquran",
+      "url": "https://github.com/hmziqrs/flutter-starter",
+      "topics": []
+    },
+    {
+      "name": "brand",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/brand",
       "topics": []
     },
     {
@@ -94,11 +101,11 @@
       ]
     },
     {
-      "name": "brand",
+      "name": "easyquran",
       "description": null,
-      "language": "TypeScript",
+      "language": "Rust",
       "stars": 0,
-      "url": "https://github.com/hmziqrs/brand",
+      "url": "https://github.com/hmziqrs/easyquran",
       "topics": []
     },
     {
@@ -133,38 +140,12 @@
         "minimax-agent",
         "xiaomi-mimo"
       ]
-    },
-    {
-      "name": "flutter-ui-designs",
-      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
-      "language": "Dart",
-      "stars": 334,
-      "url": "https://github.com/hmziqrs/flutter-ui-designs",
-      "topics": [
-        "animations",
-        "cross-platform",
-        "dart",
-        "desktop-app",
-        "flutter",
-        "flutter-animations",
-        "flutter-app",
-        "flutter-apps",
-        "flutter-design",
-        "flutter-desktop",
-        "flutter-examples",
-        "flutter-web",
-        "offline-first",
-        "parallax",
-        "parallax-scrolling",
-        "ui-design",
-        "web-application"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 8672,
+    "totalContributions": 8853,
     "calendar": {
-      "totalContributions": 8672,
+      "totalContributions": 8853,
       "weeks": [
         {
           "contributionDays": [
@@ -2178,17 +2159,17 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 9,
+              "contributionCount": 34,
               "date": "2026-10-01",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 29,
+              "contributionCount": 92,
               "date": "2026-10-02",
-              "color": "#9be9a8"
+              "color": "#40c463"
             },
             {
-              "contributionCount": 7,
+              "contributionCount": 24,
               "date": "2026-10-03",
               "color": "#9be9a8"
             }
@@ -2197,13 +2178,18 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 21,
+              "contributionCount": 42,
               "date": "2026-10-04",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 3,
+              "contributionCount": 57,
               "date": "2026-10-05",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 1,
+              "date": "2026-10-06",
               "color": "#9be9a8"
             }
           ]
@@ -2211,5 +2197,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-10-05T02:52:58.086Z"
+  "lastUpdated": "2026-10-06T03:43:09.363Z"
 }
