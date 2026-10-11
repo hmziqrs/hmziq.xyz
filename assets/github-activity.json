@@ -11,62 +11,62 @@
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-09T21:32:10Z",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-11T02:41:29Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-09T22:20:33Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-09T22:06:55Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-09T05:55:46Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-10-09T05:26:11Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-10-08T09:17:02Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-09T04:33:03Z",
+      "createdAt": "2026-10-09T04:42:15Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "freeoxide/toride",
-      "createdAt": "2026-10-08T09:26:56Z",
+      "createdAt": "2026-10-10T07:25:09Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-08T13:46:14Z",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-10T10:16:24Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-08T13:45:58Z",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-09T22:08:33Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-09T22:05:52Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-09T05:19:38Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-09T16:23:27Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-10T09:52:50Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-09T12:46:10Z",
       "message": "Pushed commits"
     }
   ],
@@ -77,14 +77,6 @@
       "language": "Rust",
       "stars": 0,
       "url": "https://github.com/hmziqrs/easyquran",
-      "topics": []
-    },
-    {
-      "name": "brand",
-      "description": null,
-      "language": "Svelte",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/brand",
       "topics": []
     },
     {
@@ -100,6 +92,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "brand",
+      "description": null,
+      "language": "Svelte",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/brand",
+      "topics": []
     },
     {
       "name": "flutter-starter",
@@ -144,49 +144,10 @@
     }
   ],
   "contributions": {
-    "totalContributions": 9294,
+    "totalContributions": 9314,
     "calendar": {
-      "totalContributions": 9294,
+      "totalContributions": 9314,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 0,
-              "date": "2025-10-05",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-10-06",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 20,
-              "date": "2025-10-07",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 21,
-              "date": "2025-10-08",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-10-09",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-10-10",
-              "color": "#ebedf0"
-            },
-            {
-              "contributionCount": 0,
-              "date": "2025-10-11",
-              "color": "#ebedf0"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2209,8 +2170,17 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 7,
+              "contributionCount": 24,
               "date": "2026-10-10",
+              "color": "#9be9a8"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 3,
+              "date": "2026-10-11",
               "color": "#9be9a8"
             }
           ]
@@ -2218,5 +2188,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-10-10T03:11:56.090Z"
+  "lastUpdated": "2026-10-11T02:44:30.319Z"
 }
