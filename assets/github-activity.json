@@ -10,72 +10,108 @@
   },
   "recentActivity": [
     {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-12T01:51:56Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-12T00:57:00Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/gpui-query",
-      "createdAt": "2026-10-12T00:56:41Z"
-    },
-    {
       "type": "PushEvent",
       "repo": "freeoxide/superai",
-      "createdAt": "2026-10-11T14:19:20Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-11T20:29:18Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/tunnel",
-      "createdAt": "2026-10-11T20:00:34Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-09T23:15:06Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/easyquran",
-      "createdAt": "2026-10-09T22:24:58Z",
+      "createdAt": "2026-10-11T11:47:31Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "freeoxide/superai",
-      "createdAt": "2026-10-11T02:11:19Z",
+      "createdAt": "2026-10-12T21:03:40Z",
       "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/superai",
+      "createdAt": "2026-10-12T21:03:26Z"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/toride",
+      "createdAt": "2026-10-12T20:58:54Z"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-12T20:20:51Z"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-12T20:20:19Z"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-12T20:14:40Z"
     },
     {
       "type": "PushEvent",
       "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-10-11T02:41:29Z",
+      "createdAt": "2026-10-12T20:14:22Z",
       "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-12T20:14:14Z"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "hmziqagent/gpui-starter",
+      "createdAt": "2026-10-12T20:04:44Z"
     }
   ],
   "topRepositories": [
     {
       "name": "easyquran",
       "description": null,
-      "language": "Rust",
+      "language": "TypeScript",
       "stars": 0,
       "url": "https://github.com/hmziqrs/easyquran",
-      "topics": []
+      "topics": [
+        "axum",
+        "axum-server",
+        "quran",
+        "quran-app",
+        "quran-online",
+        "quran-search",
+        "quran-translation",
+        "quran-web",
+        "rust",
+        "rust-api",
+        "svelte",
+        "svelte-components",
+        "svelte-kit",
+        "svelte5",
+        "sveltekit"
+      ]
+    },
+    {
+      "name": "claude-multi",
+      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
+      "language": "TypeScript",
+      "stars": 29,
+      "url": "https://github.com/hmziqrs/claude-multi",
+      "topics": [
+        "calude",
+        "claude-ai",
+        "claude-code",
+        "deepseek",
+        "deepseek-api",
+        "deepseek-v4",
+        "deepseek-v4-flash",
+        "deepseek-v4-pro",
+        "glm-5-1",
+        "glm-5-2",
+        "glm-5-turbo",
+        "mimo-v25",
+        "mimo-v25-pro",
+        "minimax",
+        "minimax-agent",
+        "xiaomi-mimo"
+      ]
     },
     {
       "name": "hmziq.xyz",
@@ -114,37 +150,12 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/ai",
       "topics": []
-    },
-    {
-      "name": "claude-multi",
-      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
-      "language": "TypeScript",
-      "stars": 29,
-      "url": "https://github.com/hmziqrs/claude-multi",
-      "topics": [
-        "calude",
-        "claude-ai",
-        "claude-code",
-        "deepseek",
-        "deepseek-api",
-        "deepseek-v4",
-        "deepseek-v4-flash",
-        "deepseek-v4-pro",
-        "glm-5-1",
-        "glm-5-2",
-        "glm-5-turbo",
-        "mimo-v25",
-        "mimo-v25-pro",
-        "minimax",
-        "minimax-agent",
-        "xiaomi-mimo"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 9559,
+    "totalContributions": 9658,
     "calendar": {
-      "totalContributions": 9559,
+      "totalContributions": 9658,
       "weeks": [
         {
           "contributionDays": [
@@ -2182,8 +2193,13 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 9,
+              "contributionCount": 103,
               "date": "2026-10-12",
+              "color": "#40c463"
+            },
+            {
+              "contributionCount": 5,
+              "date": "2026-10-13",
               "color": "#9be9a8"
             }
           ]
@@ -2191,5 +2207,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-10-12T03:07:55.024Z"
+  "lastUpdated": "2026-10-13T04:23:50.689Z"
 }
