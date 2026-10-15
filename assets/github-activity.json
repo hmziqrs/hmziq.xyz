@@ -10,6 +10,23 @@
   },
   "recentActivity": [
     {
+      "type": "PushEvent",
+      "repo": "hmziqrs/brand",
+      "createdAt": "2026-10-13T11:33:21Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-12T22:51:13Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "freeoxide/toride",
+      "createdAt": "2026-10-12T13:33:13Z"
+    },
+    {
       "type": "IssuesEvent",
       "repo": "hmziqrs/brand",
       "createdAt": "2026-10-14T00:58:58Z",
@@ -56,26 +73,31 @@
       "repo": "freeoxide/gpui-form",
       "createdAt": "2026-10-14T00:35:54Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "freeoxide/toride",
-      "createdAt": "2026-10-12T20:59:12Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/toride",
-      "createdAt": "2026-10-12T20:59:08Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-10-12T20:21:03Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
+    {
+      "name": "ai",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/ai",
+      "topics": []
+    },
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
     {
       "name": "flutter-ui-designs",
       "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
@@ -109,20 +131,6 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/brand",
       "topics": []
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
-      ]
     },
     {
       "name": "easyquran",
@@ -172,20 +180,12 @@
         "minimax-agent",
         "xiaomi-mimo"
       ]
-    },
-    {
-      "name": "flutter-starter",
-      "description": null,
-      "language": "Dart",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/flutter-starter",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 9667,
+    "totalContributions": 9670,
     "calendar": {
-      "totalContributions": 9667,
+      "totalContributions": 9670,
       "weeks": [
         {
           "contributionDays": [
@@ -2184,7 +2184,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 123,
+              "contributionCount": 125,
               "date": "2026-10-05",
               "color": "#40c463"
             },
@@ -2194,7 +2194,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 100,
+              "contributionCount": 101,
               "date": "2026-10-07",
               "color": "#40c463"
             },
@@ -2236,11 +2236,16 @@
               "contributionCount": 3,
               "date": "2026-10-14",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-10-15",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-10-14T02:33:48.662Z"
+  "lastUpdated": "2026-10-15T02:14:23.833Z"
 }
