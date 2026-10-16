@@ -5,10 +5,41 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 104,
-    "publicRepos": 83,
+    "publicRepos": 84,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-10-15T14:13:28Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-10-15T14:12:10Z",
+      "action": "created branch",
+      "message": "fix/z-sheet-drift-reconciliation"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-10-15T14:13:26Z",
+      "action": "merged"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-10-14T09:52:52Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-10-15T14:12:27Z",
+      "action": "opened"
+    },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/brand",
@@ -39,40 +70,6 @@
       "createdAt": "2026-10-14T00:58:58Z",
       "action": "opened",
       "message": "Slim down Storybook"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-10-14T00:58:57Z",
-      "action": "labeled",
-      "message": "Extract boilerplates into a page generator (self-healing CLI or AI prompt)"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-10-14T00:58:57Z",
-      "action": "opened",
-      "message": "Extract boilerplates into a page generator (self-healing CLI or AI prompt)"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-10-14T00:58:55Z",
-      "action": "labeled",
-      "message": "Refine brand repo"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-10-14T00:58:54Z",
-      "action": "opened",
-      "message": "Refine brand repo"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-10-14T00:35:54Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
@@ -82,6 +79,14 @@
       "language": "TypeScript",
       "stars": 0,
       "url": "https://github.com/hmziqrs/ai",
+      "topics": []
+    },
+    {
+      "name": "devlogs",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/devlogs",
       "topics": []
     },
     {
@@ -155,37 +160,12 @@
         "svelte5",
         "sveltekit"
       ]
-    },
-    {
-      "name": "claude-multi",
-      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
-      "language": "TypeScript",
-      "stars": 29,
-      "url": "https://github.com/hmziqrs/claude-multi",
-      "topics": [
-        "calude",
-        "claude-ai",
-        "claude-code",
-        "deepseek",
-        "deepseek-api",
-        "deepseek-v4",
-        "deepseek-v4-flash",
-        "deepseek-v4-pro",
-        "glm-5-1",
-        "glm-5-2",
-        "glm-5-turbo",
-        "mimo-v25",
-        "mimo-v25-pro",
-        "minimax",
-        "minimax-agent",
-        "xiaomi-mimo"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 9670,
+    "totalContributions": 9681,
     "calendar": {
-      "totalContributions": 9670,
+      "totalContributions": 9681,
       "weeks": [
         {
           "contributionDays": [
@@ -2028,9 +2008,9 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 79,
+              "contributionCount": 77,
               "date": "2026-09-07",
-              "color": "#40c463"
+              "color": "#9be9a8"
             },
             {
               "contributionCount": 26,
@@ -2233,19 +2213,24 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 3,
+              "contributionCount": 4,
               "date": "2026-10-14",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 7,
               "date": "2026-10-15",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 5,
+              "date": "2026-10-16",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-10-15T02:14:23.833Z"
+  "lastUpdated": "2026-10-16T02:05:43.990Z"
 }
