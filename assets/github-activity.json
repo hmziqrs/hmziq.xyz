@@ -4,11 +4,34 @@
     "name": "hmziq",
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
-    "followers": 104,
+    "followers": 105,
     "publicRepos": 84,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
+    {
+      "type": "CreateEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-10-15T14:14:40Z",
+      "action": "created branch",
+      "message": "master"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-10-15T14:15:42Z"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-10-15T14:15:38Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-10-15T14:15:33Z",
+      "message": "Pushed commits"
+    },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/ai",
@@ -45,46 +68,13 @@
       "repo": "hmziqrs/brand",
       "createdAt": "2026-10-13T11:33:21Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-10-12T22:51:13Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "DeleteEvent",
-      "repo": "freeoxide/toride",
-      "createdAt": "2026-10-12T13:33:13Z"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-10-14T00:58:58Z",
-      "action": "labeled",
-      "message": "Slim down Storybook"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-10-14T00:58:58Z",
-      "action": "opened",
-      "message": "Slim down Storybook"
     }
   ],
   "topRepositories": [
     {
-      "name": "ai",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/ai",
-      "topics": []
-    },
-    {
       "name": "devlogs",
       "description": null,
-      "language": null,
+      "language": "MDX",
       "stars": 0,
       "url": "https://github.com/hmziqrs/devlogs",
       "topics": []
@@ -102,6 +92,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "ai",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/ai",
+      "topics": []
     },
     {
       "name": "flutter-ui-designs",
@@ -163,9 +161,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 9681,
+    "totalContributions": 9685,
     "calendar": {
-      "totalContributions": 9681,
+      "totalContributions": 9685,
       "weeks": [
         {
           "contributionDays": [
@@ -2223,8 +2221,13 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 5,
+              "contributionCount": 8,
               "date": "2026-10-16",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 1,
+              "date": "2026-10-17",
               "color": "#9be9a8"
             }
           ]
@@ -2232,5 +2235,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-10-16T02:05:43.990Z"
+  "lastUpdated": "2026-10-17T01:59:53.003Z"
 }
