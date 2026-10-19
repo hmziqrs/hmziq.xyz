@@ -10,68 +10,91 @@
   },
   "recentActivity": [
     {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/devlogs",
-      "createdAt": "2026-10-16T20:06:33Z",
-      "action": "created branch",
-      "message": "master"
+      "type": "IssuesEvent",
+      "repo": "hmziqrs/autopilot-fullstack-e2e-2",
+      "createdAt": "2026-10-18T16:51:37Z",
+      "action": "unlabeled",
+      "message": "[PRD] autopilot-fullstack-e2e-2"
     },
     {
-      "type": "PushEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-10-15T23:14:26Z",
-      "message": "Pushed commits"
+      "type": "IssuesEvent",
+      "repo": "hmziqrs/autopilot-fullstack-e2e-2",
+      "createdAt": "2026-10-18T16:51:37Z",
+      "action": "labeled",
+      "message": "[PRD] autopilot-fullstack-e2e-2"
     },
     {
-      "type": "PushEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-10-15T23:00:15Z",
-      "message": "Pushed commits"
+      "type": "IssuesEvent",
+      "repo": "hmziqrs/autopilot-fullstack-e2e-2",
+      "createdAt": "2026-10-18T16:47:23Z",
+      "action": "labeled",
+      "message": "[Task] VIEW-3.5 Exercise create, edit, complete, reopen, delete and view-switch by keyboard alone at 1440 px and 390 px"
     },
     {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-10-15T14:14:40Z",
-      "action": "created branch",
-      "message": "master"
+      "type": "IssuesEvent",
+      "repo": "hmziqrs/autopilot-fullstack-e2e-2",
+      "createdAt": "2026-10-18T16:47:23Z",
+      "action": "labeled",
+      "message": "[Task] VIEW-3.5 Exercise create, edit, complete, reopen, delete and view-switch by keyboard alone at 1440 px and 390 px"
     },
     {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-10-15T14:15:42Z"
+      "type": "IssuesEvent",
+      "repo": "hmziqrs/autopilot-fullstack-e2e-2",
+      "createdAt": "2026-10-18T16:47:23Z",
+      "action": "labeled",
+      "message": "[Task] VIEW-3.5 Exercise create, edit, complete, reopen, delete and view-switch by keyboard alone at 1440 px and 390 px"
     },
     {
-      "type": "DeleteEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-10-15T14:15:38Z"
+      "type": "IssuesEvent",
+      "repo": "hmziqrs/autopilot-fullstack-e2e-2",
+      "createdAt": "2026-10-18T16:47:23Z",
+      "action": "labeled",
+      "message": "[Task] VIEW-3.5 Exercise create, edit, complete, reopen, delete and view-switch by keyboard alone at 1440 px and 390 px"
     },
     {
-      "type": "PushEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-10-15T14:15:33Z",
-      "message": "Pushed commits"
+      "type": "IssuesEvent",
+      "repo": "hmziqrs/autopilot-fullstack-e2e-2",
+      "createdAt": "2026-10-18T16:47:22Z",
+      "action": "labeled",
+      "message": "[Task] VIEW-3.5 Exercise create, edit, complete, reopen, delete and view-switch by keyboard alone at 1440 px and 390 px"
     },
     {
-      "type": "PushEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-10-15T14:13:28Z",
-      "message": "Pushed commits"
+      "type": "IssuesEvent",
+      "repo": "hmziqrs/autopilot-fullstack-e2e-2",
+      "createdAt": "2026-10-18T16:47:22Z",
+      "action": "opened",
+      "message": "[Task] VIEW-3.5 Exercise create, edit, complete, reopen, delete and view-switch by keyboard alone at 1440 px and 390 px"
     },
     {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-10-15T14:12:10Z",
-      "action": "created branch",
-      "message": "fix/z-sheet-drift-reconciliation"
+      "type": "IssuesEvent",
+      "repo": "hmziqrs/autopilot-fullstack-e2e-2",
+      "createdAt": "2026-10-18T16:47:16Z",
+      "action": "labeled",
+      "message": "[Task] VIEW-3.4 Build the client bundle with `PRIVATE_API_URL` set and check it for leaked values under a root NFR script CI runs"
     },
     {
-      "type": "PullRequestEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-10-15T14:13:26Z",
-      "action": "merged"
+      "type": "IssuesEvent",
+      "repo": "hmziqrs/autopilot-fullstack-e2e-2",
+      "createdAt": "2026-10-18T16:47:16Z",
+      "action": "labeled",
+      "message": "[Task] VIEW-3.4 Build the client bundle with `PRIVATE_API_URL` set and check it for leaked values under a root NFR script CI runs"
     }
   ],
   "topRepositories": [
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
     {
       "name": "devlogs",
       "description": null,
@@ -87,20 +110,6 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/ai",
       "topics": []
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
-      ]
     },
     {
       "name": "flutter-ui-designs",
@@ -162,9 +171,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 9694,
+    "totalContributions": 9676,
     "calendar": {
-      "totalContributions": 9694,
+      "totalContributions": 9676,
       "weeks": [
         {
           "contributionDays": [
@@ -2200,11 +2209,16 @@
               "contributionCount": 0,
               "date": "2026-10-18",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-10-19",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-10-18T01:59:10.183Z"
+  "lastUpdated": "2026-10-19T02:16:05.638Z"
 }
