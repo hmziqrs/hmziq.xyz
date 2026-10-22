@@ -10,6 +10,11 @@
   },
   "recentActivity": [
     {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/superai",
+      "createdAt": "2026-10-21T10:53:01Z"
+    },
+    {
       "type": "PushEvent",
       "repo": "hmziqrs/ai",
       "createdAt": "2026-10-17T13:35:37Z",
@@ -70,16 +75,24 @@
       "createdAt": "2026-10-18T16:47:22Z",
       "action": "opened",
       "message": "[Task] VIEW-3.5 Exercise create, edit, complete, reopen, delete and view-switch by keyboard alone at 1440 px and 390 px"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/autopilot-fullstack-e2e-2",
-      "createdAt": "2026-10-18T16:47:16Z",
-      "action": "labeled",
-      "message": "[Task] VIEW-3.4 Build the client bundle with `PRIVATE_API_URL` set and check it for leaked values under a root NFR script CI runs"
     }
   ],
   "topRepositories": [
+    {
+      "name": "react-native-loop-game",
+      "description": "Clone of infinity loop game built with react native",
+      "language": "TypeScript",
+      "stars": 22,
+      "url": "https://github.com/hmziqrs/react-native-loop-game",
+      "topics": [
+        "puzzle-game",
+        "react",
+        "react-hooks",
+        "react-native",
+        "react-native-animation",
+        "react-native-game"
+      ]
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -143,36 +156,12 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/brand",
       "topics": []
-    },
-    {
-      "name": "easyquran",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/easyquran",
-      "topics": [
-        "axum",
-        "axum-server",
-        "quran",
-        "quran-app",
-        "quran-online",
-        "quran-search",
-        "quran-translation",
-        "quran-web",
-        "rust",
-        "rust-api",
-        "svelte",
-        "svelte-components",
-        "svelte-kit",
-        "svelte5",
-        "sveltekit"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 9676,
+    "totalContributions": 9677,
     "calendar": {
-      "totalContributions": 9676,
+      "totalContributions": 9677,
       "weeks": [
         {
           "contributionDays": [
@@ -2220,8 +2209,13 @@
               "color": "#ebedf0"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 1,
               "date": "2026-10-21",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-10-22",
               "color": "#ebedf0"
             }
           ]
@@ -2229,5 +2223,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-10-21T02:24:22.180Z"
+  "lastUpdated": "2026-10-22T02:19:53.416Z"
 }
