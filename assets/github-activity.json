@@ -11,6 +11,18 @@
   "recentActivity": [
     {
       "type": "PushEvent",
+      "repo": "hmziqrs/brand",
+      "createdAt": "2026-10-25T10:38:20Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/devlogs",
+      "createdAt": "2026-10-24T18:57:02Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
       "repo": "freeoxide/tunnel",
       "createdAt": "2026-10-23T10:01:43Z",
       "message": "Pushed commits"
@@ -53,28 +65,40 @@
       "type": "PullRequestReviewEvent",
       "repo": "freeoxide/superai",
       "createdAt": "2026-10-21T10:53:01Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-10-17T13:35:37Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "hmziqrs/autopilot-fullstack-e2e-2",
-      "createdAt": "2026-10-18T16:51:37Z",
-      "action": "unlabeled",
-      "message": "[PRD] autopilot-fullstack-e2e-2"
     }
   ],
   "topRepositories": [
     {
-      "name": "devlogs",
+      "name": "claude-multi",
+      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
+      "language": "TypeScript",
+      "stars": 29,
+      "url": "https://github.com/hmziqrs/claude-multi",
+      "topics": [
+        "calude",
+        "claude-ai",
+        "claude-code",
+        "deepseek",
+        "deepseek-api",
+        "deepseek-v4",
+        "deepseek-v4-flash",
+        "deepseek-v4-pro",
+        "glm-5-1",
+        "glm-5-2",
+        "glm-5-turbo",
+        "mimo-v25",
+        "mimo-v25-pro",
+        "minimax",
+        "minimax-agent",
+        "xiaomi-mimo"
+      ]
+    },
+    {
+      "name": "brand",
       "description": null,
-      "language": null,
+      "language": "Svelte",
       "stars": 0,
-      "url": "https://github.com/hmziqrs/devlogs",
+      "url": "https://github.com/hmziqrs/brand",
       "topics": []
     },
     {
@@ -92,6 +116,14 @@
       ]
     },
     {
+      "name": "devlogs",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/devlogs",
+      "topics": []
+    },
+    {
       "name": "blog",
       "description": "blog",
       "language": "TypeScript",
@@ -106,53 +138,12 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/ai",
       "topics": []
-    },
-    {
-      "name": "react-native-loop-game",
-      "description": "Clone of infinity loop game built with react native",
-      "language": "TypeScript",
-      "stars": 22,
-      "url": "https://github.com/hmziqrs/react-native-loop-game",
-      "topics": [
-        "puzzle-game",
-        "react",
-        "react-hooks",
-        "react-native",
-        "react-native-animation",
-        "react-native-game"
-      ]
-    },
-    {
-      "name": "flutter-ui-designs",
-      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
-      "language": "Dart",
-      "stars": 333,
-      "url": "https://github.com/hmziqrs/flutter-ui-designs",
-      "topics": [
-        "animations",
-        "cross-platform",
-        "dart",
-        "desktop-app",
-        "flutter",
-        "flutter-animations",
-        "flutter-app",
-        "flutter-apps",
-        "flutter-design",
-        "flutter-desktop",
-        "flutter-examples",
-        "flutter-web",
-        "offline-first",
-        "parallax",
-        "parallax-scrolling",
-        "ui-design",
-        "web-application"
-      ]
     }
   ],
   "contributions": {
-    "totalContributions": 9743,
+    "totalContributions": 9767,
     "calendar": {
-      "totalContributions": 9743,
+      "totalContributions": 9767,
       "weeks": [
         {
           "contributionDays": [
@@ -2122,12 +2113,12 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 4,
+              "contributionCount": 6,
               "date": "2026-10-14",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 7,
+              "contributionCount": 8,
               "date": "2026-10-15",
               "color": "#9be9a8"
             },
@@ -2151,12 +2142,12 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 7,
+              "contributionCount": 21,
               "date": "2026-10-19",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 1,
+              "contributionCount": 2,
               "date": "2026-10-20",
               "color": "#9be9a8"
             },
@@ -2185,8 +2176,13 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 0,
+              "contributionCount": 8,
               "date": "2026-10-25",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-10-26",
               "color": "#ebedf0"
             }
           ]
@@ -2194,5 +2190,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-10-25T02:10:26.204Z"
+  "lastUpdated": "2026-10-26T02:10:49.171Z"
 }
