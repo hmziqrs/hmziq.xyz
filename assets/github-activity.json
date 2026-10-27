@@ -69,6 +69,20 @@
   ],
   "topRepositories": [
     {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
+    {
       "name": "claude-multi",
       "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
       "language": "TypeScript",
@@ -100,20 +114,6 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/brand",
       "topics": []
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
-      ]
     },
     {
       "name": "devlogs",
@@ -2184,11 +2184,16 @@
               "contributionCount": 0,
               "date": "2026-10-26",
               "color": "#ebedf0"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-10-27",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-10-26T02:10:49.171Z"
+  "lastUpdated": "2026-10-27T02:47:23.040Z"
 }
