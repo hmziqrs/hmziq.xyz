@@ -11,63 +11,68 @@
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-10-25T10:38:20Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/devlogs",
-      "createdAt": "2026-10-24T18:57:02Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/tunnel",
-      "createdAt": "2026-10-23T10:01:43Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-10-23T00:24:14Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
       "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-10-23T12:12:12Z",
+      "createdAt": "2026-10-27T10:27:31Z",
       "message": "Pushed commits"
     },
     {
+      "type": "WatchEvent",
+      "repo": "horizon-rust/horizon",
+      "createdAt": "2026-10-28T00:13:25Z",
+      "action": "starred"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "rustslop/languagetool",
+      "createdAt": "2026-10-27T22:33:49Z"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "rustslop/languagetool",
+      "createdAt": "2026-10-27T22:23:49Z"
+    },
+    {
       "type": "PushEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-10-23T09:28:53Z",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-27T11:10:17Z",
       "message": "Pushed commits"
     },
     {
       "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/tunnel",
-      "createdAt": "2026-10-23T13:46:36Z"
+      "repo": "freeoxide/llmproxy",
+      "createdAt": "2026-10-27T20:55:30Z"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/blog",
-      "createdAt": "2026-10-23T10:07:47Z",
+      "repo": "freeoxide/gpui-form",
+      "createdAt": "2026-10-27T11:27:48Z",
       "message": "Pushed commits"
     },
     {
       "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-10-23T09:30:55Z"
+      "repo": "freeoxide/llmproxy",
+      "createdAt": "2026-10-27T20:54:32Z"
     },
     {
       "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/superai",
-      "createdAt": "2026-10-21T10:53:01Z"
+      "repo": "freeoxide/gpui-form",
+      "createdAt": "2026-10-27T10:27:24Z"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-27T09:17:23Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "brand",
+      "description": null,
+      "language": "Svelte",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/brand",
+      "topics": []
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -108,14 +113,6 @@
       ]
     },
     {
-      "name": "brand",
-      "description": null,
-      "language": "Svelte",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/brand",
-      "topics": []
-    },
-    {
       "name": "devlogs",
       "description": null,
       "language": null,
@@ -141,9 +138,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 9767,
+    "totalContributions": 9805,
     "calendar": {
-      "totalContributions": 9767,
+      "totalContributions": 9805,
       "weeks": [
         {
           "contributionDays": [
@@ -2181,19 +2178,24 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 4,
               "date": "2026-10-26",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 20,
               "date": "2026-10-27",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 14,
+              "date": "2026-10-28",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-10-27T02:47:23.040Z"
+  "lastUpdated": "2026-10-28T02:55:29.055Z"
 }
