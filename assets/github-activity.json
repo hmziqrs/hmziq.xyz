@@ -11,6 +11,30 @@
   "recentActivity": [
     {
       "type": "PushEvent",
+      "repo": "rustslop/languagetool",
+      "createdAt": "2026-10-27T22:33:58Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/brand",
+      "createdAt": "2026-10-27T21:28:57Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-form",
+      "createdAt": "2026-10-27T22:14:45Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/llmproxy",
+      "createdAt": "2026-10-27T20:54:39Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
       "repo": "freeoxide/gpui-form",
       "createdAt": "2026-10-27T10:27:31Z",
       "message": "Pushed commits"
@@ -41,37 +65,40 @@
       "type": "PullRequestReviewEvent",
       "repo": "freeoxide/llmproxy",
       "createdAt": "2026-10-27T20:55:30Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-10-27T11:27:48Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/llmproxy",
-      "createdAt": "2026-10-27T20:54:32Z"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-10-27T10:27:24Z"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-10-27T09:17:23Z"
     }
   ],
   "topRepositories": [
     {
-      "name": "brand",
+      "name": "hmziq.rs",
       "description": null,
-      "language": "Svelte",
+      "language": "TypeScript",
       "stars": 0,
-      "url": "https://github.com/hmziqrs/brand",
+      "url": "https://github.com/hmziqrs/hmziq.rs",
       "topics": []
+    },
+    {
+      "name": "easyquran",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/easyquran",
+      "topics": [
+        "axum",
+        "axum-server",
+        "quran",
+        "quran-app",
+        "quran-online",
+        "quran-search",
+        "quran-translation",
+        "quran-web",
+        "rust",
+        "rust-api",
+        "svelte",
+        "svelte-components",
+        "svelte-kit",
+        "svelte5",
+        "sveltekit"
+      ]
     },
     {
       "name": "hmziq.xyz",
@@ -86,6 +113,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "brand",
+      "description": null,
+      "language": "Svelte",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/brand",
+      "topics": []
     },
     {
       "name": "claude-multi",
@@ -119,28 +154,12 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/devlogs",
       "topics": []
-    },
-    {
-      "name": "blog",
-      "description": "blog",
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/blog",
-      "topics": []
-    },
-    {
-      "name": "ai",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/ai",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 9805,
+    "totalContributions": 9842,
     "calendar": {
-      "totalContributions": 9805,
+      "totalContributions": 9842,
       "weeks": [
         {
           "contributionDays": [
@@ -2105,12 +2124,12 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 11,
+              "contributionCount": 26,
               "date": "2026-10-13",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 6,
+              "contributionCount": 11,
               "date": "2026-10-14",
               "color": "#9be9a8"
             },
@@ -2139,7 +2158,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 21,
+              "contributionCount": 23,
               "date": "2026-10-19",
               "color": "#9be9a8"
             },
@@ -2178,18 +2197,23 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 4,
+              "contributionCount": 6,
               "date": "2026-10-26",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 20,
+              "contributionCount": 26,
               "date": "2026-10-27",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 14,
+              "contributionCount": 15,
               "date": "2026-10-28",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 6,
+              "date": "2026-10-29",
               "color": "#9be9a8"
             }
           ]
@@ -2197,5 +2221,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-10-28T02:55:29.055Z"
+  "lastUpdated": "2026-10-29T03:21:32.621Z"
 }
