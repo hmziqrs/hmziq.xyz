@@ -11,6 +11,52 @@
   "recentActivity": [
     {
       "type": "PushEvent",
+      "repo": "hmziqrs/hmziq.rs",
+      "createdAt": "2026-10-29T02:05:03Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "DeleteEvent",
+      "repo": "hmziqrs/hmziq.rs",
+      "createdAt": "2026-10-29T01:47:19Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/hmziq.rs",
+      "createdAt": "2026-10-29T01:47:04Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/easyquran",
+      "createdAt": "2026-10-28T15:14:10Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-27T19:42:58Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-27T19:24:27Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "freeoxide/gpui-starter",
+      "createdAt": "2026-10-29T10:17:58Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/llmproxy",
+      "createdAt": "2026-10-27T20:55:37Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
       "repo": "rustslop/languagetool",
       "createdAt": "2026-10-27T22:33:58Z",
       "message": "Pushed commits"
@@ -20,54 +66,23 @@
       "repo": "hmziqrs/brand",
       "createdAt": "2026-10-27T21:28:57Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-10-27T22:14:45Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/llmproxy",
-      "createdAt": "2026-10-27T20:54:39Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-form",
-      "createdAt": "2026-10-27T10:27:31Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "WatchEvent",
-      "repo": "horizon-rust/horizon",
-      "createdAt": "2026-10-28T00:13:25Z",
-      "action": "starred"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "rustslop/languagetool",
-      "createdAt": "2026-10-27T22:33:49Z"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "rustslop/languagetool",
-      "createdAt": "2026-10-27T22:23:49Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/gpui-starter",
-      "createdAt": "2026-10-27T11:10:17Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/llmproxy",
-      "createdAt": "2026-10-27T20:55:30Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
     {
       "name": "hmziq.rs",
       "description": null,
@@ -98,20 +113,6 @@
         "svelte-kit",
         "svelte5",
         "sveltekit"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -157,9 +158,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 9842,
+    "totalContributions": 9844,
     "calendar": {
-      "totalContributions": 9842,
+      "totalContributions": 9844,
       "weeks": [
         {
           "contributionDays": [
@@ -2212,14 +2213,19 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 6,
+              "contributionCount": 8,
               "date": "2026-10-29",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-10-30",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-10-29T03:21:32.621Z"
+  "lastUpdated": "2026-10-30T03:22:45.637Z"
 }
