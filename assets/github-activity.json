@@ -12,110 +12,100 @@
     {
       "type": "PushEvent",
       "repo": "hmziqrs/brand",
-      "createdAt": "2026-11-01T21:15:13Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/quietmac",
-      "createdAt": "2026-11-01T11:20:36Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/quietmac",
-      "createdAt": "2026-11-01T14:08:11Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/toride",
-      "createdAt": "2026-11-02T20:12:46Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/devlogs",
-      "createdAt": "2026-11-01T11:18:00Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/quietmac",
-      "createdAt": "2026-11-01T11:03:18Z",
+      "createdAt": "2026-11-03T17:38:11Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/brand",
-      "createdAt": "2026-10-31T12:41:09Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/quietmac",
-      "createdAt": "2026-11-01T10:59:59Z",
-      "action": "created branch",
-      "message": "master"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-10-31T07:42:14Z",
+      "createdAt": "2026-11-03T17:27:10Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/brand",
-      "createdAt": "2026-10-31T07:41:55Z",
+      "createdAt": "2026-11-02T06:09:22Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/brand",
+      "createdAt": "2026-11-03T15:23:30Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/brand",
+      "createdAt": "2026-11-03T14:25:27Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/ai",
+      "createdAt": "2026-11-02T05:24:36Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/brand",
+      "createdAt": "2026-11-01T21:28:13Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/brand",
+      "createdAt": "2026-11-01T21:17:14Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/brand",
+      "createdAt": "2026-11-01T21:35:27Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/brand",
+      "createdAt": "2026-11-01T21:28:16Z",
       "message": "Pushed commits"
     }
   ],
   "topRepositories": [
     {
+      "name": "flutter-starter",
+      "description": null,
+      "language": "Dart",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/flutter-starter",
+      "topics": []
+    },
+    {
       "name": "claude-multi",
-      "description": "A tool to have multiple claude-code instance with deepseek, minimax, and z.ai glm models",
+      "description": "Run isolated Claude Code instances with separate providers (GLM, MiniMax, DeepSeek, MiMo, Kimi, Qwen), configs, plugins, MCP servers, and aliases.",
       "language": "TypeScript",
       "stars": 30,
       "url": "https://github.com/hmziqrs/claude-multi",
       "topics": [
-        "calude",
+        "bun",
+        "claude",
         "claude-ai",
         "claude-code",
+        "cli",
         "deepseek",
         "deepseek-api",
         "deepseek-v4",
-        "deepseek-v4-flash",
         "deepseek-v4-pro",
-        "glm-5-1",
-        "glm-5-2",
-        "glm-5-turbo",
-        "mimo-v25",
-        "mimo-v25-pro",
+        "developer-tools",
+        "glm-5-3",
+        "kimi",
+        "llm",
         "minimax",
         "minimax-agent",
+        "multi-instance",
+        "provider-templates",
+        "qwen",
+        "typescript",
         "xiaomi-mimo"
-      ]
-    },
-    {
-      "name": "ai",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/ai",
-      "topics": []
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -143,18 +133,32 @@
       "topics": []
     },
     {
-      "name": "brand",
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
+    {
+      "name": "ai",
       "description": null,
-      "language": "Svelte",
+      "language": "TypeScript",
       "stars": 0,
-      "url": "https://github.com/hmziqrs/brand",
+      "url": "https://github.com/hmziqrs/ai",
       "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 9646,
+    "totalContributions": 9726,
     "calendar": {
-      "totalContributions": 9646,
+      "totalContributions": 9726,
       "weeks": [
         {
           "contributionDays": [
@@ -2168,12 +2172,12 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 9,
+              "contributionCount": 15,
               "date": "2026-10-29",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 7,
+              "contributionCount": 15,
               "date": "2026-10-30",
               "color": "#9be9a8"
             },
@@ -2187,7 +2191,7 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 23,
+              "contributionCount": 25,
               "date": "2026-11-01",
               "color": "#9be9a8"
             },
@@ -2197,8 +2201,13 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 1,
+              "contributionCount": 15,
               "date": "2026-11-03",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 50,
+              "date": "2026-11-04",
               "color": "#9be9a8"
             }
           ]
@@ -2206,5 +2215,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-11-03T04:28:06.943Z"
+  "lastUpdated": "2026-11-04T03:46:43.564Z"
 }
