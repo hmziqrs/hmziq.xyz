@@ -11,80 +11,79 @@
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/devlogs",
-      "createdAt": "2026-11-03T05:25:01Z",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-11-05T00:58:06Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestReviewEvent",
+      "repo": "rustslop/languagetool",
+      "createdAt": "2026-11-06T01:52:15Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/flutter-starter",
+      "createdAt": "2026-11-05T00:03:30Z",
       "message": "Pushed commits"
     },
     {
       "type": "CreateEvent",
       "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-11-05T01:59:46Z",
+      "createdAt": "2026-11-04T23:43:01Z",
       "action": "created branch",
-      "message": "worktree-agent-a7d9f490a8a0f3e69"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-11-05T01:49:00Z",
-      "action": "created branch",
-      "message": "kit-consolidation"
+      "message": "audit/starter-readiness"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/brand",
-      "createdAt": "2026-11-04T10:43:57Z",
+      "createdAt": "2026-11-03T20:33:37Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "rustslop/languagetool",
+      "createdAt": "2026-11-05T19:02:19Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/devlogs",
+      "createdAt": "2026-11-05T19:58:46Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/brand",
-      "createdAt": "2026-11-04T09:51:58Z",
+      "createdAt": "2026-11-04T21:07:59Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/brand",
-      "createdAt": "2026-11-04T08:59:40Z",
+      "createdAt": "2026-11-04T20:24:59Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/brand",
-      "createdAt": "2026-11-04T08:43:30Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-11-04T13:49:50Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestReviewEvent",
-      "repo": "freeoxide/llmproxy",
-      "createdAt": "2026-11-04T20:59:37Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "freeoxide/toride",
-      "createdAt": "2026-11-02T20:12:57Z",
+      "createdAt": "2026-11-04T19:40:12Z",
       "message": "Pushed commits"
     }
   ],
   "topRepositories": [
     {
-      "name": "flutter-starter",
+      "name": "devlogs",
       "description": null,
-      "language": "Dart",
+      "language": null,
       "stars": 0,
-      "url": "https://github.com/hmziqrs/flutter-starter",
+      "url": "https://github.com/hmziqrs/devlogs",
       "topics": []
     },
     {
       "name": "claude-multi",
       "description": "Run isolated Claude Code instances with separate providers (GLM, MiniMax, DeepSeek, MiMo, Kimi, Qwen), configs, plugins, MCP servers, and aliases.",
       "language": "TypeScript",
-      "stars": 30,
+      "stars": 31,
       "url": "https://github.com/hmziqrs/claude-multi",
       "topics": [
         "bun",
@@ -110,6 +109,30 @@
       ]
     },
     {
+      "name": "ai",
+      "description": null,
+      "language": "TypeScript",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/ai",
+      "topics": []
+    },
+    {
+      "name": "flutter-starter",
+      "description": null,
+      "language": "Dart",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/flutter-starter",
+      "topics": []
+    },
+    {
+      "name": "brand",
+      "description": null,
+      "language": "Svelte",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/brand",
+      "topics": []
+    },
+    {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
       "language": "HTML",
@@ -122,44 +145,12 @@
         "rust",
         "rustlang"
       ]
-    },
-    {
-      "name": "quietmac",
-      "description": "Lower idle CPU and longer battery life on macOS without disabling SIP: reversible modules for Apple daemons, Continuity, WARP, Apple Intelligence and a dev volume for coding agents.",
-      "language": "Python",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/quietmac",
-      "topics": [
-        "apple-silicon",
-        "battery-life",
-        "coding-agents",
-        "developer-tools",
-        "energy-efficiency",
-        "launchd",
-        "macos"
-      ]
-    },
-    {
-      "name": "devlogs",
-      "description": null,
-      "language": null,
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/devlogs",
-      "topics": []
-    },
-    {
-      "name": "ai",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/ai",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 9787,
+    "totalContributions": 10130,
     "calendar": {
-      "totalContributions": 9787,
+      "totalContributions": 10130,
       "weeks": [
         {
           "contributionDays": [
@@ -2080,7 +2071,7 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 103,
+              "contributionCount": 127,
               "date": "2026-10-12",
               "color": "#40c463"
             },
@@ -2183,37 +2174,42 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 14,
+              "contributionCount": 93,
               "date": "2026-10-31",
-              "color": "#9be9a8"
+              "color": "#40c463"
             }
           ]
         },
         {
           "contributionDays": [
             {
-              "contributionCount": 25,
+              "contributionCount": 64,
               "date": "2026-11-01",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 4,
+              "contributionCount": 5,
               "date": "2026-11-02",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 15,
+              "contributionCount": 72,
               "date": "2026-11-03",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 86,
+              "contributionCount": 167,
               "date": "2026-11-04",
+              "color": "#30a14e"
+            },
+            {
+              "contributionCount": 78,
+              "date": "2026-11-05",
               "color": "#40c463"
             },
             {
-              "contributionCount": 25,
-              "date": "2026-11-05",
+              "contributionCount": 9,
+              "date": "2026-11-06",
               "color": "#9be9a8"
             }
           ]
@@ -2221,5 +2217,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-11-05T04:05:24.864Z"
+  "lastUpdated": "2026-11-06T04:01:57.662Z"
 }
