@@ -11,79 +11,72 @@
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/ai",
-      "createdAt": "2026-11-06T19:51:21Z",
+      "repo": "SuperNSH/firebase",
+      "createdAt": "2026-11-07T16:11:02Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-11-06T13:27:19Z",
+      "repo": "SuperNSH/firebase",
+      "createdAt": "2026-11-07T17:55:47Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "rustslop/languagetool",
-      "createdAt": "2026-11-05T13:43:16Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "WatchEvent",
-      "repo": "longbridge/nsh",
-      "createdAt": "2026-11-06T14:02:18Z",
-      "action": "starred"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "rustslop/languagetool",
-      "createdAt": "2026-11-06T03:48:39Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "WatchEvent",
-      "repo": "libnativeapi/nativeapi",
-      "createdAt": "2026-11-06T10:15:26Z",
-      "action": "starred"
-    },
-    {
-      "type": "WatchEvent",
-      "repo": "anomalyco/rune",
-      "createdAt": "2026-11-06T07:48:06Z",
-      "action": "starred"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "rustslop/languagetool",
-      "createdAt": "2026-11-06T02:22:02Z",
+      "repo": "SuperNSH/auth",
+      "createdAt": "2026-11-07T19:20:30Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
-      "repo": "hmziqrs/flutter-starter",
-      "createdAt": "2026-11-05T00:58:06Z",
+      "repo": "SuperNSH/firebase",
+      "createdAt": "2026-11-07T19:10:12Z",
       "message": "Pushed commits"
     },
     {
-      "type": "PullRequestReviewEvent",
-      "repo": "rustslop/languagetool",
-      "createdAt": "2026-11-06T01:52:15Z"
+      "type": "PushEvent",
+      "repo": "SuperNSH/firebase",
+      "createdAt": "2026-11-07T15:01:56Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/auth",
+      "createdAt": "2026-11-07T19:04:20Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/firebase",
+      "createdAt": "2026-11-07T10:32:30Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/biometrics",
+      "createdAt": "2026-11-07T18:38:05Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/http",
+      "createdAt": "2026-11-07T16:13:08Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/firebase",
+      "createdAt": "2026-11-07T18:17:06Z",
+      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
     {
-      "name": "brand",
+      "name": "devlogs",
       "description": null,
-      "language": "Svelte",
+      "language": null,
       "stars": 0,
-      "url": "https://github.com/hmziqrs/brand",
-      "topics": []
-    },
-    {
-      "name": "flutter-starter",
-      "description": null,
-      "language": "Dart",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/flutter-starter",
+      "url": "https://github.com/hmziqrs/devlogs",
       "topics": []
     },
     {
@@ -101,11 +94,19 @@
       ]
     },
     {
-      "name": "devlogs",
+      "name": "brand",
       "description": null,
-      "language": null,
+      "language": "Svelte",
       "stars": 0,
-      "url": "https://github.com/hmziqrs/devlogs",
+      "url": "https://github.com/hmziqrs/brand",
+      "topics": []
+    },
+    {
+      "name": "flutter-starter",
+      "description": null,
+      "language": "Dart",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/flutter-starter",
       "topics": []
     },
     {
@@ -147,49 +148,10 @@
     }
   ],
   "contributions": {
-    "totalContributions": 10151,
+    "totalContributions": 10339,
     "calendar": {
-      "totalContributions": 10151,
+      "totalContributions": 10339,
       "weeks": [
-        {
-          "contributionDays": [
-            {
-              "contributionCount": 7,
-              "date": "2025-11-02",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 20,
-              "date": "2025-11-03",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 25,
-              "date": "2025-11-04",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 41,
-              "date": "2025-11-05",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 45,
-              "date": "2025-11-06",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 47,
-              "date": "2025-11-07",
-              "color": "#9be9a8"
-            },
-            {
-              "contributionCount": 13,
-              "date": "2025-11-08",
-              "color": "#9be9a8"
-            }
-          ]
-        },
         {
           "contributionDays": [
             {
@@ -2212,8 +2174,17 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 15,
+              "contributionCount": 188,
               "date": "2026-11-07",
+              "color": "#30a14e"
+            }
+          ]
+        },
+        {
+          "contributionDays": [
+            {
+              "contributionCount": 15,
+              "date": "2026-11-08",
               "color": "#9be9a8"
             }
           ]
@@ -2221,5 +2192,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-11-07T03:38:18.600Z"
+  "lastUpdated": "2026-11-08T03:10:39.824Z"
 }
