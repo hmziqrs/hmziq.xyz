@@ -5,78 +5,80 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 105,
-    "publicRepos": 85,
+    "publicRepos": 86,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
     {
-      "type": "PushEvent",
-      "repo": "SuperNSH/firebase",
-      "createdAt": "2026-11-07T16:11:02Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/firebase",
-      "createdAt": "2026-11-07T17:55:47Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/auth",
-      "createdAt": "2026-11-07T19:20:30Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/firebase",
-      "createdAt": "2026-11-07T19:10:12Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/firebase",
-      "createdAt": "2026-11-07T15:01:56Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/auth",
-      "createdAt": "2026-11-07T19:04:20Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/firebase",
-      "createdAt": "2026-11-07T10:32:30Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/biometrics",
-      "createdAt": "2026-11-07T18:38:05Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
+      "type": "CreateEvent",
       "repo": "SuperNSH/http",
-      "createdAt": "2026-11-07T16:13:08Z",
+      "createdAt": "2026-11-09T02:07:46Z",
+      "action": "created branch",
+      "message": "master"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/auth",
+      "createdAt": "2026-11-09T02:05:04Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "SuperNSH/starter",
+      "createdAt": "2026-11-09T02:16:42Z",
+      "action": "merged"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "SuperNSH/starter",
+      "createdAt": "2026-11-09T02:16:31Z",
+      "action": "opened"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "longbridge/nsh",
+      "createdAt": "2026-11-09T01:49:46Z",
+      "action": "merged"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/firebase",
+      "createdAt": "2026-11-07T10:41:10Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "SuperNSH/firebase",
-      "createdAt": "2026-11-07T18:17:06Z",
+      "createdAt": "2026-11-07T10:25:35Z",
       "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/secure-storage",
+      "createdAt": "2026-11-07T09:58:19Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/nsh-builds",
+      "createdAt": "2026-11-07T20:15:44Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "CreateEvent",
+      "repo": "SuperNSH/starter",
+      "createdAt": "2026-11-08T14:28:18Z",
+      "action": "created branch",
+      "message": "canvas-pr"
     }
   ],
   "topRepositories": [
     {
-      "name": "devlogs",
-      "description": null,
-      "language": null,
+      "name": "nsh",
+      "description": "Native Shell is a native UI framework for iOS, Android, macOS, Windows, Linux and the web, built in Rust.",
+      "language": "Rust",
       "stars": 0,
-      "url": "https://github.com/hmziqrs/devlogs",
+      "url": "https://github.com/hmziqrs/nsh",
       "topics": []
     },
     {
@@ -92,6 +94,14 @@
         "rust",
         "rustlang"
       ]
+    },
+    {
+      "name": "devlogs",
+      "description": null,
+      "language": null,
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/devlogs",
+      "topics": []
     },
     {
       "name": "brand",
@@ -137,20 +147,12 @@
         "typescript",
         "xiaomi-mimo"
       ]
-    },
-    {
-      "name": "ai",
-      "description": null,
-      "language": "TypeScript",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/ai",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 10339,
+    "totalContributions": 10199,
     "calendar": {
-      "totalContributions": 10339,
+      "totalContributions": 10199,
       "weeks": [
         {
           "contributionDays": [
@@ -2183,8 +2185,13 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 15,
+              "contributionCount": 45,
               "date": "2026-11-08",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 28,
+              "date": "2026-11-09",
               "color": "#9be9a8"
             }
           ]
@@ -2192,5 +2199,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-11-08T03:10:39.824Z"
+  "lastUpdated": "2026-11-09T03:31:50.306Z"
 }
