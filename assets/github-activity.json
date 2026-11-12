@@ -11,6 +11,37 @@
   "recentActivity": [
     {
       "type": "PushEvent",
+      "repo": "SuperNSH/device-info",
+      "createdAt": "2026-11-12T02:56:06Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/icons",
+      "createdAt": "2026-11-10T09:32:25Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "longbridge/nsh",
+      "createdAt": "2026-11-11T17:46:02Z",
+      "action": "opened"
+    },
+    {
+      "type": "IssuesEvent",
+      "repo": "longbridge/nsh",
+      "createdAt": "2026-11-11T17:46:01Z",
+      "action": "opened",
+      "message": "ios: A responder that blocks native gestures still loses its page to the swipe back"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/icons",
+      "createdAt": "2026-11-10T11:08:46Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
       "repo": "SuperNSH/icons",
       "createdAt": "2026-11-10T09:39:49Z",
       "message": "Pushed commits"
@@ -40,42 +71,23 @@
       "repo": "rustslop/languagetool",
       "createdAt": "2026-11-09T04:57:20Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "SuperNSH/deep-links",
-      "createdAt": "2026-11-09T05:45:18Z",
-      "action": "created branch",
-      "message": "master"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "SuperNSH/microphone",
-      "createdAt": "2026-11-09T05:02:16Z",
-      "action": "created branch",
-      "message": "master"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "SuperNSH/firebase",
-      "createdAt": "2026-11-09T02:07:37Z",
-      "action": "created branch",
-      "message": "master"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/firebase",
-      "createdAt": "2026-11-09T02:09:29Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/auth",
-      "createdAt": "2026-11-09T02:07:28Z",
-      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
+    {
+      "name": "hmziq.xyz",
+      "description": "Portfolio Website built with dioxus",
+      "language": "HTML",
+      "stars": 1,
+      "url": "https://github.com/hmziqrs/hmziq.xyz",
+      "topics": [
+        "dioxus",
+        "dioxus-router",
+        "dioxus-web",
+        "rust",
+        "rustlang"
+      ]
+    },
     {
       "name": "claude-multi",
       "description": "Run isolated Claude Code instances with separate providers (GLM, MiniMax, DeepSeek, MiMo, Kimi, Qwen), configs, plugins, MCP servers, and aliases.",
@@ -103,20 +115,6 @@
         "qwen",
         "typescript",
         "xiaomi-mimo"
-      ]
-    },
-    {
-      "name": "hmziq.xyz",
-      "description": "Portfolio Website built with dioxus",
-      "language": "HTML",
-      "stars": 1,
-      "url": "https://github.com/hmziqrs/hmziq.xyz",
-      "topics": [
-        "dioxus",
-        "dioxus-router",
-        "dioxus-web",
-        "rust",
-        "rustlang"
       ]
     },
     {
@@ -153,9 +151,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 10256,
+    "totalContributions": 10301,
     "calendar": {
-      "totalContributions": 10256,
+      "totalContributions": 10301,
       "weeks": [
         {
           "contributionDays": [
@@ -2203,8 +2201,13 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 7,
+              "contributionCount": 29,
               "date": "2026-11-11",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 23,
+              "date": "2026-11-12",
               "color": "#9be9a8"
             }
           ]
@@ -2212,5 +2215,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-11-11T03:39:06.338Z"
+  "lastUpdated": "2026-11-12T04:47:11.657Z"
 }
