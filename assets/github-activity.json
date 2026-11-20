@@ -11,69 +11,93 @@
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "SuperNSH/query",
-      "createdAt": "2026-11-19T02:17:35Z",
+      "repo": "SuperNSH/logging",
+      "createdAt": "2026-11-18T21:33:01Z",
       "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/wake-lock",
+      "createdAt": "2026-11-18T21:24:00Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/microphone",
+      "createdAt": "2026-11-18T21:23:38Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/in-app-review",
+      "createdAt": "2026-11-18T21:23:16Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/permissions",
+      "createdAt": "2026-11-18T19:03:22Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/text-to-speech",
+      "createdAt": "2026-11-18T06:07:20Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "longbridge/nsh",
+      "createdAt": "2026-11-19T13:24:46Z",
+      "action": "merged"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/brand",
+      "createdAt": "2026-11-18T07:36:14Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PullRequestEvent",
+      "repo": "longbridge/nsh",
+      "createdAt": "2026-11-19T10:35:54Z",
+      "action": "merged"
     },
     {
       "type": "IssuesEvent",
       "repo": "longbridge/nsh",
-      "createdAt": "2026-11-19T04:23:11Z",
+      "createdAt": "2026-11-19T08:59:47Z",
       "action": "opened",
-      "message": "cli: Let a Rust crate add Android libraries (Java classes and AARs) to the packaged APK"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "longbridge/nsh",
-      "createdAt": "2026-11-19T04:23:09Z",
-      "action": "opened",
-      "message": "cli: Let an app declare extra Android permissions in nsh.json"
-    },
-    {
-      "type": "IssuesEvent",
-      "repo": "longbridge/nsh",
-      "createdAt": "2026-11-19T04:23:01Z",
-      "action": "opened",
-      "message": "android: A packaged JS app drops links of its own scheme"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/http",
-      "createdAt": "2026-11-19T02:02:27Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/icons",
-      "createdAt": "2026-11-19T01:33:18Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/biometrics",
-      "createdAt": "2026-11-18T22:39:53Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/secure-storage",
-      "createdAt": "2026-11-18T21:43:39Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/camera",
-      "createdAt": "2026-11-18T19:34:46Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/background",
-      "createdAt": "2026-11-18T19:31:29Z",
-      "message": "Pushed commits"
+      "message": "base: Focusing a NumberInput focuses its wrapper, not its text field"
     }
   ],
   "topRepositories": [
+    {
+      "name": "flutter-ui-designs",
+      "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
+      "language": "Dart",
+      "stars": 332,
+      "url": "https://github.com/hmziqrs/flutter-ui-designs",
+      "topics": [
+        "animations",
+        "cross-platform",
+        "dart",
+        "desktop-app",
+        "flutter",
+        "flutter-animations",
+        "flutter-app",
+        "flutter-apps",
+        "flutter-design",
+        "flutter-desktop",
+        "flutter-examples",
+        "flutter-web",
+        "offline-first",
+        "parallax",
+        "parallax-scrolling",
+        "ui-design",
+        "web-application"
+      ]
+    },
     {
       "name": "hmziq.xyz",
       "description": "Portfolio Website built with dioxus",
@@ -140,20 +164,12 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/brand",
       "topics": []
-    },
-    {
-      "name": "flutter-starter",
-      "description": null,
-      "language": "Dart",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/flutter-starter",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 10233,
+    "totalContributions": 10249,
     "calendar": {
-      "totalContributions": 10233,
+      "totalContributions": 10249,
       "weeks": [
         {
           "contributionDays": [
@@ -2206,14 +2222,19 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 84,
+              "contributionCount": 100,
               "date": "2026-11-19",
               "color": "#40c463"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-11-20",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-11-19T04:55:21.462Z"
+  "lastUpdated": "2026-11-20T04:45:51.532Z"
 }
