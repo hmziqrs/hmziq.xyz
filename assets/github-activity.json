@@ -4,71 +4,69 @@
     "name": "hmziq",
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
-    "followers": 105,
+    "followers": 106,
     "publicRepos": 86,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
     {
-      "type": "PushEvent",
-      "repo": "SuperNSH/logging",
-      "createdAt": "2026-11-18T21:33:01Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/wake-lock",
-      "createdAt": "2026-11-18T21:24:00Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/microphone",
-      "createdAt": "2026-11-18T21:23:38Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/in-app-review",
-      "createdAt": "2026-11-18T21:23:16Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/permissions",
-      "createdAt": "2026-11-18T19:03:22Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/text-to-speech",
-      "createdAt": "2026-11-18T06:07:20Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
+      "type": "IssueCommentEvent",
       "repo": "longbridge/nsh",
-      "createdAt": "2026-11-19T13:24:46Z",
-      "action": "merged"
+      "createdAt": "2026-11-21T04:35:19Z"
     },
     {
       "type": "PushEvent",
       "repo": "hmziqrs/brand",
-      "createdAt": "2026-11-18T07:36:14Z",
+      "createdAt": "2026-11-19T07:05:54Z",
       "message": "Pushed commits"
     },
     {
       "type": "PullRequestEvent",
       "repo": "longbridge/nsh",
-      "createdAt": "2026-11-19T10:35:54Z",
+      "createdAt": "2026-11-21T00:37:18Z",
       "action": "merged"
     },
     {
-      "type": "IssuesEvent",
+      "type": "PullRequestEvent",
       "repo": "longbridge/nsh",
-      "createdAt": "2026-11-19T08:59:47Z",
-      "action": "opened",
-      "message": "base: Focusing a NumberInput focuses its wrapper, not its text field"
+      "createdAt": "2026-11-21T00:37:02Z",
+      "action": "merged"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/camera",
+      "createdAt": "2026-11-19T02:43:06Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/starter",
+      "createdAt": "2026-11-19T02:17:15Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/auth",
+      "createdAt": "2026-11-19T01:39:14Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/qr-code",
+      "createdAt": "2026-11-18T21:42:58Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/share",
+      "createdAt": "2026-11-18T21:30:39Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/firebase",
+      "createdAt": "2026-11-19T02:46:21Z",
+      "message": "Pushed commits"
     }
   ],
   "topRepositories": [
@@ -167,9 +165,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 10249,
+    "totalContributions": 10266,
     "calendar": {
-      "totalContributions": 10249,
+      "totalContributions": 10266,
       "weeks": [
         {
           "contributionDays": [
@@ -2227,14 +2225,19 @@
               "color": "#40c463"
             },
             {
-              "contributionCount": 0,
+              "contributionCount": 15,
               "date": "2026-11-20",
-              "color": "#ebedf0"
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 2,
+              "date": "2026-11-21",
+              "color": "#9be9a8"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-11-20T04:45:51.532Z"
+  "lastUpdated": "2026-11-21T04:41:01.450Z"
 }
