@@ -4,71 +4,67 @@
     "name": "hmziq",
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
-    "followers": 106,
+    "followers": 105,
     "publicRepos": 86,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
     {
-      "type": "PullRequestEvent",
-      "repo": "longbridge/nsh",
-      "createdAt": "2026-11-22T03:49:38Z",
-      "action": "opened"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/nsh",
-      "createdAt": "2026-11-20T08:52:45Z",
-      "action": "created branch",
-      "message": "android-ndk-context"
-    },
-    {
       "type": "PushEvent",
       "repo": "hmziqrs/nsh",
-      "createdAt": "2026-11-21T04:24:04Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/nsh",
-      "createdAt": "2026-11-19T08:56:30Z",
-      "action": "created branch",
-      "message": "runtime-permissions"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/nsh",
-      "createdAt": "2026-11-19T08:54:22Z",
+      "createdAt": "2026-11-23T02:17:28Z",
       "message": "Pushed commits"
     },
     {
       "type": "IssueCommentEvent",
       "repo": "longbridge/nsh",
-      "createdAt": "2026-11-21T04:35:19Z"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "hmziqrs/brand",
-      "createdAt": "2026-11-19T07:05:54Z",
-      "message": "Pushed commits"
+      "createdAt": "2026-11-23T03:24:46Z"
     },
     {
       "type": "PullRequestEvent",
       "repo": "longbridge/nsh",
-      "createdAt": "2026-11-21T00:37:18Z",
+      "createdAt": "2026-11-23T02:29:51Z",
       "action": "merged"
+    },
+    {
+      "type": "IssueCommentEvent",
+      "repo": "longbridge/nsh",
+      "createdAt": "2026-11-23T02:26:47Z"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "hmziqrs/nsh",
+      "createdAt": "2026-11-23T02:24:32Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/frameworks",
+      "createdAt": "2026-11-23T01:57:42Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "IssueCommentEvent",
+      "repo": "longbridge/nsh",
+      "createdAt": "2026-11-23T02:17:45Z"
+    },
+    {
+      "type": "IssueCommentEvent",
+      "repo": "longbridge/nsh",
+      "createdAt": "2026-11-23T01:57:42Z"
     },
     {
       "type": "PullRequestEvent",
       "repo": "longbridge/nsh",
-      "createdAt": "2026-11-21T00:37:02Z",
-      "action": "merged"
+      "createdAt": "2026-11-23T01:41:55Z",
+      "action": "opened"
     },
     {
-      "type": "PushEvent",
-      "repo": "SuperNSH/camera",
-      "createdAt": "2026-11-19T02:43:06Z",
-      "message": "Pushed commits"
+      "type": "CreateEvent",
+      "repo": "hmziqrs/nsh",
+      "createdAt": "2026-11-22T08:15:18Z",
+      "action": "created branch",
+      "message": "crate-xcframeworks"
     }
   ],
   "topRepositories": [
@@ -76,7 +72,7 @@
       "name": "flutter-ui-designs",
       "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
       "language": "Dart",
-      "stars": 332,
+      "stars": 331,
       "url": "https://github.com/hmziqrs/flutter-ui-designs",
       "topics": [
         "animations",
@@ -167,9 +163,9 @@
     }
   ],
   "contributions": {
-    "totalContributions": 10267,
+    "totalContributions": 9792,
     "calendar": {
-      "totalContributions": 10267,
+      "totalContributions": 9792,
       "weeks": [
         {
           "contributionDays": [
@@ -2202,8 +2198,13 @@
         {
           "contributionDays": [
             {
-              "contributionCount": 1,
+              "contributionCount": 23,
               "date": "2026-11-22",
+              "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 8,
+              "date": "2026-11-23",
               "color": "#9be9a8"
             }
           ]
@@ -2211,5 +2212,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-11-22T03:55:19.171Z"
+  "lastUpdated": "2026-11-23T04:36:05.979Z"
 }
