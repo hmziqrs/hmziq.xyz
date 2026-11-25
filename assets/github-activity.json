@@ -11,68 +11,90 @@
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "SuperNSH/widgets",
-      "createdAt": "2026-11-24T04:47:57Z",
+      "repo": "SuperNSH/secure-storage",
+      "createdAt": "2026-11-24T12:37:11Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/purchases",
+      "createdAt": "2026-11-24T12:37:04Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/wake-lock",
+      "createdAt": "2026-11-24T12:35:35Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/qr-code",
+      "createdAt": "2026-11-24T12:34:16Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/ocr",
+      "createdAt": "2026-11-24T12:35:05Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/pdf-export",
+      "createdAt": "2026-11-24T12:34:20Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/in-app-review",
+      "createdAt": "2026-11-24T12:34:13Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "freeoxide/gpui-form",
+      "createdAt": "2026-11-23T13:14:37Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/webgpu",
+      "createdAt": "2026-11-24T18:48:15Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "SuperNSH/widgets",
-      "createdAt": "2026-11-23T19:39:22Z",
+      "createdAt": "2026-11-24T07:25:50Z",
       "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/widgets",
-      "createdAt": "2026-11-23T21:19:04Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "SuperNSH/widgets",
-      "createdAt": "2026-11-23T21:17:51Z",
-      "action": "created branch",
-      "message": "next"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/nsh",
-      "createdAt": "2026-11-22T15:38:27Z",
-      "action": "created branch",
-      "message": "android-maven"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/widgets",
-      "createdAt": "2026-11-23T21:32:15Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "CreateEvent",
-      "repo": "hmziqrs/nsh",
-      "createdAt": "2026-11-22T14:22:29Z",
-      "action": "created branch",
-      "message": "android-platform-dirs"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/widgets",
-      "createdAt": "2026-11-23T13:12:30Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PullRequestEvent",
-      "repo": "longbridge/nsh",
-      "createdAt": "2026-11-23T05:40:41Z",
-      "action": "merged"
-    },
-    {
-      "type": "IssueCommentEvent",
-      "repo": "longbridge/nsh",
-      "createdAt": "2026-11-23T05:15:55Z"
     }
   ],
   "topRepositories": [
+    {
+      "name": "easyquran",
+      "description": null,
+      "language": "Rust",
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/easyquran",
+      "topics": [
+        "axum",
+        "axum-server",
+        "quran",
+        "quran-app",
+        "quran-online",
+        "quran-search",
+        "quran-translation",
+        "quran-web",
+        "rust",
+        "rust-api",
+        "svelte",
+        "svelte-components",
+        "svelte-kit",
+        "svelte5",
+        "sveltekit"
+      ]
+    },
     {
       "name": "flutter-ui-designs",
       "description": "Collection of UI designs built with Flutter, runs on any platform: mobile, web & desktop.",
@@ -157,20 +179,12 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/devlogs",
       "topics": []
-    },
-    {
-      "name": "brand",
-      "description": null,
-      "language": "Svelte",
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/brand",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 9840,
+    "totalContributions": 10121,
     "calendar": {
-      "totalContributions": 9840,
+      "totalContributions": 10121,
       "weeks": [
         {
           "contributionDays": [
@@ -2062,7 +2076,7 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 20,
+              "contributionCount": 21,
               "date": "2026-10-28",
               "color": "#9be9a8"
             },
@@ -2072,12 +2086,12 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 15,
+              "contributionCount": 20,
               "date": "2026-10-30",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 93,
+              "contributionCount": 94,
               "date": "2026-10-31",
               "color": "#40c463"
             }
@@ -2106,17 +2120,17 @@
               "color": "#30a14e"
             },
             {
-              "contributionCount": 80,
+              "contributionCount": 82,
               "date": "2026-11-05",
               "color": "#40c463"
             },
             {
-              "contributionCount": 13,
+              "contributionCount": 132,
               "date": "2026-11-06",
-              "color": "#9be9a8"
+              "color": "#40c463"
             },
             {
-              "contributionCount": 188,
+              "contributionCount": 209,
               "date": "2026-11-07",
               "color": "#30a14e"
             }
@@ -2179,12 +2193,12 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 27,
+              "contributionCount": 53,
               "date": "2026-11-18",
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 100,
+              "contributionCount": 109,
               "date": "2026-11-19",
               "color": "#40c463"
             },
@@ -2213,8 +2227,13 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 43,
+              "contributionCount": 139,
               "date": "2026-11-24",
+              "color": "#40c463"
+            },
+            {
+              "contributionCount": 1,
+              "date": "2026-11-25",
               "color": "#9be9a8"
             }
           ]
@@ -2222,5 +2241,5 @@
       ]
     }
   },
-  "lastUpdated": "2026-11-24T07:29:03.560Z"
+  "lastUpdated": "2026-11-25T05:58:09.879Z"
 }
