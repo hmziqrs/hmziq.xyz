@@ -5,72 +5,80 @@
     "avatarUrl": "https://avatars.githubusercontent.com/u/6891214?v=4",
     "bio": null,
     "followers": 105,
-    "publicRepos": 86,
+    "publicRepos": 87,
     "profileUrl": "https://github.com/hmziqrs"
   },
   "recentActivity": [
     {
       "type": "PushEvent",
-      "repo": "SuperNSH/starter",
-      "createdAt": "2026-11-25T18:58:58Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/query",
-      "createdAt": "2026-11-25T18:56:42Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/pdf-export",
-      "createdAt": "2026-11-25T18:56:30Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/device-info",
-      "createdAt": "2026-11-25T18:56:05Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/biometrics",
-      "createdAt": "2026-11-25T18:55:53Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/firebase",
-      "createdAt": "2026-11-25T18:32:17Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/skia",
-      "createdAt": "2026-11-25T18:56:54Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/text-to-speech",
-      "createdAt": "2026-11-25T18:56:49Z",
-      "message": "Pushed commits"
-    },
-    {
-      "type": "PushEvent",
-      "repo": "SuperNSH/in-app-review",
-      "createdAt": "2026-11-25T18:56:18Z",
+      "repo": "SuperNSH/native-deps",
+      "createdAt": "2026-11-26T06:08:45Z",
       "message": "Pushed commits"
     },
     {
       "type": "PushEvent",
       "repo": "SuperNSH/auth",
-      "createdAt": "2026-11-25T18:55:48Z",
+      "createdAt": "2026-11-26T06:32:05Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/form",
+      "createdAt": "2026-11-26T06:31:08Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/camera",
+      "createdAt": "2026-11-26T06:30:51Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/ocr",
+      "createdAt": "2026-11-26T06:31:22Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/biometrics",
+      "createdAt": "2026-11-26T06:30:47Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/purchases",
+      "createdAt": "2026-11-26T06:31:32Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/permissions",
+      "createdAt": "2026-11-26T06:31:29Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/native-deps",
+      "createdAt": "2026-11-26T06:10:13Z",
+      "message": "Pushed commits"
+    },
+    {
+      "type": "PushEvent",
+      "repo": "SuperNSH/text-to-speech",
+      "createdAt": "2026-11-26T06:31:54Z",
       "message": "Pushed commits"
     }
   ],
   "topRepositories": [
+    {
+      "name": "zeroclaw",
+      "description": "Fast, small, and fully autonomous AI personal assistant infrastructure, any OS, any platform — deploy anywhere, swap anything 🦀",
+      "language": null,
+      "stars": 0,
+      "url": "https://github.com/hmziqrs/zeroclaw",
+      "topics": []
+    },
     {
       "name": "easyquran",
       "description": null,
@@ -171,20 +179,12 @@
       "stars": 0,
       "url": "https://github.com/hmziqrs/nsh",
       "topics": []
-    },
-    {
-      "name": "devlogs",
-      "description": null,
-      "language": null,
-      "stars": 0,
-      "url": "https://github.com/hmziqrs/devlogs",
-      "topics": []
     }
   ],
   "contributions": {
-    "totalContributions": 10265,
+    "totalContributions": 10272,
     "calendar": {
-      "totalContributions": 10265,
+      "totalContributions": 10272,
       "weeks": [
         {
           "contributionDays": [
@@ -2242,14 +2242,19 @@
               "color": "#9be9a8"
             },
             {
-              "contributionCount": 2,
+              "contributionCount": 9,
               "date": "2026-11-27",
               "color": "#9be9a8"
+            },
+            {
+              "contributionCount": 0,
+              "date": "2026-11-28",
+              "color": "#ebedf0"
             }
           ]
         }
       ]
     }
   },
-  "lastUpdated": "2026-11-27T05:44:40.354Z"
+  "lastUpdated": "2026-11-28T05:24:28.345Z"
 }
